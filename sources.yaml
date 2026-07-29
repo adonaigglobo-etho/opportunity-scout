@@ -1,0 +1,225 @@
+# ============================================================================
+# sources.yaml  —  YOUR editable source list for the Opportunity Scout council
+# ----------------------------------------------------------------------------
+# The scout crawls every source under `active:` each run. The council may
+# PROPOSE additions during a --sweep; approved-by-quorum candidates land in
+# `pending_sources:` and wait for your Telegram "yes" before being promoted here.
+#
+# Fields per source:
+#   name        : human label
+#   url         : landing / call page the scout fetches
+#   type        : portal | society | aggregator | api | rss  (how to read it)
+#   tags        : which of YOUR interests it serves (used for relevance scoring)
+#   cadence     : how often calls open, if known (freeform note)
+#   notes       : eligibility gotchas, verified status, anything worth remembering
+#
+# tags vocabulary (edit freely): grant, predoc, postdoc, mobility, travel,
+#   thesis-prize, collaboration, job, animal-behaviour, cognition, ecology,
+#   sci-comm, spain, eu
+# ============================================================================
+
+profile:
+  # Used by the council to score fit. Keep this honest and current.
+  name: "(your name)"
+  stage: "just completed TFM (master's thesis)"
+  location: "Spain"
+  fields: [comparative cognition, animal behaviour, behavioural flexibility, animal ecology, animal culture]
+  methods: [GLM-HMM, PsychoPy, Pavlovia/PsychoJS, behavioural modelling]
+  pi: "Alex Taylor"
+  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility, corvid cognition, decision making, behavioural ecology]
+  language: [English, Spanish]
+
+# ----------------------------------------------------------------------------
+active:
+
+  # === Spanish pre/post-doctoral funding ===================================
+  - name: "la Caixa INPhINIT Doctoral Fellowships"
+    url: "https://lacaixafoundation.org/en/doctoral-inphinit-fellowships"
+    type: portal
+    tags: [grant, predoc, spain, mobility]
+    cadence: "Annual — Incoming ~28 Jan, Retaining ~18 Feb (2026 dates verified)"
+    notes: "STEM/life-sciences eligible. Incoming = NOT resident in ES/PT >12mo of last 3yr; Retaining = resident in ES/PT. Host must hold Severo Ochoa / María de Maeztu accreditation for Incoming."
+
+  - name: "la Caixa Junior Leader (postdoc)"
+    url: "https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships"
+    type: portal
+    tags: [grant, postdoc, spain, mobility]
+    cadence: "Annual, typically autumn call"
+    notes: "For later — postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility."
+
+  - name: "FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)"
+    url: "https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/"
+    type: portal
+    tags: [grant, predoc, spain]
+    cadence: "Annual, ministry call (usually late autumn/winter)"
+    notes: "Requires enrolment/admission in a doctoral programme. Confirm exact call URL each cycle — ministry restructures pages."
+
+  - name: "FPI — Ayudas para contratos predoctorales (AEI)"
+    url: "https://www.aei.gob.es/convocatorias"
+    type: portal
+    tags: [grant, predoc, spain]
+    cadence: "Annual, tied to funded research projects"
+    notes: "FPI is attached to a specific funded project/PI — so a target lab in Spain with an active AEI project is the entry point. Cross-reference with lab_discovery hits."
+
+  - name: "AEI — Agencia Estatal de Investigación (all calls)"
+    url: "https://www.aei.gob.es/convocatorias/buscador-convocatorias"
+    type: portal
+    tags: [grant, predoc, postdoc, spain]
+    cadence: "Rolling"
+    notes: "Master call index for Spanish state research funding. Broad — filter hard by tags."
+
+  - name: "Generalitat de Catalunya — FI predoctoral (AGAUR)"
+    url: "https://agaur.gencat.cat/en/beques-i-ajuts/"
+    type: portal
+    tags: [grant, predoc, spain]
+    cadence: "Annual"
+    notes: "Regional predoc (relevant if targeting Catalan institutions, e.g. CREAF/CSIC Barcelona — see Daniel Sol in network.yaml)."
+
+  # === EU mobility & fellowships ===========================================
+  - name: "Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships"
+    url: "https://marie-sklodowska-curie-actions.ec.europa.eu/actions"
+    type: portal
+    tags: [grant, predoc, postdoc, mobility, eu]
+    cadence: "Annual per action (PF call typically opens spring, closes ~Sep)"
+    notes: "Doctoral Networks are applied for by consortia (you join as a recruited fellow — watch for open recruited positions). PF is postdoc-stage."
+
+  - name: "EMBO Postdoctoral Fellowships"
+    url: "https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/"
+    type: society
+    tags: [grant, postdoc, mobility, eu]
+    cadence: "Two rounds/year (spring & autumn; autumn deadline ~23 Jan verified for 2026 round rules)"
+    notes: "Postdoc-stage; international mobility required. One host lab = one candidate per round. Seed for future."
+
+  - name: "EMBO Scientific Exchange Grants"
+    url: "https://www.embo.org/funding/fellowships-grants-and-career-support/scientific-exchange-grants/"
+    type: society
+    tags: [travel, mobility, collaboration, eu]
+    cadence: "Rolling"
+    notes: "Funds research visits up to 3 months to another lab to learn techniques. Good fit for a short methods exchange (e.g. modelling collaboration)."
+
+  - name: "Erasmus+ (traineeships / mobility)"
+    url: "https://erasmus-plus.ec.europa.eu/opportunities/individuals"
+    type: portal
+    tags: [mobility, travel, eu]
+    cadence: "Via home institution"
+    notes: "Usually routed through your university's international office; note as a channel, not a direct call."
+
+  # === Field societies: animal behaviour / cognition / ecology =============
+  - name: "ASAB Research Grants"
+    url: "https://www.asab.org/research-grants"
+    type: society
+    tags: [grant, travel, collaboration, animal-behaviour]
+    cadence: "Three rounds/year — deadlines 1 Feb, 1 Jun, 1 Oct (verified)"
+    notes: "Up to £10k (£15k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas — fine for Spain. No overheads."
+
+  - name: "ASAB Scholarships & smaller grants"
+    url: "https://www.asab.org/grant-overview"
+    type: society
+    tags: [grant, travel, animal-behaviour, sci-comm]
+    cadence: "Various"
+    notes: "Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible."
+
+  - name: "Animal Behavior Society — Grants & Awards"
+    url: "https://www.animalbehaviorsociety.org/web/awards.php"
+    type: society
+    tags: [grant, travel, thesis-prize, animal-behaviour]
+    cadence: "Annual cycles per award"
+    notes: "Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing — factor membership into eligibility."
+
+  - name: "Company of Biologists — Travelling Fellowships"
+    url: "https://www.biologists.com/grants/travelling-fellowships/"
+    type: society
+    tags: [travel, collaboration, mobility]
+    cadence: "Rolling / journal-specific"
+    notes: "Up to £3k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology."
+
+  - name: "Company of Biologists — DMM/JEB conference & partnership travel grants"
+    url: "https://www.biologists.com/grants/"
+    type: society
+    tags: [travel, sci-comm]
+    cadence: "Quarterly (SEB-linked travel grant: 31 Mar / 30 Jun / 30 Sep / 31 Dec)"
+    notes: "Smaller conference-attendance travel grants; some require SEB membership. Good for getting to a target conference cheaply."
+
+  - name: "International Society for Behavioral Ecology (ISBE)"
+    url: "https://behavecol.org/"
+    type: society
+    tags: [grant, travel, ecology, animal-behaviour]
+    cadence: "Around biennial congress"
+    notes: "Congress travel awards + occasional grants. Confirm current schemes on site."
+
+  - name: "European Society for Evolutionary Biology (ESEB)"
+    url: "https://eseb.org/prizes-funding/"
+    type: society
+    tags: [grant, travel, mobility, ecology]
+    cadence: "Various (e.g. Godfrey-Smith / research exchange schemes)"
+    notes: "Research exchange and outreach funding; relevant on the evolution/culture angle."
+
+  # === Thesis prizes (premios TFM/TFG) =====================================
+  - name: "University TFM/TFG prizes (your home + target universities)"
+    url: "https://www.google.com/search?q=premio+mejor+trabajo+fin+de+master+TFM"
+    type: aggregator
+    tags: [thesis-prize, spain]
+    cadence: "Annual, per university, usually autumn"
+    notes: "PLACEHOLDER — replace with your university's specific 'premio TFM' page. Many faculties + Spanish learned societies (e.g. subject academies) run best-thesis prizes. Council should surface any it finds and you confirm."
+
+  - name: "Learned-society best-thesis / young-researcher prizes"
+    url: "https://www.google.com/search?q=premio+joven+investigador+etolog%C3%ADa+comportamiento+animal"
+    type: aggregator
+    tags: [thesis-prize, animal-behaviour, spain]
+    cadence: "Annual"
+    notes: "Spanish + international societies in ethology/cognition periodically run young-researcher awards. Seed; council validates real ones."
+
+  # === Aggregators & discovery feeds =======================================
+  - name: "Euraxess (Spain) — jobs, funding & fellowships"
+    url: "https://euraxess.ec.europa.eu/jobs/search"
+    type: aggregator
+    tags: [grant, job, postdoc, predoc, mobility, collaboration, eu, spain]
+    cadence: "Rolling — richest single structured source"
+    notes: "Filter by field + country. Best all-round source for mobility/funding/jobs. Prioritise in every run."
+
+  - name: "scientifyRESEARCH funding database"
+    url: "https://www.scientifyresearch.org/"
+    type: aggregator
+    tags: [grant, travel, mobility]
+    cadence: "Rolling"
+    notes: "Curated, structured grant/fellowship listings with deadlines — good for catching quarterly travel grants."
+
+  - name: "jobRxiv"
+    url: "https://jobrxiv.org/"
+    type: aggregator
+    tags: [job, postdoc, predoc]
+    cadence: "Rolling"
+    notes: "Life-sciences positions incl. PhD/RA. Cross-check hits against lab_discovery for warm-connection targets."
+
+  - name: "ResearchGate / Bluesky / X open calls"
+    url: "https://bsky.app/search?q=PhD%20position%20animal%20cognition"
+    type: aggregator
+    tags: [job, collaboration, predoc]
+    cadence: "Rolling — social"
+    notes: "Informal but timely. Many labs post openings + collaboration calls here before formal portals. Treat as low-confidence signal; verify before acting."
+
+  # === Lab & researcher discovery (for cold/warm outreach) =================
+  - name: "OpenAlex — author & institution discovery"
+    url: "https://api.openalex.org/"
+    type: api
+    tags: [collaboration, cognition, animal-behaviour, ecology]
+    cadence: "On demand (every --sweep)"
+    notes: "Primary engine for finding labs/researchers by topic overlap. Query authors by concept + recent works; rank by overlap with profile.keywords_openalex. Feeds outreach targets to skill 2. No key needed."
+
+  - name: "ORCID"
+    url: "https://orcid.org/"
+    type: api
+    tags: [collaboration]
+    cadence: "On demand"
+    notes: "Resolve a discovered author to affiliation/email-visibility and recent outputs before drafting outreach."
+
+# ----------------------------------------------------------------------------
+# Council-proposed sources awaiting YOUR approval. The scout appends here during
+# a --sweep when a quorum of advisors agrees a new source is relevant AND it
+# passed a live reachability/relevance check. Approve via Telegram to promote
+# into `active:`. Never auto-promoted.
+pending_sources: []
+
+# ----------------------------------------------------------------------------
+# Append-only audit trail of what the scout added, when, and why (for trust).
+discovered_log: []
