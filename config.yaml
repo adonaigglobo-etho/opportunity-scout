@@ -32,8 +32,8 @@ council:
   advisor_models: [opus, sonnet, sonnet, sonnet]
 
 telegram:
-  bot_token_env: "SCOUT_BOT_TOKEN"   # set as env var; never hard-code
-  chat_id_env: "SCOUT_CHAT_ID"
+  bot_token_env: "TELEGRAM_BOT_TOKEN"   # cloud env var; local SCOUT_BOT_TOKEN also works
+  chat_id_env: "TELEGRAM_CHAT_ID"        # cloud env var; local SCOUT_CHAT_ID also works
   # Greenlights: you reply to a pushed item to approve it. Approved items are
   # written to context/approved_queue.json for skill 2 (the drafter) to pick up.
   approval_keywords: [yes, go, draft, "✅", approve]

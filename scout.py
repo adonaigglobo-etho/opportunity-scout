@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Opportunity Scout engine.
+Opportunity Scout engine  (Windows-safe: UTF-8 on every file operation).
 
 Does the mechanical work so the Claude Code Chair can focus on ranking judgement:
   - loads sources.yaml / network.yaml / config.yaml
@@ -9,11 +9,10 @@ Does the mechanical work so the Claude Code Chair can focus on ranking judgement
   - pushes a digest to Telegram (or writes to output/ if unconfigured)
   - reads Telegram replies to move greenlit items into approved_queue.json
 
-This is a scaffold: the per-source parsers are deliberately generic. Tighten a
-parser when you see a source you care about returning junk. No API keys needed.
+No API keys needed for scouting.
 """
 from __future__ import annotations
-import argparse, json, os, sys, time, datetime as dt, urllib.parse, urllib.request
+import io, argparse, json, os, sys, time, datetime as dt, urllib.parse, urllib.request
 from pathlib import Path
 
 try:
@@ -27,7 +26,7 @@ OUT = ROOT / "output"
 CTX.mkdir(exist_ok=True); OUT.mkdir(exist_ok=True)
 
 def load_yaml(name):
-    with open(ROOT / name) as f:
+    with io.open(ROOT / name, encoding="utf-8", errors="replace") as f:
         return yaml.safe_load(f)
 
 def http_get(url, accept="application/json", timeout=25):
@@ -44,11 +43,12 @@ def http_get(url, accept="application/json", timeout=25):
 def load_seen(cfg):
     p = ROOT / cfg["dedup"]["store"]
     if p.exists():
-        return json.loads(p.read_text())
+        return json.loads(p.read_text(encoding="utf-8"))
     return {}
 
 def save_seen(cfg, seen):
-    (ROOT / cfg["dedup"]["store"]).write_text(json.dumps(seen, indent=2))
+    (ROOT / cfg["dedup"]["store"]).write_text(
+        json.dumps(seen, indent=2), encoding="utf-8")
 
 def is_fresh(seen, key, suppress_days):
     if key not in seen:
@@ -63,11 +63,14 @@ def discover_labs(profile, per_keyword=8):
     """Find recent authors publishing on the profile's keywords."""
     out = []
     since = (dt.date.today() - dt.timedelta(days=365 * 2)).isoformat()
+    oa_key = os.environ.get("OPENALEX_API_KEY", "").strip()
     for kw in profile.get("keywords_openalex", []):
         q = urllib.parse.quote(kw)
         url = (f"https://api.openalex.org/works?search={q}"
                f"&filter=from_publication_date:{since}"
                f"&sort=cited_by_count:desc&per-page={per_keyword}")
+        if oa_key:
+            url += f"&api_key={oa_key}"
         try:
             data = json.loads(http_get(url))
         except Exception as e:
@@ -108,13 +111,12 @@ def attach_warm_ties(people, network):
     return people
 
 # ---------------------------------------------------------------------------
-# Generic source fetch  (portals/aggregators return HTML the Chair reads;
-# here we just confirm reachability + capture the page for the Chair to parse)
+# Generic source fetch
 # ---------------------------------------------------------------------------
 def fetch_source(src):
     """Return a lightweight candidate stub per source. The Chair (Claude) does
     the real content extraction from the fetched page; this proves reachability
-    and hands back the URL + any obvious deadline text it can cheaply spot."""
+    and hands back the URL + page excerpt for the Chair to parse."""
     stub = {
         "id": f"source::{src['name']}",
         "kind": "grant",
@@ -131,7 +133,7 @@ def fetch_source(src):
     try:
         body = http_get(src["url"], accept="text/html")
         stub["reachable"] = True
-        stub["_page_excerpt"] = body[:4000]  # Chair parses this for calls/deadlines
+        stub["_page_excerpt"] = body[:4000]
     except Exception as e:
         stub["eligibility_notes"] += f"  [UNREACHABLE: {e}]"
     return stub
@@ -140,15 +142,19 @@ def fetch_source(src):
 # Telegram
 # ---------------------------------------------------------------------------
 def tg_send(cfg, text):
-    token = os.environ.get(cfg["telegram"]["bot_token_env"])
-    chat = os.environ.get(cfg["telegram"]["chat_id_env"])
+    token = (os.environ.get(cfg["telegram"]["bot_token_env"])
+             or os.environ.get("TELEGRAM_BOT_TOKEN")
+             or os.environ.get("SCOUT_BOT_TOKEN"))
+    chat = (os.environ.get(cfg["telegram"]["chat_id_env"])
+            or os.environ.get("TELEGRAM_CHAT_ID")
+            or os.environ.get("SCOUT_CHAT_ID"))
     if not (token and chat):
         return False
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = urllib.parse.urlencode({
-        "chat_id": chat, "text": text, "parse_mode": "Markdown",
+        "chat_id": chat, "text": text,
         "disable_web_page_preview": "false",
-    }).encode()
+    }).encode("utf-8")
     try:
         urllib.request.urlopen(urllib.request.Request(url, data=payload), timeout=20)
         return True
@@ -158,17 +164,17 @@ def tg_send(cfg, text):
 
 def render_digest(items, mode):
     today = dt.date.today().isoformat()
-    lines = [f"# Opportunity Scout — {mode} — {today}", ""]
+    lines = [f"Opportunity Scout - {mode} - {today}", ""]
     for i, it in enumerate(items, 1):
-        flag = "⏰ " if it.get("deadline") else ""
-        lines.append(f"**{i}. {flag}{it['title']}**  _({it['kind']})_")
-        if it.get("why_it_fits"): lines.append(f"   ↳ {it['why_it_fits']}")
-        if it.get("deadline"):    lines.append(f"   ⏳ deadline: {it['deadline']}")
-        if it.get("eligibility_notes"): lines.append(f"   ⚠️ {it['eligibility_notes']}")
+        flag = "[!] " if it.get("deadline") else ""
+        lines.append(f"{i}. {flag}{it['title']}  ({it['kind']})")
+        if it.get("why_it_fits"): lines.append(f"   - {it['why_it_fits']}")
+        if it.get("deadline"):    lines.append(f"   - deadline: {it['deadline']}")
+        if it.get("eligibility_notes"): lines.append(f"   - note: {it['eligibility_notes']}")
         if it.get("warm_tie"):
             wt = it["warm_tie"]
-            lines.append(f"   🤝 warm tie ({wt['usable_as']}, {wt['status']}): {wt['connection']}")
-        lines.append(f"   🔗 {it['url']}")
+            lines.append(f"   - warm tie ({wt['usable_as']}, {wt['status']}): {wt['connection']}")
+        lines.append(f"   - {it['url']}")
         lines.append("")
     return "\n".join(lines)
 
@@ -200,19 +206,19 @@ def run(mode):
     fresh = [c for c in candidates if is_fresh(seen, c["id"], suppress)]
 
     # NOTE: ranking/scoring is done by the Claude Code Chair, not here.
-    # The Chair reads output/latest_candidates.json, convenes the council,
-    # ranks, and curates the final push. We cap to the config ceiling.
     ceil = m.get("max_candidates", len(fresh))
     fresh = fresh[:ceil]
 
-    (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2))
+    (OUT / "latest_candidates.json").write_text(
+        json.dumps(fresh, indent=2), encoding="utf-8")
 
     digest = render_digest(fresh, mode)
-    (OUT / f"digest_{dt.date.today().isoformat()}_{mode}.md").write_text(digest)
+    (OUT / f"digest_{dt.date.today().isoformat()}_{mode}.md").write_text(
+        digest, encoding="utf-8")
 
-    pushed = tg_send(cfg, digest[:3800])  # Telegram msg limit safety
+    pushed = tg_send(cfg, digest[:3800])
     if not pushed:
-        print("Telegram not configured — digest written to output/ only.")
+        print("Telegram not configured - digest written to output/ only.")
 
     # record surfaced
     for c in fresh:
