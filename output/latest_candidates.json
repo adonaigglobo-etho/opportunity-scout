@@ -1,0 +1,602 @@
+[
+  {
+    "id": "person::https://openalex.org/A5100348183",
+    "kind": "person",
+    "title": "Rizwan Ahmad",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5100348183",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'animal cognition': Apoptosis: A Comprehensive Overview of Signaling Pathways, Morphological Changes, and Physiological Significance and The",
+    "tags": [
+      "animal cognition"
+    ],
+    "institution": "Jawaharlal Nehru Medical College Hospital",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5006305255",
+    "kind": "person",
+    "title": "Yizhou Fan",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5006305255",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and p",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "Peking University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5114190756",
+    "kind": "person",
+    "title": "Luzhen Tang",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5114190756",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and p",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "Peking University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5036808970",
+    "kind": "person",
+    "title": "Ibomoiye Domor Mienye",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5036808970",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "University of Johannesburg",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5036607092",
+    "kind": "person",
+    "title": "Theo G. Swart",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5036607092",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "University of Johannesburg",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5032387052",
+    "kind": "person",
+    "title": "Wiesje M. van der Flier",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5032387052",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Neuroinflammation in Alzheimer disease",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "Amsterdam University Medical Centers",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5041301106",
+    "kind": "person",
+    "title": "Lixiang Yan",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5041301106",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Promises and challenges of generative artificial intelligence for human learning",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "Monash University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5006173637",
+    "kind": "person",
+    "title": "Samuel Greiff",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5006173637",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'comparative cognition': Promises and challenges of generative artificial intelligence for human learning",
+    "tags": [
+      "comparative cognition"
+    ],
+    "institution": "Goethe University Frankfurt",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5007776691",
+    "kind": "person",
+    "title": "Christiaan Vrints",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5007776691",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': 2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5091851552",
+    "kind": "person",
+    "title": "Felicita Andreotti",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5091851552",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': 2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5007699908",
+    "kind": "person",
+    "title": "Masayuki Teramoto",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5007699908",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': Global, regional, and national burden of stroke and its risk factors, 1990\u20132021: a systematic analysis for the Global Bu",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5073575829",
+    "kind": "person",
+    "title": "Melsew Dagne Abate",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5073575829",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': Global, regional, and national burden of stroke and its risk factors, 1990\u20132021: a systematic analysis for the Global Bu",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5058773312",
+    "kind": "person",
+    "title": "Michael Gerlich",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5058773312",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "Business School Lausanne",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5081550394",
+    "kind": "person",
+    "title": "Noah Hollmann",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5081550394",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': Accurate predictions on small data with a tabular foundation model",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "University of Freiburg",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5066455544",
+    "kind": "person",
+    "title": "Yunshun Chen",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5066455544",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': edgeR v4: powerful differential analysis of sequencing data with expanded functionality and improved support for small c",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5080272906",
+    "kind": "person",
+    "title": "Lizhong Chen",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5080272906",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': edgeR v4: powerful differential analysis of sequencing data with expanded functionality and improved support for small c",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "The University of Melbourne",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5058238831",
+    "kind": "person",
+    "title": "Patrick D. McGorry",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5058238831",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': The Lancet Psychiatry Commission on youth mental health",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "Orygen Youth Health",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5010264820",
+    "kind": "person",
+    "title": "Cristina Mei",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5010264820",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': The Lancet Psychiatry Commission on youth mental health",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "Orygen Youth Health",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5051235158",
+    "kind": "person",
+    "title": "Ruth Finnegan",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5051235158",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'behavioural flexibility': Oral Literature in Africa",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "institution": "British Academy",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5084190090",
+    "kind": "person",
+    "title": "Madeline A. Lancaster",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5084190090",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Unraveling mechanisms of human brain evolution",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "MRC Laboratory of Molecular Biology",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5038221761",
+    "kind": "person",
+    "title": "James R. Davies",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5038221761",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Is episodic-like memory <i>like</i> episodic memory?",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "University of Cambridge",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5042763116",
+    "kind": "person",
+    "title": "Nicola S. Clayton",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5042763116",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Is episodic-like memory <i>like</i> episodic memory?",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "University of Cambridge",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5088537383",
+    "kind": "person",
+    "title": "Lucy M. Aplin",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5088537383",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Social learning and culture in birds: emerging patterns and relevance to conservation",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Australian National University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5002474274",
+    "kind": "person",
+    "title": "Ross Crates",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5002474274",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Social learning and culture in birds: emerging patterns and relevance to conservation",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Australian National University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5083282423",
+    "kind": "person",
+    "title": "Johan Lind",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5083282423",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': A sequence bottleneck for animal intelligence and language?",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Link\u00f6ping University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5089114606",
+    "kind": "person",
+    "title": "Anna Jon-And",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5089114606",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': A sequence bottleneck for animal intelligence and language?",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Stockholm University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5020759431",
+    "kind": "person",
+    "title": "Alison L. Greggor",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5020759431",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Strategies for integrating animal social learning and culture into conservation translocation practice",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5030994081",
+    "kind": "person",
+    "title": "Shermin de Silva",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5030994081",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Strategies for integrating animal social learning and culture into conservation translocation practice",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "University of California San Diego",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5092119588",
+    "kind": "person",
+    "title": "Amrit Nepali",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5092119588",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Flight initiation distance and bird tolerance to humans in rural and urban habitats",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Tribhuvan University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5066255920",
+    "kind": "person",
+    "title": "Hem Bahadur Katuwal",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5066255920",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Flight initiation distance and bird tolerance to humans in rural and urban habitats",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Nepal Red Cross Society",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5021417064",
+    "kind": "person",
+    "title": "Andrea S. Grunst",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5021417064",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Animal personality in multiple stressor environments: the evolutionary ecology of among-individual differences in respon",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Indiana State University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5008965599",
+    "kind": "person",
+    "title": "Melissa L. Grunst",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5008965599",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': Animal personality in multiple stressor environments: the evolutionary ecology of among-individual differences in respon",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "Indiana State University",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5056800293",
+    "kind": "person",
+    "title": "Andrew Whiten",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5056800293",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': The growing methodological toolkit for identifying and studying social learning and culture in non-human animals",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "University of St Andrews",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5045118643",
+    "kind": "person",
+    "title": "Christian Rutz",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5045118643",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'corvid cognition': The growing methodological toolkit for identifying and studying social learning and culture in non-human animals",
+    "tags": [
+      "corvid cognition"
+    ],
+    "institution": "University of St Andrews",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5088255068",
+    "kind": "person",
+    "title": "Charles B. Hodges",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5088255068",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': The Difference between Emergency Remote Teaching and Online Learning",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5026370938",
+    "kind": "person",
+    "title": "Stephanie Moore",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5026370938",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': The Difference between Emergency Remote Teaching and Online Learning",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5005773814",
+    "kind": "person",
+    "title": "Isabelle C. Van Gelder",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5005773814",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association f",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5064509705",
+    "kind": "person",
+    "title": "Michiel Rienstra",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5064509705",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association f",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5007776691",
+    "kind": "person",
+    "title": "Christiaan Vrints",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5007776691",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': 2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5091851552",
+    "kind": "person",
+    "title": "Felicita Andreotti",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5091851552",
+    "deadline": null,
+    "eligibility_notes": "",
+    "why_it_fits": "Recent work on 'decision making': 2024 ESC Guidelines for the management of chronic coronary syndromes",
+    "tags": [
+      "decision making"
+    ],
+    "institution": "",
+    "warm_tie": null
+  }
+]

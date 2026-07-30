@@ -40,6 +40,39 @@ connections:
       that check in the Telegram approval. Cleaner alternative: ask Alex to make
       the intro directly.
 
+  - target: "Mathilde Eriksen"
+    openalex_id: ""            # fill when known, for exact matching
+    orcid: ""
+    institution: "Animal Minds group, University of Auckland"
+    topics: [comparative cognition, animal minds]
+    connection: "Same research group (Animal Minds) as me and my PI Alex Taylor; she is at the Auckland node, I am at UAB."
+    usable_as: shared-interest
+    confirm_with: ""
+    status: confirmed
+    note: "Colleague within the same lab network; nameable freely as a shared connection."
+
+  - target: "Harshkumar Nileshbhai Vasoya"
+    openalex_id: ""
+    orcid: ""
+    institution: "UAB (Universitat Autonoma de Barcelona)"
+    topics: [animal cognition, animal behaviour]
+    connection: "Direct labmate at UAB, same group as me and Alex Taylor."
+    usable_as: shared-interest
+    confirm_with: ""
+    status: confirmed
+    note: "UAB labmate; nameable as a colleague."
+
+  - target: "Duncan Angus Pottinger"
+    openalex_id: ""
+    orcid: ""
+    institution: "UAB (Universitat Autonoma de Barcelona)"
+    topics: [animal cognition, animal behaviour]
+    connection: "Direct labmate at UAB, same group as me and Alex Taylor."
+    usable_as: shared-interest
+    confirm_with: ""
+    status: confirmed
+    note: "UAB labmate; nameable as a colleague."
+
   # Add more as you go. Example of a COLD target (no tie) for contrast:
   # - target: "Some Lab PI"
   #   institution: "..."

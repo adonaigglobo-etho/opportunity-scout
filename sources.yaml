@@ -20,13 +20,13 @@
 
 profile:
   # Used by the council to score fit. Keep this honest and current.
-  name: "(your name)"
-  stage: "just completed TFM (master's thesis)"
-  location: "Spain"
-  fields: [comparative cognition, animal behaviour, behavioural flexibility, animal ecology, animal culture]
-  methods: [GLM-HMM, PsychoPy, Pavlovia/PsychoJS, behavioural modelling]
+  name: "Adonai Gil Gómez-Lobo"
+  stage: "just completed TFM (master's thesis) and is working as a Research Assistant at the Animal Minds Lab, leaded by Alex Taylor"
+  location: "Spain, Barcelona, Cataluña"
+  fields: [comparative cognition, animal behaviour, behavioural flexibility, collective animal cognition, cross-species cognition comparison]
+  methods: [GLM-HMM, PsychoPy, Pavlovia/PsychoJS, behavioural modelling, linear regression, bayesian regression]
   pi: "Alex Taylor"
-  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility, corvid cognition, decision making, behavioural ecology]
+  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility, bird cognition, decision making, behavioural ecology, collective animal cognition, cross-species cognition comparison]
   language: [English, Spanish]
 
 # ----------------------------------------------------------------------------
@@ -154,20 +154,34 @@ active:
     cadence: "Various (e.g. Godfrey-Smith / research exchange schemes)"
     notes: "Research exchange and outreach funding; relevant on the evolution/culture angle."
 
-  # === Thesis prizes (premios TFM/TFG) =====================================
-  - name: "University TFM/TFG prizes (your home + target universities)"
-    url: "https://www.google.com/search?q=premio+mejor+trabajo+fin+de+master+TFM"
-    type: aggregator
-    tags: [thesis-prize, spain]
-    cadence: "Annual, per university, usually autumn"
-    notes: "PLACEHOLDER — replace with your university's specific 'premio TFM' page. Many faculties + Spanish learned societies (e.g. subject academies) run best-thesis prizes. Council should surface any it finds and you confirm."
+  - name: "Comparative Cognition Society (CO3)"
+    url: "https://comparativecognition.org/"
+    type: society
+    tags: [grant, travel, thesis-prize, cognition, animal-behaviour]
+    cadence: "Annual (around the CO3 conference / early spring)"
+    notes: "THE defining society for this exact profile. Early Career Award + travel/conference awards. Confirm current schemes and deadlines on site. Membership may be required."
 
-  - name: "Learned-society best-thesis / young-researcher prizes"
-    url: "https://www.google.com/search?q=premio+joven+investigador+etolog%C3%ADa+comportamiento+animal"
-    type: aggregator
-    tags: [thesis-prize, animal-behaviour, spain]
-    cadence: "Annual"
-    notes: "Spanish + international societies in ethology/cognition periodically run young-researcher awards. Seed; council validates real ones."
+  - name: "Fondation Fyssen — postdoctoral study grants"
+    url: "https://www.fondationfyssen.fr/en/"
+    type: society
+    tags: [grant, postdoc, mobility, cognition, animal-behaviour]
+    cadence: "Annual — application window roughly Feb–Mar (confirm on site)"
+    notes: "Animal-cognition-focused foundation; postdoc study grants (~€45k range) for mobility. Postdoc-stage — seed for after the PhD."
+
+  # === Thesis prizes (premios TFM/TFG) =====================================
+  - name: "UAB — Premis / Premi Extraordinari de Màster"
+    url: "https://www.uab.cat/premis-reconeixements/"
+    type: portal
+    tags: [thesis-prize, spain]
+    cadence: "Annual (per your own institution)"
+    notes: "Replaces the old placeholder — your own UAB master's/thesis prizes. Confirm the exact faculty page for your programme; premi extraordinari is awarded on academic record."
+
+  - name: "SEEEE — Sociedad Española de Etología y Ecología Evolutiva"
+    url: "https://www.etologia.org/"
+    type: society
+    tags: [thesis-prize, travel, animal-behaviour, ecology, spain]
+    cadence: "Annual, around the society congress"
+    notes: "Spanish ethology/evolutionary-ecology society — young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based."
 
   # === Aggregators & discovery feeds =======================================
   - name: "Euraxess (Spain) — jobs, funding & fellowships"
@@ -183,6 +197,20 @@ active:
     tags: [grant, travel, mobility]
     cadence: "Rolling"
     notes: "Curated, structured grant/fellowship listings with deadlines — good for catching quarterly travel grants."
+
+  - name: "jobs.ac.uk"
+    url: "https://www.jobs.ac.uk/search/?keywords=animal%20behaviour%20cognition"
+    type: aggregator
+    tags: [job, postdoc, predoc]
+    cadence: "Rolling — where most UK/EU animal-behaviour PhD/RA posts appear"
+    notes: "Primary board for UK/European academic posts in the field. Cross-check hits against lab_discovery for warm-connection targets."
+
+  - name: "Nature Careers"
+    url: "https://www.nature.com/naturecareers/jobs/animal-behaviour"
+    type: aggregator
+    tags: [job, postdoc, predoc]
+    cadence: "Rolling"
+    notes: "Higher-profile research posts and fellowships across the life sciences."
 
   - name: "jobRxiv"
     url: "https://jobrxiv.org/"

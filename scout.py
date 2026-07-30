@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 """
-Opportunity Scout engine  (Windows-safe: UTF-8 on every file operation).
+Opportunity Scout engine  (Windows-safe; post-review build).
 
-Does the mechanical work so the Claude Code Chair can focus on ranking judgement:
-  - loads sources.yaml / network.yaml / config.yaml
-  - fetches web sources and runs OpenAlex lab/researcher discovery
-  - normalises to candidate records, dedups against context/seen.json
-  - pushes a digest to Telegram (or writes to output/ if unconfigured)
-  - reads Telegram replies to move greenlit items into approved_queue.json
-
-No API keys needed for scouting.
+P0: fail-loud preflight; topic-scoped OpenAlex discovery ranked by overlap (not
+raw citations), capturing lab/affiliation, PI and ORCID; seen.json written only
+after confirmed delivery; chunked auto-send; id/strict-name warm-tie matching.
+P1: --deadlines parses dates from each source's cadence note (no longer a no-op);
+git-checkbox approvals harvested from committed digests into approved_queue.json.
 """
 from __future__ import annotations
-import io, argparse, json, os, sys, time, datetime as dt, urllib.parse, urllib.request
+import io, re, argparse, json, os, sys, datetime as dt, urllib.parse, urllib.request
 from pathlib import Path
 
 try:
@@ -21,9 +18,11 @@ except ImportError:
     sys.exit("Missing dependency: pip install pyyaml")
 
 ROOT = Path(__file__).parent
-CTX = ROOT / "context"
-OUT = ROOT / "output"
+CTX = ROOT / "context"; OUT = ROOT / "output"
 CTX.mkdir(exist_ok=True); OUT.mkdir(exist_ok=True)
+CONFIG_FILES = ["config.yaml", "sources.yaml", "network.yaml"]
+MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
 def load_yaml(name):
     with io.open(ROOT / name, encoding="utf-8", errors="replace") as f:
@@ -31,235 +30,324 @@ def load_yaml(name):
 
 def http_get(url, accept="application/json", timeout=25):
     req = urllib.request.Request(url, headers={
-        "User-Agent": "opportunity-scout/1.0 (mailto:you@example.com)",
-        "Accept": accept,
-    })
+        "User-Agent": "opportunity-scout/1.0 (mailto:you@example.com)", "Accept": accept})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", "replace")
 
-# ---------------------------------------------------------------------------
-# Dedup store
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------ Telegram
+def _tg_creds(cfg=None):
+    def pick(cfgkey, *envs):
+        if cfg:
+            v = os.environ.get(cfg["telegram"][cfgkey])
+            if v: return v
+        for e in envs:
+            v = os.environ.get(e)
+            if v: return v
+        return None
+    return (pick("bot_token_env", "TELEGRAM_BOT_TOKEN", "SCOUT_BOT_TOKEN"),
+            pick("chat_id_env", "TELEGRAM_CHAT_ID", "SCOUT_CHAT_ID"))
+
+def tg_send(cfg, text):
+    token, chat = _tg_creds(cfg)
+    if not (token and chat): return False
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = urllib.parse.urlencode({
+        "chat_id": chat, "text": text, "disable_web_page_preview": "false"}).encode("utf-8")
+    try:
+        urllib.request.urlopen(urllib.request.Request(url, data=payload), timeout=20); return True
+    except Exception as e:
+        print(f"  [telegram] {e}", file=sys.stderr); return False
+
+def tg_send_long(cfg, text, limit=3800):
+    ok = True; buf = ""
+    for para in text.split("\n\n"):
+        if buf and len(buf) + len(para) + 2 > limit:
+            ok = tg_send(cfg, buf) and ok; buf = para
+        else:
+            buf = (buf + "\n\n" + para) if buf else para
+    if buf.strip(): ok = tg_send(cfg, buf) and ok
+    return ok
+
+def emergency_tg(text):
+    token = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("SCOUT_BOT_TOKEN")
+    chat = os.environ.get("TELEGRAM_CHAT_ID") or os.environ.get("SCOUT_CHAT_ID")
+    if not (token and chat): return False
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = urllib.parse.urlencode({"chat_id": chat, "text": text}).encode("utf-8")
+    try:
+        urllib.request.urlopen(urllib.request.Request(url, data=payload), timeout=20); return True
+    except Exception:
+        return False
+
+# ------------------------------------------------------------------ Preflight
+def preflight():
+    problems = []
+    for f in CONFIG_FILES:
+        try:
+            if load_yaml(f) is None: problems.append(f"{f}: parsed empty")
+        except Exception as e:
+            problems.append(f"{f}: {type(e).__name__}: {e}")
+    if problems:
+        msg = "Opportunity Scout PREFLIGHT FAILED - run aborted:\n" + "\n".join(problems)
+        emergency_tg(msg); print(msg, file=sys.stderr); sys.exit(1)
+
+# ------------------------------------------------------------------ Dedup
 def load_seen(cfg):
     p = ROOT / cfg["dedup"]["store"]
-    if p.exists():
-        return json.loads(p.read_text(encoding="utf-8"))
-    return {}
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 def save_seen(cfg, seen):
-    (ROOT / cfg["dedup"]["store"]).write_text(
-        json.dumps(seen, indent=2), encoding="utf-8")
+    (ROOT / cfg["dedup"]["store"]).write_text(json.dumps(seen, indent=2), encoding="utf-8")
 
 def is_fresh(seen, key, suppress_days):
-    if key not in seen:
-        return True
-    last = dt.date.fromisoformat(seen[key])
-    return (dt.date.today() - last).days >= suppress_days
+    if key not in seen: return True
+    return (dt.date.today() - dt.date.fromisoformat(seen[key])).days >= suppress_days
 
-# ---------------------------------------------------------------------------
-# OpenAlex lab / researcher discovery  (no key required)
-# ---------------------------------------------------------------------------
-def discover_labs(profile, per_keyword=8):
-    """Find recent authors publishing on the profile's keywords."""
-    out = []
-    since = (dt.date.today() - dt.timedelta(days=365 * 2)).isoformat()
-    oa_key = os.environ.get("OPENALEX_API_KEY", "").strip()
+def mark_seen_and_save(cfg, ids):
+    seen = load_seen(cfg); today = dt.date.today().isoformat()
+    for k in ids:
+        if k: seen[k] = today
+    save_seen(cfg, seen)
+
+# ------------------------------------------------------------------ OpenAlex
+def _oa_suffix():
+    key = os.environ.get("OPENALEX_API_KEY", "").strip()
+    return f"&api_key={key}" if key else ""
+
+def resolve_topic_id(keyword):
+    try:
+        q = urllib.parse.quote(keyword)
+        data = json.loads(http_get(
+            f"https://api.openalex.org/topics?search={q}&per-page=1{_oa_suffix()}"))
+        r = data.get("results", [])
+        if r:
+            tid = r[0].get("id", "")
+            return tid.rsplit("/", 1)[-1] if tid else None
+    except Exception as e:
+        print(f"  [openalex topic] {keyword}: {e}", file=sys.stderr)
+    return None
+
+def discover_labs(profile, per_keyword=10):
+    since = (dt.date.today() - dt.timedelta(days=365 * 3)).isoformat()
+    people = {}
     for kw in profile.get("keywords_openalex", []):
-        q = urllib.parse.quote(kw)
-        url = (f"https://api.openalex.org/works?search={q}"
-               f"&filter=from_publication_date:{since}"
-               f"&sort=cited_by_count:desc&per-page={per_keyword}")
-        if oa_key:
-            url += f"&api_key={oa_key}"
+        tid = resolve_topic_id(kw)
+        filt = (f"primary_topic.id:{tid},from_publication_date:{since}" if tid
+                else f"title_and_abstract.search:{urllib.parse.quote(kw)},from_publication_date:{since}")
+        url = (f"https://api.openalex.org/works?filter={filt}"
+               f"&sort=cited_by_count:desc&per-page={per_keyword}{_oa_suffix()}")
         try:
             data = json.loads(http_get(url))
         except Exception as e:
-            print(f"  [openalex] {kw}: {e}", file=sys.stderr)
-            continue
+            print(f"  [openalex works] {kw}: {e}", file=sys.stderr); continue
         for w in data.get("results", []):
-            for a in w.get("authorships", [])[:2]:  # lead / senior
-                author = a.get("author", {})
-                inst = (a.get("institutions") or [{}])[0]
-                out.append({
-                    "id": f"person::{author.get('id','')}",
-                    "kind": "person",
-                    "title": author.get("display_name", "Unknown"),
-                    "source": "OpenAlex",
-                    "url": author.get("id", ""),
-                    "deadline": None,
-                    "eligibility_notes": "",
-                    "why_it_fits": f"Recent work on '{kw}': {w.get('title','')[:120]}",
-                    "tags": [kw],
-                    "institution": inst.get("display_name", ""),
-                })
+            auths = w.get("authorships", [])
+            pi = next((a.get("author", {}).get("display_name", "")
+                       for a in auths if a.get("author_position") == "last"), "")
+            for a in auths:
+                if a.get("author_position") == "middle": continue
+                author = a.get("author", {}); aid = author.get("id", "")
+                if not aid: continue
+                inst = (a.get("institutions") or [{}])
+                rec = people.get(aid)
+                if not rec:
+                    rec = {"id": f"person::{aid}", "kind": "person",
+                           "title": author.get("display_name", "Unknown"),
+                           "source": "OpenAlex", "url": aid,
+                           "orcid": author.get("orcid", "") or "", "deadline": None,
+                           "eligibility_notes": "",
+                           "institution": inst[0].get("display_name", "") if inst else "",
+                           "raw_affiliation": "; ".join(a.get("raw_affiliation_strings", []) or []),
+                           "pi_last_author": pi, "matched_topics": [],
+                           "example_work": w.get("title", "")[:140], "tags": []}
+                    people[aid] = rec
+                if kw not in rec["matched_topics"]:
+                    rec["matched_topics"].append(kw)
+    out = list(people.values())
+    for r in out:
+        r["overlap"] = len(r["matched_topics"]); r["tags"] = list(r["matched_topics"])
+        r["why_it_fits"] = (f"Overlaps {r['overlap']} of your topics "
+                            f"({', '.join(r['matched_topics'])}); e.g. \"{r['example_work']}\"")
+    out.sort(key=lambda r: r["overlap"], reverse=True)
     return out
 
+# ------------------------------------------------------------------ Warm ties
+def _norm_tokens(name):
+    return set(t for t in "".join(
+        c.lower() if (c.isalnum() or c.isspace()) else " " for c in name).split() if len(t) > 1)
+
 def attach_warm_ties(people, network):
-    """Match discovered people to warm connections in network.yaml (name substring)."""
-    conns = {c["target"].lower(): c for c in network.get("connections", [])}
+    conns = network.get("connections", [])
     for p in people:
         p["warm_tie"] = None
-        name = p["title"].lower()
-        for target, c in conns.items():
-            if target in name or name in target:
-                p["warm_tie"] = {
-                    "connection": c.get("connection", ""),
-                    "usable_as": c.get("usable_as", "none"),
-                    "confirm_with": c.get("confirm_with", ""),
-                    "status": c.get("status", "cold"),
-                }
+        p_oa = (p.get("url") or "").rsplit("/", 1)[-1].lower()
+        p_orcid = (p.get("orcid") or "").rsplit("/", 1)[-1].lower()
+        p_tokens = _norm_tokens(p.get("title", ""))
+        for c in conns:
+            c_oa = (c.get("openalex_id") or "").rsplit("/", 1)[-1].lower()
+            c_orcid = (c.get("orcid") or "").rsplit("/", 1)[-1].lower()
+            matched = False
+            if c_oa and c_oa == p_oa: matched = True
+            elif c_orcid and c_orcid == p_orcid: matched = True
+            else:
+                ct = _norm_tokens(c.get("target", ""))
+                if len(ct) >= 2 and len(p_tokens) >= 2 and (ct <= p_tokens or p_tokens <= ct):
+                    matched = True
+            if matched:
+                p["warm_tie"] = {"connection": c.get("connection", ""),
+                                 "usable_as": c.get("usable_as", "none"),
+                                 "confirm_with": c.get("confirm_with", ""),
+                                 "status": c.get("status", "cold")}
+                break
     return people
 
-# ---------------------------------------------------------------------------
-# Generic source fetch
-# ---------------------------------------------------------------------------
+# ------------------------------------------------------------------ Sources
 def fetch_source(src):
-    """Return a lightweight candidate stub per source. The Chair (Claude) does
-    the real content extraction from the fetched page; this proves reachability
-    and hands back the URL + page excerpt for the Chair to parse."""
-    stub = {
-        "id": f"source::{src['name']}",
-        "kind": "grant",
-        "title": src["name"],
-        "source": src["name"],
-        "url": src["url"],
-        "deadline": None,
-        "eligibility_notes": src.get("notes", ""),
-        "why_it_fits": "",
-        "tags": src.get("tags", []),
-        "warm_tie": None,
-        "reachable": False,
-    }
+    stub = {"id": f"source::{src['name']}", "kind": "grant", "title": src["name"],
+            "source": src["name"], "url": src["url"], "deadline": None,
+            "eligibility_notes": src.get("notes", ""), "why_it_fits": "",
+            "tags": src.get("tags", []), "warm_tie": None, "reachable": False,
+            "cadence": src.get("cadence", "")}
     try:
         body = http_get(src["url"], accept="text/html")
-        stub["reachable"] = True
-        stub["_page_excerpt"] = body[:4000]
+        stub["reachable"] = True; stub["_page_excerpt"] = body[:4000]
     except Exception as e:
         stub["eligibility_notes"] += f"  [UNREACHABLE: {e}]"
     return stub
 
-# ---------------------------------------------------------------------------
-# Telegram
-# ---------------------------------------------------------------------------
-def tg_send(cfg, text):
-    token = (os.environ.get(cfg["telegram"]["bot_token_env"])
-             or os.environ.get("TELEGRAM_BOT_TOKEN")
-             or os.environ.get("SCOUT_BOT_TOKEN"))
-    chat = (os.environ.get(cfg["telegram"]["chat_id_env"])
-            or os.environ.get("TELEGRAM_CHAT_ID")
-            or os.environ.get("SCOUT_CHAT_ID"))
-    if not (token and chat):
-        return False
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-    payload = urllib.parse.urlencode({
-        "chat_id": chat, "text": text,
-        "disable_web_page_preview": "false",
-    }).encode("utf-8")
-    try:
-        urllib.request.urlopen(urllib.request.Request(url, data=payload), timeout=20)
-        return True
-    except Exception as e:
-        print(f"  [telegram] {e}", file=sys.stderr)
-        return False
+# ------------------------------------------------------------------ Cadence deadlines
+def parse_cadence_deadlines(text, within_days, today=None):
+    today = today or dt.date.today(); found = []
+    for m in re.finditer(r"~?(\d{1,2})\s*(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)",
+                         (text or "").lower()):
+        day = int(m.group(1)); mon = MONTHS[m.group(2)]
+        for yr in (today.year, today.year + 1):
+            try:
+                d = dt.date(yr, mon, day)
+            except ValueError:
+                break
+            if d >= today:
+                if (d - today).days <= within_days: found.append(d)
+                break
+    return sorted(set(found))
 
-def render_digest(items, mode):
+# ------------------------------------------------------------------ Digest
+def render_digest(items, mode, checkboxes=False):
     today = dt.date.today().isoformat()
     lines = [f"Opportunity Scout - {mode} - {today}", ""]
     for i, it in enumerate(items, 1):
         flag = "[!] " if it.get("deadline") else ""
-        lines.append(f"{i}. {flag}{it['title']}  ({it['kind']})")
+        head = (f"- [ ] {flag}{it['title']}  ({it['kind']})  <!--id:{it['id']}-->"
+                if checkboxes else f"{i}. {flag}{it['title']}  ({it['kind']})")
+        lines.append(head)
         if it.get("why_it_fits"): lines.append(f"   - {it['why_it_fits']}")
-        if it.get("deadline"):    lines.append(f"   - deadline: {it['deadline']}")
+        if it.get("institution"): lines.append(f"   - {it['institution']}")
+        if it.get("deadline"): lines.append(f"   - deadline: {it['deadline']}")
         if it.get("eligibility_notes"): lines.append(f"   - note: {it['eligibility_notes']}")
         if it.get("warm_tie"):
             wt = it["warm_tie"]
-            lines.append(f"   - warm tie ({wt['usable_as']}, {wt['status']}): {wt['connection']}")
+            cw = f" (confirm with {wt['confirm_with']})" if wt.get("confirm_with") else ""
+            lines.append(f"   - WARM TIE ({wt['usable_as']}, {wt['status']}){cw}: {wt['connection']}")
         lines.append(f"   - {it['url']}")
         lines.append("")
     return "\n".join(lines)
 
-def tg_send_long(cfg, text, limit=3800):
-    """Send text in Telegram-sized chunks, splitting on blank lines."""
-    ok = True
-    buf = ""
-    for para in text.split("\n\n"):
-        if buf and len(buf) + len(para) + 2 > limit:
-            ok = tg_send(cfg, buf) and ok
-            buf = para
-        else:
-            buf = (buf + "\n\n" + para) if buf else para
-    if buf.strip():
-        ok = tg_send(cfg, buf) and ok
-    return ok
+# ------------------------------------------------------------------ Approval harvest
+def harvest_approvals():
+    qp = CTX / "approved_queue.json"
+    queue = json.loads(qp.read_text(encoding="utf-8")) if qp.exists() else []
+    have = {c.get("id") for c in queue}
+    records = {}
+    for f in list(OUT.glob("*_candidates.json")) + [OUT / "latest_candidates.json"]:
+        if f.exists():
+            try:
+                for c in json.loads(f.read_text(encoding="utf-8")):
+                    records.setdefault(c.get("id"), c)
+            except Exception:
+                pass
+    ticked = set()
+    for md in OUT.glob("*.md"):
+        for line in md.read_text(encoding="utf-8", errors="replace").splitlines():
+            m = re.match(r"\s*-\s*\[[xX]\].*?<!--id:(.*?)-->", line)
+            if m: ticked.add(m.group(1))
+    added = 0
+    for tid in ticked:
+        if tid in have: continue
+        rec = records.get(tid)
+        if rec:
+            queue.append(rec); have.add(tid); added += 1
+    qp.write_text(json.dumps(queue, indent=2), encoding="utf-8")
+    return added
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
-def run(mode, no_send=False):
-    cfg = load_yaml("config.yaml")
-    sources = load_yaml("sources.yaml")
-    network = load_yaml("network.yaml")
-    seen = load_seen(cfg)
-    m = cfg["modes"][mode]
-
-    candidates = []
-
-    # sources
-    for src in sources.get("active", []):
-        stub = fetch_source(src)
-        candidates.append(stub)
-
-    # lab discovery (sweep only)
+# ------------------------------------------------------------------ Runs
+def run_sweep(cfg, sources, network, no_send=False):
+    seen = load_seen(cfg); m = cfg["modes"]["sweep"]
+    candidates = [fetch_source(s) for s in sources.get("active", [])]
     if m.get("do_lab_discovery"):
-        people = discover_labs(sources["profile"])
-        people = attach_warm_ties(people, network)
-        candidates += people
+        candidates += attach_warm_ties(discover_labs(sources["profile"]), network)
+    fresh = [c for c in candidates if is_fresh(seen, c["id"], cfg["dedup"]["suppress_days"])]
+    fresh = fresh[:m.get("max_candidates", len(fresh))]
 
-    # dedup
-    suppress = cfg["dedup"]["suppress_days"]
-    fresh = [c for c in candidates if is_fresh(seen, c["id"], suppress)]
-
-    # NOTE: ranking/scoring is done by the Claude Code Chair, not here.
-    ceil = m.get("max_candidates", len(fresh))
-    fresh = fresh[:ceil]
-
-    (OUT / "latest_candidates.json").write_text(
-        json.dumps(fresh, indent=2), encoding="utf-8")
-
-    digest = render_digest(fresh, mode)
-    (OUT / f"digest_{dt.date.today().isoformat()}_{mode}.md").write_text(
-        digest, encoding="utf-8")
+    stamp = dt.date.today().isoformat()
+    (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
+    (OUT / f"{stamp}_sweep_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
+    digest = render_digest(fresh, "sweep", checkboxes=True)
+    (OUT / f"digest_{stamp}_sweep.md").write_text(digest, encoding="utf-8")
 
     if no_send:
-        print("--no-send: skipping Telegram; digest and candidates written to output/.")
+        print(f"--no-send: {len(fresh)} candidates written; Chair ranks & sends. "
+              "seen.json untouched until delivery."); return
+    if tg_send_long(cfg, digest):
+        mark_seen_and_save(cfg, [c["id"] for c in fresh])
+        print(f"sweep: {len(fresh)} candidates surfaced and delivered.")
     else:
-        pushed = tg_send(cfg, digest[:3800])
-        if not pushed:
-            print("Telegram not configured - digest written to output/ only.")
+        print("sweep: send failed/unconfigured - digest in output/ only; seen.json untouched.")
 
-    # record surfaced
-    for c in fresh:
-        seen[c["id"]] = dt.date.today().isoformat()
-    save_seen(cfg, seen)
+def run_deadlines(cfg, sources):
+    within = cfg["modes"]["deadlines"]["urgent_within_days"]; items = []
+    for s in sources.get("active", []):
+        for d in parse_cadence_deadlines(s.get("cadence", ""), within):
+            items.append({"id": f"deadline::{s['name']}::{d.isoformat()}", "kind": "deadline",
+                          "title": s["name"], "url": s["url"], "deadline": d.isoformat(),
+                          "why_it_fits": f"cadence: {s.get('cadence','')}",
+                          "eligibility_notes": "", "institution": "", "warm_tie": None})
+    items.sort(key=lambda x: x["deadline"])
+    if not items:
+        tg_send(cfg, f"Opportunity Scout - deadlines - nothing closing within {within} days.")
+        print("deadlines: none within window."); return
+    tg_send_long(cfg, render_digest(items, "deadlines"))
+    print(f"deadlines: {len(items)} urgent item(s) pushed.")
 
-    print(f"{mode}: {len(fresh)} candidates surfaced. "
-          f"Chair should now convene the council over output/latest_candidates.json.")
-
+# ------------------------------------------------------------------
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--sweep", action="store_const", const="sweep", dest="mode")
     g.add_argument("--deadlines", action="store_const", const="deadlines", dest="mode")
-    ap.add_argument("--no-send", action="store_true", dest="no_send",
-                    help="fetch + dedup but do not push to Telegram (Chair ranks, then sends)")
-    ap.add_argument("--send-file", dest="send_file", default=None,
-                    help="send the contents of a file to Telegram (used for the ranked digest)")
+    ap.add_argument("--no-send", action="store_true", dest="no_send")
+    ap.add_argument("--harvest", action="store_true",
+                    help="move ticked digest items into approved_queue.json")
+    ap.add_argument("--send-file", dest="send_file", default=None)
     args = ap.parse_args()
 
+    preflight()
+
+    if args.harvest:
+        print(f"harvest: {harvest_approvals()} newly approved item(s) queued."); sys.exit(0)
     if args.send_file:
         cfg = load_yaml("config.yaml")
-        text = io.open(args.send_file, encoding="utf-8").read()
-        ok = tg_send_long(cfg, text)
-        print("sent to Telegram." if ok else "send failed / Telegram not configured.")
+        if tg_send_long(cfg, io.open(args.send_file, encoding="utf-8").read()):
+            lc = OUT / "latest_candidates.json"
+            if lc.exists():
+                mark_seen_and_save(cfg, [c.get("id") for c in json.loads(lc.read_text(encoding="utf-8"))])
+            print("sent; seen.json updated on confirmed delivery.")
+        else:
+            print("send failed / not configured; seen.json untouched.")
+        sys.exit(0)
+
+    cfg = load_yaml("config.yaml"); sources = load_yaml("sources.yaml"); network = load_yaml("network.yaml")
+    if (args.mode or "sweep") == "sweep":
+        harvest_approvals()               # capture last cycle's ticked approvals first
+        run_sweep(cfg, sources, network, no_send=args.no_send)
     else:
-        run(args.mode or "sweep", no_send=args.no_send)
+        run_deadlines(cfg, sources)
