@@ -178,10 +178,24 @@ def render_digest(items, mode):
         lines.append("")
     return "\n".join(lines)
 
+def tg_send_long(cfg, text, limit=3800):
+    """Send text in Telegram-sized chunks, splitting on blank lines."""
+    ok = True
+    buf = ""
+    for para in text.split("\n\n"):
+        if buf and len(buf) + len(para) + 2 > limit:
+            ok = tg_send(cfg, buf) and ok
+            buf = para
+        else:
+            buf = (buf + "\n\n" + para) if buf else para
+    if buf.strip():
+        ok = tg_send(cfg, buf) and ok
+    return ok
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
-def run(mode):
+def run(mode, no_send=False):
     cfg = load_yaml("config.yaml")
     sources = load_yaml("sources.yaml")
     network = load_yaml("network.yaml")
@@ -216,9 +230,12 @@ def run(mode):
     (OUT / f"digest_{dt.date.today().isoformat()}_{mode}.md").write_text(
         digest, encoding="utf-8")
 
-    pushed = tg_send(cfg, digest[:3800])
-    if not pushed:
-        print("Telegram not configured - digest written to output/ only.")
+    if no_send:
+        print("--no-send: skipping Telegram; digest and candidates written to output/.")
+    else:
+        pushed = tg_send(cfg, digest[:3800])
+        if not pushed:
+            print("Telegram not configured - digest written to output/ only.")
 
     # record surfaced
     for c in fresh:
@@ -233,5 +250,16 @@ if __name__ == "__main__":
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--sweep", action="store_const", const="sweep", dest="mode")
     g.add_argument("--deadlines", action="store_const", const="deadlines", dest="mode")
+    ap.add_argument("--no-send", action="store_true", dest="no_send",
+                    help="fetch + dedup but do not push to Telegram (Chair ranks, then sends)")
+    ap.add_argument("--send-file", dest="send_file", default=None,
+                    help="send the contents of a file to Telegram (used for the ranked digest)")
     args = ap.parse_args()
-    run(args.mode or "sweep")
+
+    if args.send_file:
+        cfg = load_yaml("config.yaml")
+        text = io.open(args.send_file, encoding="utf-8").read()
+        ok = tg_send_long(cfg, text)
+        print("sent to Telegram." if ok else "send failed / Telegram not configured.")
+    else:
+        run(args.mode or "sweep", no_send=args.no_send)
