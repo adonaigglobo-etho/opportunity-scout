@@ -1,161 +1,117 @@
-# Opportunity Scout — sweep — 2026-07-30
+Opportunity Scout - sweep - 2026-07-30
 
-**1. Rizwan Ahmad**  _(person)_
-   ↳ Recent work on 'animal cognition': Apoptosis: A Comprehensive Overview of Signaling Pathways, Morphological Changes, and Physiological Significance and The
-   🔗 https://openalex.org/A5100348183
+- [ ] la Caixa INPhINIT Doctoral Fellowships  (grant)  <!--id:source::la Caixa INPhINIT Doctoral Fellowships-->
+   - note: STEM/life-sciences eligible. Incoming = NOT resident in ES/PT >12mo of last 3yr; Retaining = resident in ES/PT. Host must hold Severo Ochoa / María de Maeztu accreditation for Incoming.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://lacaixafoundation.org/en/doctoral-inphinit-fellowships
 
-**2. Yizhou Fan**  _(person)_
-   ↳ Recent work on 'comparative cognition': Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and p
-   🔗 https://openalex.org/A5006305255
+- [ ] la Caixa Junior Leader (postdoc)  (grant)  <!--id:source::la Caixa Junior Leader (postdoc)-->
+   - note: For later — postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships
 
-**3. Luzhen Tang**  _(person)_
-   ↳ Recent work on 'comparative cognition': Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and p
-   🔗 https://openalex.org/A5114190756
+- [ ] FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)  (grant)  <!--id:source::FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)-->
+   - note: Requires enrolment/admission in a doctoral programme. Confirm exact call URL each cycle — ministry restructures pages.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/
 
-**4. Ibomoiye Domor Mienye**  _(person)_
-   ↳ Recent work on 'comparative cognition': Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications
-   🔗 https://openalex.org/A5036808970
+- [ ] FPI — Ayudas para contratos predoctorales (AEI)  (grant)  <!--id:source::FPI — Ayudas para contratos predoctorales (AEI)-->
+   - note: FPI is attached to a specific funded project/PI — so a target lab in Spain with an active AEI project is the entry point. Cross-reference with lab_discovery hits.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.aei.gob.es/convocatorias
 
-**5. Theo G. Swart**  _(person)_
-   ↳ Recent work on 'comparative cognition': Recurrent Neural Networks: A Comprehensive Review of Architectures, Variants, and Applications
-   🔗 https://openalex.org/A5036607092
+- [ ] AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
+   - note: Master call index for Spanish state research funding. Broad — filter hard by tags.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.aei.gob.es/convocatorias/buscador-convocatorias
 
-**6. Wiesje M. van der Flier**  _(person)_
-   ↳ Recent work on 'comparative cognition': Neuroinflammation in Alzheimer disease
-   🔗 https://openalex.org/A5032387052
+- [ ] Generalitat de Catalunya — FI predoctoral (AGAUR)  (grant)  <!--id:source::Generalitat de Catalunya — FI predoctoral (AGAUR)-->
+   - note: Regional predoc (relevant if targeting Catalan institutions, e.g. CREAF/CSIC Barcelona — see Daniel Sol in network.yaml).  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://agaur.gencat.cat/en/beques-i-ajuts/
 
-**7. Lixiang Yan**  _(person)_
-   ↳ Recent work on 'comparative cognition': Promises and challenges of generative artificial intelligence for human learning
-   🔗 https://openalex.org/A5041301106
+- [ ] Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships  (grant)  <!--id:source::Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships-->
+   - note: Doctoral Networks are applied for by consortia (you join as a recruited fellow — watch for open recruited positions). PF is postdoc-stage.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://marie-sklodowska-curie-actions.ec.europa.eu/actions
 
-**8. Samuel Greiff**  _(person)_
-   ↳ Recent work on 'comparative cognition': Promises and challenges of generative artificial intelligence for human learning
-   🔗 https://openalex.org/A5006173637
+- [ ] EMBO Postdoctoral Fellowships  (grant)  <!--id:source::EMBO Postdoctoral Fellowships-->
+   - note: Postdoc-stage; international mobility required. One host lab = one candidate per round. Seed for future.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/
 
-**9. Christiaan Vrints**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': 2024 ESC Guidelines for the management of chronic coronary syndromes
-   🔗 https://openalex.org/A5007776691
+- [ ] EMBO Scientific Exchange Grants  (grant)  <!--id:source::EMBO Scientific Exchange Grants-->
+   - note: Funds research visits up to 3 months to another lab to learn techniques. Good fit for a short methods exchange (e.g. modelling collaboration).  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.embo.org/funding/fellowships-grants-and-career-support/scientific-exchange-grants/
 
-**10. Felicita Andreotti**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': 2024 ESC Guidelines for the management of chronic coronary syndromes
-   🔗 https://openalex.org/A5091851552
+- [ ] Erasmus+ (traineeships / mobility)  (grant)  <!--id:source::Erasmus+ (traineeships / mobility)-->
+   - note: Usually routed through your university's international office; note as a channel, not a direct call.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://erasmus-plus.ec.europa.eu/opportunities/individuals
 
-**11. Masayuki Teramoto**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': Global, regional, and national burden of stroke and its risk factors, 1990–2021: a systematic analysis for the Global Bu
-   🔗 https://openalex.org/A5007699908
+- [ ] ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
+   - note: Up to £10k (£15k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas — fine for Spain. No overheads.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.asab.org/research-grants
 
-**12. Melsew Dagne Abate**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': Global, regional, and national burden of stroke and its risk factors, 1990–2021: a systematic analysis for the Global Bu
-   🔗 https://openalex.org/A5073575829
+- [ ] ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
+   - note: Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.asab.org/grant-overview
 
-**13. Michael Gerlich**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking
-   🔗 https://openalex.org/A5058773312
+- [ ] Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
+   - note: Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing — factor membership into eligibility.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.animalbehaviorsociety.org/web/awards.php
 
-**14. Noah Hollmann**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': Accurate predictions on small data with a tabular foundation model
-   🔗 https://openalex.org/A5081550394
+- [ ] Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
+   - note: Up to £3k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.biologists.com/grants/travelling-fellowships/
 
-**15. Yunshun Chen**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': edgeR v4: powerful differential analysis of sequencing data with expanded functionality and improved support for small c
-   🔗 https://openalex.org/A5066455544
+- [ ] Company of Biologists — DMM/JEB conference & partnership travel grants  (grant)  <!--id:source::Company of Biologists — DMM/JEB conference & partnership travel grants-->
+   - note: Smaller conference-attendance travel grants; some require SEB membership. Good for getting to a target conference cheaply.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.biologists.com/grants/
 
-**16. Lizhong Chen**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': edgeR v4: powerful differential analysis of sequencing data with expanded functionality and improved support for small c
-   🔗 https://openalex.org/A5080272906
+- [ ] International Society for Behavioral Ecology (ISBE)  (grant)  <!--id:source::International Society for Behavioral Ecology (ISBE)-->
+   - note: Congress travel awards + occasional grants. Confirm current schemes on site.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://behavecol.org/
 
-**17. Patrick D. McGorry**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': The Lancet Psychiatry Commission on youth mental health
-   🔗 https://openalex.org/A5058238831
+- [ ] European Society for Evolutionary Biology (ESEB)  (grant)  <!--id:source::European Society for Evolutionary Biology (ESEB)-->
+   - note: Research exchange and outreach funding; relevant on the evolution/culture angle.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://eseb.org/prizes-funding/
 
-**18. Cristina Mei**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': The Lancet Psychiatry Commission on youth mental health
-   🔗 https://openalex.org/A5010264820
+- [ ] Comparative Cognition Society (CO3)  (grant)  <!--id:source::Comparative Cognition Society (CO3)-->
+   - note: THE defining society for this exact profile. Early Career Award + travel/conference awards. Confirm current schemes and deadlines on site. Membership may be required.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://comparativecognition.org/
 
-**19. Ruth Finnegan**  _(person)_
-   ↳ Recent work on 'behavioural flexibility': Oral Literature in Africa
-   🔗 https://openalex.org/A5051235158
+- [ ] Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
+   - note: Animal-cognition-focused foundation; postdoc study grants (~€45k range) for mobility. Postdoc-stage — seed for after the PhD.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.fondationfyssen.fr/en/
 
-**20. Madeline A. Lancaster**  _(person)_
-   ↳ Recent work on 'corvid cognition': Unraveling mechanisms of human brain evolution
-   🔗 https://openalex.org/A5084190090
+- [ ] UAB — Premis / Premi Extraordinari de Màster  (grant)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
+   - note: Replaces the old placeholder — your own UAB master's/thesis prizes. Confirm the exact faculty page for your programme; premi extraordinari is awarded on academic record.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.uab.cat/premis-reconeixements/
 
-**21. James R. Davies**  _(person)_
-   ↳ Recent work on 'corvid cognition': Is episodic-like memory <i>like</i> episodic memory?
-   🔗 https://openalex.org/A5038221761
+- [ ] SEEEE — Sociedad Española de Etología y Ecología Evolutiva  (grant)  <!--id:source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva-->
+   - note: Spanish ethology/evolutionary-ecology society — young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.etologia.org/
 
-**22. Nicola S. Clayton**  _(person)_
-   ↳ Recent work on 'corvid cognition': Is episodic-like memory <i>like</i> episodic memory?
-   🔗 https://openalex.org/A5042763116
+- [ ] Euraxess (Spain) — jobs, funding & fellowships  (grant)  <!--id:source::Euraxess (Spain) — jobs, funding & fellowships-->
+   - note: Filter by field + country. Best all-round source for mobility/funding/jobs. Prioritise in every run.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://euraxess.ec.europa.eu/jobs/search
 
-**23. Lucy M. Aplin**  _(person)_
-   ↳ Recent work on 'corvid cognition': Social learning and culture in birds: emerging patterns and relevance to conservation
-   🔗 https://openalex.org/A5088537383
+- [ ] scientifyRESEARCH funding database  (grant)  <!--id:source::scientifyRESEARCH funding database-->
+   - note: Curated, structured grant/fellowship listings with deadlines — good for catching quarterly travel grants.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.scientifyresearch.org/
 
-**24. Ross Crates**  _(person)_
-   ↳ Recent work on 'corvid cognition': Social learning and culture in birds: emerging patterns and relevance to conservation
-   🔗 https://openalex.org/A5002474274
+- [ ] jobs.ac.uk  (grant)  <!--id:source::jobs.ac.uk-->
+   - note: Primary board for UK/European academic posts in the field. Cross-check hits against lab_discovery for warm-connection targets.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.jobs.ac.uk/search/?keywords=animal%20behaviour%20cognition
 
-**25. Johan Lind**  _(person)_
-   ↳ Recent work on 'corvid cognition': A sequence bottleneck for animal intelligence and language?
-   🔗 https://openalex.org/A5083282423
+- [ ] Nature Careers  (grant)  <!--id:source::Nature Careers-->
+   - note: Higher-profile research posts and fellowships across the life sciences.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://www.nature.com/naturecareers/jobs/animal-behaviour
 
-**26. Anna Jon-And**  _(person)_
-   ↳ Recent work on 'corvid cognition': A sequence bottleneck for animal intelligence and language?
-   🔗 https://openalex.org/A5089114606
+- [ ] jobRxiv  (grant)  <!--id:source::jobRxiv-->
+   - note: Life-sciences positions incl. PhD/RA. Cross-check hits against lab_discovery for warm-connection targets.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://jobrxiv.org/
 
-**27. Alison L. Greggor**  _(person)_
-   ↳ Recent work on 'corvid cognition': Strategies for integrating animal social learning and culture into conservation translocation practice
-   🔗 https://openalex.org/A5020759431
+- [ ] ResearchGate / Bluesky / X open calls  (grant)  <!--id:source::ResearchGate / Bluesky / X open calls-->
+   - note: Informal but timely. Many labs post openings + collaboration calls here before formal portals. Treat as low-confidence signal; verify before acting.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://bsky.app/search?q=PhD%20position%20animal%20cognition
 
-**28. Shermin de Silva**  _(person)_
-   ↳ Recent work on 'corvid cognition': Strategies for integrating animal social learning and culture into conservation translocation practice
-   🔗 https://openalex.org/A5030994081
+- [ ] OpenAlex — author & institution discovery  (grant)  <!--id:source::OpenAlex — author & institution discovery-->
+   - note: Primary engine for finding labs/researchers by topic overlap. Query authors by concept + recent works; rank by overlap with profile.keywords_openalex. Feeds outreach targets to skill 2. No key needed.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://api.openalex.org/
 
-**29. Amrit Nepali**  _(person)_
-   ↳ Recent work on 'corvid cognition': Flight initiation distance and bird tolerance to humans in rural and urban habitats
-   🔗 https://openalex.org/A5092119588
-
-**30. Hem Bahadur Katuwal**  _(person)_
-   ↳ Recent work on 'corvid cognition': Flight initiation distance and bird tolerance to humans in rural and urban habitats
-   🔗 https://openalex.org/A5066255920
-
-**31. Andrea S. Grunst**  _(person)_
-   ↳ Recent work on 'corvid cognition': Animal personality in multiple stressor environments: the evolutionary ecology of among-individual differences in respon
-   🔗 https://openalex.org/A5021417064
-
-**32. Melissa L. Grunst**  _(person)_
-   ↳ Recent work on 'corvid cognition': Animal personality in multiple stressor environments: the evolutionary ecology of among-individual differences in respon
-   🔗 https://openalex.org/A5008965599
-
-**33. Andrew Whiten**  _(person)_
-   ↳ Recent work on 'corvid cognition': The growing methodological toolkit for identifying and studying social learning and culture in non-human animals
-   🔗 https://openalex.org/A5056800293
-
-**34. Christian Rutz**  _(person)_
-   ↳ Recent work on 'corvid cognition': The growing methodological toolkit for identifying and studying social learning and culture in non-human animals
-   🔗 https://openalex.org/A5045118643
-
-**35. Charles B. Hodges**  _(person)_
-   ↳ Recent work on 'decision making': The Difference between Emergency Remote Teaching and Online Learning
-   🔗 https://openalex.org/A5088255068
-
-**36. Stephanie Moore**  _(person)_
-   ↳ Recent work on 'decision making': The Difference between Emergency Remote Teaching and Online Learning
-   🔗 https://openalex.org/A5026370938
-
-**37. Isabelle C. Van Gelder**  _(person)_
-   ↳ Recent work on 'decision making': 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association f
-   🔗 https://openalex.org/A5005773814
-
-**38. Michiel Rienstra**  _(person)_
-   ↳ Recent work on 'decision making': 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association f
-   🔗 https://openalex.org/A5064509705
-
-**39. Christiaan Vrints**  _(person)_
-   ↳ Recent work on 'decision making': 2024 ESC Guidelines for the management of chronic coronary syndromes
-   🔗 https://openalex.org/A5007776691
-
-**40. Felicita Andreotti**  _(person)_
-   ↳ Recent work on 'decision making': 2024 ESC Guidelines for the management of chronic coronary syndromes
-   🔗 https://openalex.org/A5091851552
+- [ ] ORCID  (grant)  <!--id:source::ORCID-->
+   - note: Resolve a discovered author to affiliation/email-visibility and recent outputs before drafting outreach.  [UNREACHABLE: <urlopen error Tunnel connection failed: 403 Forbidden>]
+   - https://orcid.org/
