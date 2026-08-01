@@ -37,6 +37,7 @@ active:
     url: "https://lacaixafoundation.org/en/doctoral-inphinit-fellowships"
     type: portal
     tags: [grant, predoc, spain, mobility]
+    tier: national
     cadence: "Annual — Incoming ~28 Jan, Retaining ~18 Feb (2026 dates verified)"
     notes: "STEM/life-sciences eligible. Incoming = NOT resident in ES/PT >12mo of last 3yr; Retaining = resident in ES/PT. Host must hold Severo Ochoa / María de Maeztu accreditation for Incoming."
 
@@ -44,6 +45,7 @@ active:
     url: "https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships"
     type: portal
     tags: [grant, postdoc, spain, mobility]
+    tier: national
     cadence: "Annual, typically autumn call"
     notes: "For later — postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility."
 
@@ -51,6 +53,7 @@ active:
     url: "https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/"
     type: portal
     tags: [grant, predoc, spain]
+    tier: national
     cadence: "Annual, ministry call (usually late autumn/winter)"
     notes: "Requires enrolment/admission in a doctoral programme. Confirm exact call URL each cycle — ministry restructures pages."
 
@@ -58,6 +61,7 @@ active:
     url: "https://www.aei.gob.es/convocatorias"
     type: portal
     tags: [grant, predoc, spain]
+    tier: national
     cadence: "Annual, tied to funded research projects"
     notes: "FPI is attached to a specific funded project/PI — so a target lab in Spain with an active AEI project is the entry point. Cross-reference with lab_discovery hits."
 
@@ -65,6 +69,7 @@ active:
     url: "https://www.aei.gob.es/convocatorias/buscador-convocatorias"
     type: portal
     tags: [grant, predoc, postdoc, spain]
+    tier: national
     cadence: "Rolling"
     notes: "Master call index for Spanish state research funding. Broad — filter hard by tags."
 
@@ -72,6 +77,7 @@ active:
     url: "https://agaur.gencat.cat/en/beques-i-ajuts/"
     type: portal
     tags: [grant, predoc, spain]
+    tier: regional
     cadence: "Annual"
     notes: "Regional predoc (relevant if targeting Catalan institutions, e.g. CREAF/CSIC Barcelona — see Daniel Sol in network.yaml)."
 
@@ -80,6 +86,7 @@ active:
     url: "https://marie-sklodowska-curie-actions.ec.europa.eu/actions"
     type: portal
     tags: [grant, predoc, postdoc, mobility, eu]
+    tier: international
     cadence: "Annual per action (PF call typically opens spring, closes ~Sep)"
     notes: "Doctoral Networks are applied for by consortia (you join as a recruited fellow — watch for open recruited positions). PF is postdoc-stage."
 
@@ -87,6 +94,7 @@ active:
     url: "https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/"
     type: society
     tags: [grant, postdoc, mobility, eu]
+    tier: international
     cadence: "Two rounds/year (spring & autumn; autumn deadline ~23 Jan verified for 2026 round rules)"
     notes: "Postdoc-stage; international mobility required. One host lab = one candidate per round. Seed for future."
 
@@ -94,6 +102,7 @@ active:
     url: "https://www.embo.org/funding/fellowships-grants-and-career-support/scientific-exchange-grants/"
     type: society
     tags: [travel, mobility, collaboration, eu]
+    tier: international
     cadence: "Rolling"
     notes: "Funds research visits up to 3 months to another lab to learn techniques. Good fit for a short methods exchange (e.g. modelling collaboration)."
 
@@ -101,6 +110,7 @@ active:
     url: "https://erasmus-plus.ec.europa.eu/opportunities/individuals"
     type: portal
     tags: [mobility, travel, eu]
+    tier: international
     cadence: "Via home institution"
     notes: "Usually routed through your university's international office; note as a channel, not a direct call."
 
@@ -109,6 +119,7 @@ active:
     url: "https://www.asab.org/research-grants"
     type: society
     tags: [grant, travel, collaboration, animal-behaviour]
+    tier: international
     cadence: "Three rounds/year — deadlines 1 Feb, 1 Jun, 1 Oct (verified)"
     notes: "Up to £10k (£15k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas — fine for Spain. No overheads."
 
@@ -116,6 +127,7 @@ active:
     url: "https://www.asab.org/grant-overview"
     type: society
     tags: [grant, travel, animal-behaviour, sci-comm]
+    tier: international
     cadence: "Various"
     notes: "Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible."
 
@@ -123,6 +135,7 @@ active:
     url: "https://www.animalbehaviorsociety.org/web/awards.php"
     type: society
     tags: [grant, travel, thesis-prize, animal-behaviour]
+    tier: international
     cadence: "Annual cycles per award"
     notes: "Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing — factor membership into eligibility."
 
@@ -130,6 +143,7 @@ active:
     url: "https://www.biologists.com/grants/travelling-fellowships/"
     type: society
     tags: [travel, collaboration, mobility]
+    tier: international
     cadence: "Rolling / journal-specific"
     notes: "Up to £3k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology."
 
@@ -137,6 +151,7 @@ active:
     url: "https://www.biologists.com/grants/"
     type: society
     tags: [travel, sci-comm]
+    tier: international
     cadence: "Quarterly (SEB-linked travel grant: 31 Mar / 30 Jun / 30 Sep / 31 Dec)"
     notes: "Smaller conference-attendance travel grants; some require SEB membership. Good for getting to a target conference cheaply."
 
@@ -144,6 +159,7 @@ active:
     url: "https://behavecol.org/"
     type: society
     tags: [grant, travel, ecology, animal-behaviour]
+    tier: international
     cadence: "Around biennial congress"
     notes: "Congress travel awards + occasional grants. Confirm current schemes on site."
 
@@ -151,6 +167,7 @@ active:
     url: "https://eseb.org/prizes-funding/"
     type: society
     tags: [grant, travel, mobility, ecology]
+    tier: international
     cadence: "Various (e.g. Godfrey-Smith / research exchange schemes)"
     notes: "Research exchange and outreach funding; relevant on the evolution/culture angle."
 
@@ -158,6 +175,7 @@ active:
     url: "https://www.comparativecognition.org/student_awards.php"
     type: society
     tags: [grant, travel, thesis-prize, cognition, animal-behaviour]
+    tier: international
     cadence: "Student-award deadlines ~Dec (a few months before CO3, held ~April); Stan Kuczaj travel grant ~Feb 28"
     notes: "THE defining society for this exact profile. Student awards (publication, best talk/poster, travel) + Stan Kuczaj Memorial Travel Grant to CO3; separate Early Career Award for early-career faculty (first 5 yrs of first post, $1000). MUST be a current CCS member to apply; you now apply for all awards. Confirm current-cycle deadlines on the student-awards page."
 
@@ -165,6 +183,7 @@ active:
     url: "https://www.fondationfyssen.fr/en/"
     type: society
     tags: [grant, postdoc, mobility, cognition, animal-behaviour]
+    tier: international
     cadence: "Annual — application window roughly Feb–Mar (confirm on site)"
     notes: "Animal-cognition-focused foundation; postdoc study grants (~€45k range) for mobility. Postdoc-stage — seed for after the PhD."
 
@@ -173,6 +192,7 @@ active:
     url: "https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html"
     type: portal
     tags: [thesis-prize, spain]
+    tier: regional
     cadence: "Awarded once per academic year for the previous year's graduates"
     notes: "UAB premi extraordinari de titulacio is AWARDED AUTOMATICALLY - you do NOT apply. Eligible if you finished the master in the previous academic year with global GPA >= 8.0; a faculty tribunal decides on academic record. Nothing to submit. Your master is at the Institut de Neurociencies (INc): https://www.uab.cat/en/incuab - confirm the master-level prize with your programme academic-affairs office (the INc site currently lists doctorate-level prizes)."
 
@@ -180,6 +200,7 @@ active:
     url: "https://etologia.org/"
     type: society
     tags: [thesis-prize, travel, animal-behaviour, ecology, spain]
+    tier: national
     cadence: "Annual, around the society congress"
     notes: "Spanish ethology/evolutionary-ecology society - young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based. NOTE: www.etologia.org threw an SSL cert error last run; entry now uses etologia.org (no www)."
 
@@ -188,6 +209,7 @@ active:
     url: "https://euraxess.ec.europa.eu/jobs/search"
     type: aggregator
     tags: [grant, job, postdoc, predoc, mobility, collaboration, eu, spain]
+    tier: national
     cadence: "Rolling — richest single structured source"
     notes: "Filter by field + country. Best all-round source for mobility/funding/jobs. Prioritise in every run."
 
@@ -195,6 +217,7 @@ active:
     url: "https://www.scientifyresearch.org/"
     type: aggregator
     tags: [grant, travel, mobility]
+    tier: international
     cadence: "Rolling"
     notes: "Curated, structured grant/fellowship listings with deadlines — good for catching quarterly travel grants."
 
@@ -202,6 +225,7 @@ active:
     url: "https://www.jobs.ac.uk/search/?keywords=animal%20behaviour%20cognition"
     type: aggregator
     tags: [job, postdoc, predoc]
+    tier: international
     cadence: "Rolling — where most UK/EU animal-behaviour PhD/RA posts appear"
     notes: "Primary board for UK/European academic posts in the field. Cross-check hits against lab_discovery for warm-connection targets."
 
@@ -209,6 +233,7 @@ active:
     url: "https://www.nature.com/naturecareers/jobs/animal-behaviour"
     type: aggregator
     tags: [job, postdoc, predoc]
+    tier: international
     cadence: "Rolling"
     notes: "Higher-profile research posts and fellowships across the life sciences."
 
@@ -216,6 +241,7 @@ active:
     url: "https://jobrxiv.org/"
     type: aggregator
     tags: [job, postdoc, predoc]
+    tier: international
     cadence: "Rolling"
     notes: "Life-sciences positions incl. PhD/RA. Cross-check hits against lab_discovery for warm-connection targets."
 
@@ -223,6 +249,7 @@ active:
     url: "https://bsky.app/search?q=PhD%20position%20animal%20cognition"
     type: aggregator
     tags: [job, collaboration, predoc]
+    tier: international
     cadence: "Rolling — social"
     notes: "Informal but timely. Many labs post openings + collaboration calls here before formal portals. Treat as low-confidence signal; verify before acting."
 
