@@ -9,7 +9,7 @@ P1: --deadlines parses dates from each source's cadence note (no longer a no-op)
 git-checkbox approvals harvested from committed digests into approved_queue.json.
 """
 from __future__ import annotations
-import io, re, argparse, json, os, sys, datetime as dt, urllib.parse, urllib.request
+import io, re, time, ssl, argparse, json, os, sys, datetime as dt, urllib.parse, urllib.request
 from pathlib import Path
 
 try:
@@ -28,11 +28,23 @@ def load_yaml(name):
     with io.open(ROOT / name, encoding="utf-8", errors="replace") as f:
         return yaml.safe_load(f)
 
-def http_get(url, accept="application/json", timeout=25):
+def http_get(url, accept="application/json", timeout=25, insecure_fallback=False):
+    mail = os.environ.get("OPENALEX_MAILTO", "").strip() or "opportunity-scout@example.com"
     req = urllib.request.Request(url, headers={
-        "User-Agent": "opportunity-scout/1.0 (mailto:you@example.com)", "Accept": accept})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+        "User-Agent": f"Mozilla/5.0 (opportunity-scout; mailto:{mail})", "Accept": accept})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", "replace")
+    except (ssl.SSLError, urllib.error.URLError) as e:
+        # Some government/portal sites have incomplete cert chains. For reading
+        # PUBLIC pages only, retry once without verification. Never used for
+        # anything that sends credentials (Telegram uses its own path).
+        reason = getattr(e, "reason", e)
+        if insecure_fallback and ("SSL" in str(reason) or "CERTIFICATE" in str(reason).upper()):
+            ctx = ssl._create_unverified_context()
+            with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
+                return r.read().decode("utf-8", "replace")
+        raise
 
 # ------------------------------------------------------------------ Telegram
 def _tg_creds(cfg=None):
@@ -111,33 +123,53 @@ def mark_seen_and_save(cfg, ids):
 
 # ------------------------------------------------------------------ OpenAlex
 def _oa_suffix():
+    parts = []
+    mail = os.environ.get("OPENALEX_MAILTO", "").strip()
     key = os.environ.get("OPENALEX_API_KEY", "").strip()
-    return f"&api_key={key}" if key else ""
+    if mail: parts.append("mailto=" + urllib.parse.quote(mail))
+    if key: parts.append("api_key=" + key)
+    return ("&" + "&".join(parts)) if parts else ""
 
 def resolve_topic_id(keyword):
-    try:
-        q = urllib.parse.quote(keyword)
-        data = json.loads(http_get(
-            f"https://api.openalex.org/topics?search={q}&per-page=1{_oa_suffix()}"))
-        r = data.get("results", [])
-        if r:
-            tid = r[0].get("id", "")
-            return tid.rsplit("/", 1)[-1] if tid else None
-    except Exception as e:
-        print(f"  [openalex topic] {keyword}: {e}", file=sys.stderr)
-    return None
+    """Return (topic_id, topic_name) or (None, None). Retries once on failure,
+    since the topics endpoint is rate-limited (~1/sec) and a throttled call is
+    the most common reason resolution silently falls back to text search."""
+    q = urllib.parse.quote(keyword)
+    url = f"https://api.openalex.org/topics?search={q}&per-page=1{_oa_suffix()}"
+    for attempt in range(2):
+        try:
+            data = json.loads(http_get(url))
+            r = data.get("results", [])
+            if r:
+                tid = r[0].get("id", "")
+                name = r[0].get("display_name", "")
+                return (tid.rsplit("/", 1)[-1] if tid else None), name
+            return None, None
+        except Exception as e:
+            print(f"  [openalex topic] {keyword} (try {attempt+1}): {e}", file=sys.stderr)
+            time.sleep(1.2)  # respect ~1/sec limit before retry
+    return None, None
 
 def discover_labs(profile, per_keyword=10):
     since = (dt.date.today() - dt.timedelta(days=365 * 3)).isoformat()
     people = {}
+    methods = {}  # keyword -> "topic:<name>" or "fallback"
     for kw in profile.get("keywords_openalex", []):
-        tid = resolve_topic_id(kw)
-        filt = (f"primary_topic.id:{tid},from_publication_date:{since}" if tid
-                else f"title_and_abstract.search:{urllib.parse.quote(kw)},from_publication_date:{since}")
+        tid, tname = resolve_topic_id(kw)
+        time.sleep(1.1)  # stay under the ~1/sec OpenAlex topics limit
+        if tid:
+            filt = f"primary_topic.id:{tid},from_publication_date:{since}"
+            # within a correct topic, relevance beats raw citations for on-profile hits
+            sort = "relevance_score:desc"
+            methods[kw] = f"topic:{tname}"
+        else:
+            filt = f"title_and_abstract.search:{urllib.parse.quote(kw)},from_publication_date:{since}"
+            sort = "cited_by_count:desc"
+            methods[kw] = "fallback"
         url = (f"https://api.openalex.org/works?filter={filt}"
-               f"&sort=cited_by_count:desc&per-page={per_keyword}{_oa_suffix()}")
+               f"&sort={sort}&per-page={per_keyword}{_oa_suffix()}")
         try:
-            data = json.loads(http_get(url))
+            data = json.loads(http_get(url)); time.sleep(1.1)
         except Exception as e:
             print(f"  [openalex works] {kw}: {e}", file=sys.stderr); continue
         for w in data.get("results", []):
@@ -159,14 +191,17 @@ def discover_labs(profile, per_keyword=10):
                            "institution": inst[0].get("display_name", "") if inst else "",
                            "raw_affiliation": "; ".join(a.get("raw_affiliation_strings", []) or []),
                            "pi_last_author": pi, "matched_topics": [],
+                           "match_methods": [],
                            "example_work": w.get("title", "")[:140], "tags": []}
                     people[aid] = rec
                 if kw not in rec["matched_topics"]:
                     rec["matched_topics"].append(kw)
+                    rec["match_methods"].append(methods.get(kw, "?"))
     out = list(people.values())
     for r in out:
         r["overlap"] = len(r["matched_topics"]); r["tags"] = list(r["matched_topics"])
-        r["why_it_fits"] = (f"Overlaps {r['overlap']} of your topics "
+        r["discovery"] = "topic" if any(m.startswith("topic:") for m in r["match_methods"]) else "fallback"
+        r["why_it_fits"] = (f"[{r['discovery']}] overlaps {r['overlap']} of your topics "
                             f"({', '.join(r['matched_topics'])}); e.g. \"{r['example_work']}\"")
     out.sort(key=lambda r: r["overlap"], reverse=True)
     return out
@@ -209,7 +244,7 @@ def fetch_source(src):
             "tags": src.get("tags", []), "warm_tie": None, "reachable": False,
             "cadence": src.get("cadence", "")}
     try:
-        body = http_get(src["url"], accept="text/html")
+        body = http_get(src["url"], accept="text/html", insecure_fallback=True)
         stub["reachable"] = True; stub["_page_excerpt"] = body[:4000]
     except Exception as e:
         stub["eligibility_notes"] += f"  [UNREACHABLE: {e}]"

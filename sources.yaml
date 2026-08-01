@@ -26,7 +26,9 @@ profile:
   fields: [comparative cognition, animal behaviour, behavioural flexibility, collective animal cognition, cross-species cognition comparison]
   methods: [GLM-HMM, PsychoPy, Pavlovia/PsychoJS, behavioural modelling, linear regression, bayesian regression]
   pi: "Alex Taylor"
-  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility, bird cognition, decision making, behavioural ecology, collective animal cognition, cross-species cognition comparison]
+  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility,
+                      bird cognition, decision making, behavioural ecology,
+                      collective behaviour, social learning]
   language: [English, Spanish]
 
 # ----------------------------------------------------------------------------
