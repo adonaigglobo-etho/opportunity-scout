@@ -1,0 +1,222 @@
+[
+  {
+    "id": "source::la Caixa INPhINIT Doctoral Fellowships",
+    "kind": "grant",
+    "title": "la Caixa INPhINIT Doctoral Fellowships",
+    "source": "la Caixa INPhINIT Doctoral Fellowships",
+    "url": "https://lacaixafoundation.org/en/doctoral-inphinit-fellowships",
+    "deadline": null,
+    "eligibility_notes": "STEM/life-sciences eligible. Incoming = NOT resident in ES/PT >12mo of last 3yr; Retaining = resident in ES/PT. Host must hold Severo Ochoa / Mar\u00eda de Maeztu accreditation for Incoming.  [UNREACHABLE: HTTP Error 403: Forbidden]",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "spain",
+      "mobility"
+    ],
+    "warm_tie": null,
+    "reachable": false,
+    "cadence": "Annual \u2014 Incoming ~28 Jan, Retaining ~18 Feb (2026 dates verified)",
+    "tier": "international"
+  },
+  {
+    "id": "source::la Caixa Junior Leader (postdoc)",
+    "kind": "grant",
+    "title": "la Caixa Junior Leader (postdoc)",
+    "source": "la Caixa Junior Leader (postdoc)",
+    "url": "https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships",
+    "deadline": null,
+    "eligibility_notes": "For later \u2014 postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility.  [UNREACHABLE: HTTP Error 403: Forbidden]",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "postdoc",
+      "spain",
+      "mobility"
+    ],
+    "warm_tie": null,
+    "reachable": false,
+    "cadence": "Annual, typically autumn call",
+    "tier": "international"
+  },
+  {
+    "id": "source::FPU \u2014 Ayudas para la Formaci\u00f3n de Profesorado Universitario (MEFP)",
+    "kind": "grant",
+    "title": "FPU \u2014 Ayudas para la Formaci\u00f3n de Profesorado Universitario (MEFP)",
+    "source": "FPU \u2014 Ayudas para la Formaci\u00f3n de Profesorado Universitario (MEFP)",
+    "url": "https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/",
+    "deadline": null,
+    "eligibility_notes": "Requires enrolment/admission in a doctoral programme. Confirm exact call URL each cycle \u2014 ministry restructures pages.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Annual, ministry call (usually late autumn/winter)",
+    "tier": "international",
+    "_page_excerpt": "<!DOCTYPE html>\r\n<html xml:lang=\"es\" lang=\"es\">\r\n\r\n<head>\r\n        <!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-V5CJEH4Z0R\"></script>\r\n<script>\r\nfunction marketingTagAnalitica() {\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-V5CJEH4Z0R');\r\n}\r\n</script>\r\n        <!-- Delete cookie -->\r\n<script>\r\nfunction deleteCookie(cname) {\r\n\tif (readCookie(cname) != null) {\r\n\t\tdocument.cookie = cname + \"= ;expires=Thu, 01-Jan-70 00:00:01 GMT; Path=/;domain=ciencia.gob.es\";\r\n\t}\r\n}\r\n</script>\r\n        <!-- Set cookie -->\n<script>\nfunction setCookie(cname, cvalue, exdays) {\n\tvar d = new Date();\n\td.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));\n\tvar expires = (exdays == '') ? '' : 'expires=' + d.toUTCString() + ';';\n\tdocument.cookie = cname + \"=\" + cvalue + \";\" + expires + \";path=/\";\n}\n</script>\r\n        <!-- Set cookie -->\r\n<script>\r\nfunction setCookie(cname, cvalue, exdays) {\r\n\tvar d = new Date();\r\n\td.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));\r\n\tvar expires = (exdays == '') ? '' : 'expires=' + d.toUTCString() + ';';\r\n\tdocument.cookie = cname + \"=\" + cvalue + \";\" + expires + \";path=/\";\r\n}\r\n</script>\r\n<script type=\"text/javascript\" async src=\"https://www.google-analytics.com/analytics.js\"></script>\r\n<script>\r\nvar examinar = 'Examinar';\r\nvar opcional = 'Opcional';\r\n//var urlServletAssetDownload = '/gesdamdoc-servlet/?uuid=';\r\nvar urlServletAssetDownload = '/site-web/InfoGeneralPortal/documento/';\r\nvar site = window.location.href;\r\nif(site.indexOf('aee') !== -1){\r\n  urlServletAssetDownload = '/site-aee/InfoGeneral/documento/';\r\n}\r\n</script>\r\n<title>CIENCIA - Ministerio de Ciencia, Innovaci\u00f3n y Universidades</title>\r\n\r\n<meta charset=\"utf-8\">\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n<meta name=\"author\" content=\"Ministerio de Ciencia, Innovaci\u00f3n y Universidades\">\r\n<meta name=\"description\" content=\"Ministerio de Ciencia, Innovaci\u00f3n y Universidades \">\r\n<meta name=\"keywords\" content=\"Ministerio de Ciencia, Innovaci\u00f3n y Universidades\">\r\n<meta name=\"robots\" content=\"index,\r\n                             follow\"/>\r\n\r\n<link rel=\"icon\" type=\"image/vnd.microsoft.icon\" href=\"/.resources/site-web/webresources/img/favicon.ico\">\r\n<link rel=\"canonical\" href=\"https://www.ciencia.gob.es/site-web/home.html\"/>\r\n<link rel=\"alternate\" hreflang=\"ca\" href=\"https://www.ciencia.gob.es/ca/\"/>\r\n<link rel=\"alternate\" hreflang=\"en\" href=\"https://www.ciencia.gob.es/en/\"/>\r\n<link rel=\"alternate\" hreflang=\"eu\" href=\"https://www.ciencia.gob.es/eu/\"/>\r\n<link rel=\"alternate\" hreflang=\"gl\" href=\"https://www.ciencia.gob.es/gl/\"/>\r\n<link rel=\"alternate\" hreflang=\"va\" href=\"https://www.ciencia.gob.es/va/\"/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n  <link rel=\"stylesheet\" href=\"/.resources/site-web/webresources/css/bootstrap-icons~2026-07-15-05-36-53-660~cache.css\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"/.resources/site-web/webresources/css/newHeader~2026-07-15-05-36-53-848~cache.css\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"/.resources/site-web/webresources/css/bootstrap.min~2026-07-15-05-36-53-743~cache.css\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Poppins:100,200,400,600&display=swap\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"/.resources/site-web/webresources/css/leaflet~2026-07-15-05-36-53-811~cache.css\" media=\"all\" />\r\n  <link rel=\"stylesheet\" href=\"/.resources/site-web/webresources/css/mci-organigrama~2026-07-15-05-36-53-827~cach"
+  },
+  {
+    "id": "source::FPI \u2014 Ayudas para contratos predoctorales (AEI)",
+    "kind": "grant",
+    "title": "FPI \u2014 Ayudas para contratos predoctorales (AEI)",
+    "source": "FPI \u2014 Ayudas para contratos predoctorales (AEI)",
+    "url": "https://www.aei.gob.es/convocatorias",
+    "deadline": null,
+    "eligibility_notes": "FPI is attached to a specific funded project/PI \u2014 so a target lab in Spain with an active AEI project is the entry point. Cross-reference with lab_discovery hits.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Annual, tied to funded research projects",
+    "tier": "international",
+    "_page_excerpt": "<!DOCTYPE html>\n<html  lang=\"es\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VW72V68TSZ\"></script>\n<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag(\"js\", new Date());gtag(\"set\", \"developer_id.dMDhkMT\", true);gtag(\"config\", \"G-VW72V68TSZ\", {\"groups\":\"default\",\"page_placeholder\":\"PLACEHOLDER_page_location\"});</script>\n<link rel=\"canonical\" href=\"http://www.aei.gob.es/convocatorias\" />\n<meta name=\"Generator\" content=\"Drupal 9 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #264c80} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />\n<script src=\"https://www.google.com/recaptcha/api.js?hl=es\" async defer></script>\n<link rel=\"icon\" href=\"/themes/custom/vartheme_aei/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n<link rel=\"alternate\" hreflang=\"eu\" href=\"http://www.aei.gob.es/eu/deiak\" />\n<link rel=\"alternate\" hreflang=\"ca\" href=\"http://www.aei.gob.es/ca/convocatories\" />\n<link rel=\"alternate\" hreflang=\"gl\" href=\"http://www.aei.gob.es/gl/chamadas\" />\n<link rel=\"alternate\" hreflang=\"en\" href=\"http://www.aei.gob.es/en/announcements\" />\n<link rel=\"alternate\" hreflang=\"es\" href=\"http://www.aei.gob.es/convocatorias\" />\n<link rel=\"alternate\" hreflang=\"va\" href=\"http://www.aei.gob.es/va/convocatories\" />\n\n    <title>Convocatorias | Agencia Estatal de Investigaci\u00f3n</title>\n    <link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/ajax-progress.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/align.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/autocomplete-loading.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/fieldgroup.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/container-inline.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/clearfix.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/details.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/hidden.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/item-list.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/js.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/nowrap.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/position-container.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/progress.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/reset-appearance.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/resize.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/sticky-header.module.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-counter.css?thxao6\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/componen"
+  },
+  {
+    "id": "person::https://openalex.org/A5038612405",
+    "kind": "person",
+    "title": "Marco Baroni",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5038612405",
+    "orcid": "https://orcid.org/0000-0001-5066-3580",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Instituci\u00f3 Catalana de Recerca i Estudis Avan\u00e7ats",
+    "raw_affiliation": "Catalan Institution for Research and Advanced Studies (ICREA), Barcelona, Spain; Department of Translation and Language Sciences, Universitat Pompeu Fabra, Barcelona, Spain",
+    "pi_last_author": "Marco Baroni",
+    "matched_topics": [
+      "behavioural flexibility"
+    ],
+    "match_methods": [
+      "fallback"
+    ],
+    "example_work": "Human-like systematic generalization through a meta-learning neural network",
+    "tags": [
+      "behavioural flexibility"
+    ],
+    "overlap": 1,
+    "discovery": "fallback",
+    "tier": "national",
+    "why_it_fits": "[fallback] overlaps 1 of your topics (behavioural flexibility); e.g. \"Human-like systematic generalization through a meta-learning neural network\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5032193561",
+    "kind": "person",
+    "title": "Eduardo Sampaio",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5032193561",
+    "orcid": "https://orcid.org/0000-0002-9222-2553",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Lisbon",
+    "raw_affiliation": "Centre for the Advanced Study of Collective Behaviour, University of Konstanz, Konstanz, Germany. esampaio@ab.mpg.de; Department of Biology, University of Konstanz, Konstanz, Germany. esampaio@ab.mpg.de; Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany. esampaio@ab.mpg.de; MARE-Marine and Environmental Sciences Centre, Laborat\u00f3rio Mar\u00edtimo da Guia, Faculdade de Ci\u00eancias, Universidade de Lisboa, Lisbon, Portugal. esampaio@ab.mpg.de",
+    "pi_last_author": "Simon Gingins",
+    "matched_topics": [
+      "collective animal behaviour"
+    ],
+    "match_methods": [
+      "fallback"
+    ],
+    "example_work": "Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups",
+    "tags": [
+      "collective animal behaviour"
+    ],
+    "overlap": 1,
+    "discovery": "fallback",
+    "tier": "national",
+    "why_it_fits": "[fallback] overlaps 1 of your topics (collective animal behaviour); e.g. \"Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5012649250",
+    "kind": "person",
+    "title": "Antonio Ben\u00edtez\u2010Burraco",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5012649250",
+    "orcid": "https://orcid.org/0000-0003-4574-5666",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Vrije Universiteit Brussel",
+    "raw_affiliation": "Department of Spanish, Linguistics, and Theory of Literature, University of Seville 41004 Seville, Spain; Vrije Universiteit Brussel",
+    "pi_last_author": "Antonio Ben\u00edtez\u2010Burraco",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Elephants as an animal model for self-domestication",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Elephants as an animal model for self-domestication\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5129301060",
+    "kind": "person",
+    "title": "Juan Olvido Perea-Garcia",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5129301060",
+    "orcid": "",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universidad de Las Palmas de Gran Canaria",
+    "raw_affiliation": "Department of Modern Philology, University of Las Palmas de Gran Canaria (ULPGC), Las Palmas, Spain; University Institute for Health and Biomedical Research (IUIBS), University of Las Palmas de Gran Canaria (ULPGC), Las Palmas, Spain",
+    "pi_last_author": "Juan Olvido Perea-Garcia",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Designing research interfaces for non-human minds: a biocentric design approach for animal cognition research",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Designing research interfaces for non-human minds: a biocentric design approach for animal cognition research\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5029348330",
+    "kind": "person",
+    "title": "Marta D\u00edaz Boladeras",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5029348330",
+    "orcid": "https://orcid.org/0000-0001-8215-0499",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Cidete (Spain)",
+    "raw_affiliation": "Technical Research Centre for Dependency Care and Autonomous Living (CETpD), Rambla Exposici\u00f3, 59., 08800, Vilanova i la Geltr\u00fa, Spain; Universitat Polit\u00e8cnica de Catalunya, BarcelonaTech (UPC), Catalonia, Spain",
+    "pi_last_author": "",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Bond formation with pet-robots: An integrative approach",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Bond formation with pet-robots: An integrative approach\"",
+    "warm_tie": null
+  }
+]
