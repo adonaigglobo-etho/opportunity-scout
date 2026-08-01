@@ -291,18 +291,22 @@ def discover_regional(profile, per_keyword=6):
     out.sort(key=lambda r: r["overlap"], reverse=True)
     return out
 
-def select_by_tier_quota(candidates, total, tiers=("regional","national","international")):
-    """Even split across tiers; unfilled slots redistribute to tiers with surplus.
-    Assumes `candidates` is already score-ordered (best first)."""
-    from math import ceil
+def select_by_tier_quota(candidates, total, tiers=("regional","national","international"), quota=None):
+    """Fill each tier up to its quota; unfilled slots redistribute to tiers with
+    surplus. `quota` is a dict like {'regional':4,'national':6,'international':8}.
+    If quota is None, split `total` evenly. Assumes candidates are score-ordered."""
     buckets = {t: [c for c in candidates if c.get("tier","international") == t] for t in tiers}
-    base = total // len(tiers)
+    if quota:
+        want = {t: int(quota.get(t, 0)) for t in tiers}
+    else:
+        base = total // len(tiers)
+        want = {t: base for t in tiers}
     picked, used = [], {t: 0 for t in tiers}
-    # first pass: give each tier its base share
+    # first pass: each tier gets up to its quota
     for t in tiers:
-        take = buckets[t][:base]
+        take = buckets[t][:want[t]]
         picked += take; used[t] = len(take)
-    # redistribute leftover slots to tiers that still have candidates
+    # redistribute any unfilled slots to tiers that still have surplus candidates
     remaining = total - len(picked)
     while remaining > 0:
         progressed = False
@@ -312,8 +316,7 @@ def select_by_tier_quota(candidates, total, tiers=("regional","national","intern
                 picked.append(buckets[t][used[t]]); used[t] += 1
                 remaining -= 1; progressed = True
         if not progressed:
-            break  # no tier has more candidates
-    # keep overall score order in the final list
+            break
     picked_ids = {c["id"] for c in picked}
     return [c for c in candidates if c["id"] in picked_ids]
 
@@ -473,9 +476,9 @@ def run_sweep(cfg, sources, network, no_send=False):
                 seen_ids.add(pr["id"]); deduped.append(pr)
         candidates += attach_warm_ties(deduped, network)
     fresh = [c for c in candidates if is_fresh(seen, c["id"], cfg["dedup"]["suppress_days"])]
-    # apply an even-tier quota so regional/national aren't crowded out by international
+    # apply the per-tier quota so regional/national aren't crowded out by international
     quota_total = m.get("quota_total", m.get("max_candidates", 100))
-    fresh = select_by_tier_quota(fresh, quota_total)
+    fresh = select_by_tier_quota(fresh, quota_total, quota=m.get("tier_quota"))
 
     stamp = dt.date.today().isoformat()
     (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
