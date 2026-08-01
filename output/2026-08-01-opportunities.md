@@ -1,59 +1,115 @@
 # Opportunity Scout — sweep — 2026-08-01
 
-**Chair's note (quiet month):** 100 raw candidates came out of this sweep (29 recurring
-source stubs, 71 OpenAlex person hits). None of the 29 sources produced a *new*,
-dated call — they're the same standing sources re-fetched; several are currently
-unreachable (`la Caixa Junior Leader` 403, `FPU`/`FPI`/`AEI` SSL failures, `UAB
-Premis` 404, `SEEEE` SSL failure) and are worth re-checking by hand, but a broken
-fetch isn't an opportunity, so none are listed below — chase actual deadlines via
-`--deadlines` instead. Of the 71 person hits, all matched on a single loose keyword
-(`overlap: 1`) via OpenAlex's text-search fallback, and the large majority are
-off-profile noise (companion-animal welfare, materials science, ML/AI, cardiology,
-multi-criteria decision theory) or, in two cases, garbage/spam OpenAlex records
-(nonsense titles, fabricated-sounding institutions) that were discarded outright.
-**Zero warm ties** matched against `network.yaml` this run — everything below is
-cold outreach. Selecting 4 of 8 possible slots rather than padding to 8.
+**Chair's note:** A mid-sweep bug fix changed this run's numbers, so flagging it up
+front. `resolve_topic_id()`/`discover_labs()` had a live bug: `sort=relevance_score:desc`
+is only a valid OpenAlex sort when a `search` term is present, so every topic-scoped
+query for `animal cognition`, `decision making`, `collective behaviour`, and
+`social learning` was returning `HTTP 400` and silently dropping to nothing. Fixed by
+pairing the sort with `search=<keyword>` alongside the topic filter (see
+`scout.py` `discover_labs()`), then re-ran the sweep. First pass (broken):
+20 candidates, all via keyword-fallback. Second pass (fixed): 78 fresh candidates,
+58 of them properly topic-scoped. The 78 are what's ranked below.
+
+**Data-quality flag (not a candidate, a process note):** two of the eight profile
+keywords are resolving to the *wrong* OpenAlex topic and produced zero usable
+candidates this run — `decision making` → Multi-Criteria Decision Making /
+fuzzy-set operations research (14 people, none behavioural), and
+`collective behaviour` → complex-systems/emergence physics, including a couple of
+non-mainstream "consciousness"/AGI titles (8 people, none behavioural). Both sets
+were discarded outright, not ranked. Recommend swapping these two
+`keywords_openalex` entries in `sources.yaml` for more specific phrasing (e.g.
+"collective animal behaviour", "behavioural decision-making") next cycle — flagging
+for your review rather than changing the profile file myself.
+
+Of the remaining ~56 candidates (animal cognition, behavioural ecology-fallback,
+social learning), most are genuine labs but many are companion-animal
+welfare/therapy, plant/microbiome ecology, or otherwise off-profile. **Zero warm
+ties** matched against `network.yaml` this run — everything below is cold
+outreach, and none of it is a funding call or has a deadline (`OpenAlex` discovery
+surfaces labs/researchers, not open positions — a "position" here means "worth
+a cold email," not a confirmed vacancy). None of the 29 recurring grant/fellowship
+sources produced a new dated call this cycle — they're all within the 120-day
+dedup suppression window from the last confirmed send, so a quiet cycle for
+calls specifically. Selecting 7 of 8 possible slots rather than padding.
 
 ---
 
-- [ ] Jonas Rose (with Onur Güntürkün) — avian cognitive neuroscience  (person)  <!--id:person::https://openalex.org/A5050311500-->
-   - why it fits: Neural Basis of Learning lab, Ruhr University Bochum — pigeon/bird
-     cognitive neuroscience and decision-making; co-authored the 2024 review "Why
-     birds are smart" with Onur Güntürkün (Biopsychology, same institute). Strong
-     topical match for comparative/behavioural-flexibility work; a plausible
-     PhD-lab or collaboration target for methods exchange.
-   - deadline: none — cold-outreach target, not a call with a submission window
-   - eligibility flags: none identified (informal contact, no formal eligibility gate applies)
-   - warm-tie note: none found in network.yaml — treat as fully cold
-   - link: https://openalex.org/A5050311500
+- [ ] Lucy M. Aplin — social learning & culture in birds  (person)  <!--id:person::https://openalex.org/A5088537383-->
+   - why it fits: Australian National University. Senior author on "Social learning
+     and culture in birds: emerging patterns and relevance to conservation" — one
+     of the field's leading voices on animal culture and behavioural flexibility
+     via social learning, directly on-profile for collective animal cognition.
+     High strategic value: ANU is a major node, a strong door-opener even cold.
+   - deadline: none — cold-outreach lead, not a call
+   - eligibility flags: none — informal contact, no eligibility gate applies
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5088537383
 
-- [ ] Scott A. Taylor (with Georgy A. Semenov) — food-caching corvid-relative cognition genetics  (person)  <!--id:person::https://openalex.org/A5078189551-->
-   - why it fits: Dept. of Ecology & Evolutionary Biology, University of Colorado
-     Boulder. Recent work on genes/gene networks underlying spatial cognition in
-     food-caching chickadees — a close comparative system to corvid caching
-     cognition. No relation to PI Alex Taylor despite the shared surname; noted
-     explicitly to avoid any false-tie impression.
-   - deadline: none — cold-outreach target
+- [ ] Judith M. Burkart — cooperative cognition & social learning in marmosets  (person)  <!--id:person::https://openalex.org/A5125138636-->
+   - why it fits: University of Zurich. Senior author on "Opportunities and
+     mechanisms for learning through social interactions: lessons from marmosets" —
+     strong cross-species comparative-cognition fit (marmoset social
+     learning/cooperation vs. your bird/comparative work), well-established lab.
+   - deadline: none — cold-outreach lead, not a call
    - eligibility flags: none identified
-   - warm-tie note: none found in network.yaml — cold; surname overlap with your PI is coincidental, not a connection
-   - link: https://openalex.org/A5078189551
+   - warm-tie note: none found in network.yaml — cold (note: Zurich also hosts
+     other comparative-cognition groups; nothing here is a confirmed tie, don't
+     imply one)
+   - link: https://openalex.org/A5125138636
 
-- [ ] Inga Tiemann (with Sonja Hillemacher) — cognitive ecology of mirror self-recognition in fowl  (person)  <!--id:person::https://openalex.org/A5091295228-->
-   - why it fits: Institute of Agricultural Engineering, University of Bonn.
-     "Roosters do not warn the bird in the mirror" — direct comparative-cognition /
-     self-recognition work in birds, adjacent to behavioural-flexibility interests.
-   - deadline: none — cold-outreach target
+- [ ] Enikő Kubinyi — canine cognition & the Family Dog Project  (person)  <!--id:person::https://openalex.org/A5086539835-->
+   - why it fits: Eötvös Loránd University. Senior author on "Age-related effects
+     on a hierarchical structure of canine cognition" (with Zsófia Bognár) —
+     established comparative-cognition group, relevant methods overlap on
+     cognitive structure/ageing models.
+   - deadline: none — cold-outreach lead, not a call
    - eligibility flags: none identified
    - warm-tie note: none found in network.yaml — cold
-   - link: https://openalex.org/A5091295228
+   - link: https://openalex.org/A5086539835
 
-- [ ] Christine R. Lattin — avian hippocampus, spatial cognition & neuroendocrinology  (person)  <!--id:person::https://openalex.org/A5079375127-->
-   - why it fits: Dept. of Biological Sciences, Louisiana State University. Senior/
-     corresponding author on "A bird's eye view of the hippocampus beyond space"
-     (co-authored with Farrah N. Madison, UW–Madison, on a separate campus — not
-     the same lab, so listed as an individual contact rather than implying a
-     joint group). Relevant for spatial/behavioural-flexibility cognition angle.
-   - deadline: none — cold-outreach target
+- [ ] Per Jensen — domestication effects on animal cognition  (person)  <!--id:person::https://openalex.org/A5071463695-->
+   - why it fits: Linköping University. Senior author (with Vitor Hugo Bessa
+     Ferreira) on "Are domesticated animals dumber than their wild relatives?" — a
+     comprehensive review directly on behavioural-flexibility/domestication
+     comparative cognition, good entry point for a methods-exchange conversation.
+   - deadline: none — cold-outreach lead, not a call
    - eligibility flags: none identified
    - warm-tie note: none found in network.yaml — cold
-   - link: https://openalex.org/A5079375127
+   - link: https://openalex.org/A5071463695
+
+- [ ] Esther Bouma (with Jennifer Vonk) — cognition/emotion attribution in companion animals  (person)  <!--id:person::https://openalex.org/A5039706983-->
+   - why it fits: University of Groningen (Bouma) and Oakland University (Vonk,
+     a well-known comparative psychologist) co-authored "Attachment as the
+     Catalyst for the Attribution of Complex Cognition and Emotion to Companion
+     Cats." Moderate fit — companion-animal leaning rather than core comparative
+     cognition, included for Vonk's standing in the field rather than topical
+     precision.
+   - deadline: none — cold-outreach lead, not a call
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5039706983
+
+- [ ] Pengfei Wei (with Yaning Han) — 3D multi-animal pose estimation & behaviour embedding  (person)  <!--id:person::https://openalex.org/A5101506671-->
+   - why it fits: Chinese Academy of Sciences. "Multi-animal 3D social pose
+     estimation, identification and behaviour embedding with a few-shot learning
+     framework" — a methods/tools fit rather than a topical-cognition fit:
+     computational behaviour-quantification pipeline that complements your
+     GLM-HMM/behavioural-modelling toolkit. Surfaced via the `behavioural ecology`
+     fallback search (topic resolution failed for this keyword), so treat the
+     match as looser than the topic-scoped picks above.
+   - deadline: none — cold-outreach lead, not a call
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5101506671
+
+- [ ] Justin Kitzes (with Sam Lapp) — OpenSoundscape bioacoustics analysis toolkit  (person)  <!--id:person::https://openalex.org/A5073601081-->
+   - why it fits: University of Pittsburgh. Maintainer of OpenSoundscape, an
+     open-source Python bioacoustics package. Tools/methods fit for behavioural
+     ecology data pipelines rather than a cognition-topic match; lower strategic
+     priority than the picks above but a plausible low-effort methods contact.
+     Also surfaced via the `behavioural ecology` fallback search, same caveat as
+     above.
+   - deadline: none — cold-outreach lead, not a call
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5073601081

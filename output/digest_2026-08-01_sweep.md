@@ -1,468 +1,380 @@
 Opportunity Scout - sweep - 2026-08-01
 
-- [ ] la Caixa INPhINIT Doctoral Fellowships  (grant)  <!--id:source::la Caixa INPhINIT Doctoral Fellowships-->
-   - note: STEM/life-sciences eligible. Incoming = NOT resident in ES/PT >12mo of last 3yr; Retaining = resident in ES/PT. Host must hold Severo Ochoa / María de Maeztu accreditation for Incoming.  [UNREACHABLE: HTTP Error 403: Forbidden]
-   - https://lacaixafoundation.org/en/doctoral-inphinit-fellowships
+- [ ] Micah M. Murray  (person)  <!--id:person::https://openalex.org/A5029520140-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Animal cognition: Dogs build semantic expectations between spoken words and objects"
+   - Vanderbilt University
+   - https://openalex.org/A5029520140
 
-- [ ] la Caixa Junior Leader (postdoc)  (grant)  <!--id:source::la Caixa Junior Leader (postdoc)-->
-   - note: For later — postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility.  [UNREACHABLE: HTTP Error 403: Forbidden]
-   - https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships
+- [ ] Kara D. Federmeier  (person)  <!--id:person::https://openalex.org/A5006526693-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Animal cognition: Dogs build semantic expectations between spoken words and objects"
+   - University of Illinois Urbana-Champaign
+   - https://openalex.org/A5006526693
 
-- [ ] FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)  (grant)  <!--id:source::FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)-->
-   - note: Requires enrolment/admission in a doctoral programme. Confirm exact call URL each cycle — ministry restructures pages.  [UNREACHABLE: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>]
-   - https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/
+- [ ] Vitor Hugo Bessa Ferreira  (person)  <!--id:person::https://openalex.org/A5088217940-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan"
+   - Linköping University
+   - https://openalex.org/A5088217940
 
-- [ ] FPI — Ayudas para contratos predoctorales (AEI)  (grant)  <!--id:source::FPI — Ayudas para contratos predoctorales (AEI)-->
-   - note: FPI is attached to a specific funded project/PI — so a target lab in Spain with an active AEI project is the entry point. Cross-reference with lab_discovery hits.  [UNREACHABLE: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>]
-   - https://www.aei.gob.es/convocatorias
+- [ ] Per Jensen  (person)  <!--id:person::https://openalex.org/A5071463695-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan"
+   - Linköping University
+   - https://openalex.org/A5071463695
 
-- [ ] AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
-   - note: Master call index for Spanish state research funding. Broad — filter hard by tags.  [UNREACHABLE: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>]
-   - https://www.aei.gob.es/convocatorias/buscador-convocatorias
+- [ ] Elodie P. Remoissenet  (person)  <!--id:person::https://openalex.org/A5135575064-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "From Surveillance to Cognition: A Unified Framework for Precision Behavioral and Metabolic Intelligence in Companion Animals"
+   - Barnsley College
+   - https://openalex.org/A5135575064
 
-- [ ] Generalitat de Catalunya — FI predoctoral (AGAUR)  (grant)  <!--id:source::Generalitat de Catalunya — FI predoctoral (AGAUR)-->
-   - note: Regional predoc (relevant if targeting Catalan institutions, e.g. CREAF/CSIC Barcelona — see Daniel Sol in network.yaml).
-   - https://agaur.gencat.cat/en/beques-i-ajuts/
+- [ ] Anjali Arya  (person)  <!--id:person::https://openalex.org/A5102663523-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Animal Cognition and Animal Welfare: A Review"
+   - https://openalex.org/A5102663523
 
-- [ ] Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships  (grant)  <!--id:source::Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships-->
-   - note: Doctoral Networks are applied for by consortia (you join as a recruited fellow — watch for open recruited positions). PF is postdoc-stage.
-   - https://marie-sklodowska-curie-actions.ec.europa.eu/actions
+- [ ] P.M. Lunagariya  (person)  <!--id:person::https://openalex.org/A5038787674-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Animal Cognition and Animal Welfare: A Review"
+   - https://openalex.org/A5038787674
 
-- [ ] EMBO Postdoctoral Fellowships  (grant)  <!--id:source::EMBO Postdoctoral Fellowships-->
-   - note: Postdoc-stage; international mobility required. One host lab = one candidate per round. Seed for future.
-   - https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/
+- [ ] Dorota Szewczyk  (person)  <!--id:person::https://openalex.org/A5092029086-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Therapeutic Role of Animals: A Comprehensive Literature Review on the Prevalent Forms and Species in Animal-Assisted Interventions"
+   - Międzyleski Szpital Specjalistyczny w Warszawie
+   - https://openalex.org/A5092029086
 
-- [ ] EMBO Scientific Exchange Grants  (grant)  <!--id:source::EMBO Scientific Exchange Grants-->
-   - note: Funds research visits up to 3 months to another lab to learn techniques. Good fit for a short methods exchange (e.g. modelling collaboration).
-   - https://www.embo.org/funding/fellowships-grants-and-career-support/scientific-exchange-grants/
+- [ ] Ewa Sikorska  (person)  <!--id:person::https://openalex.org/A5052595224-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Therapeutic Role of Animals: A Comprehensive Literature Review on the Prevalent Forms and Species in Animal-Assisted Interventions"
+   - Medical University of Warsaw
+   - https://openalex.org/A5052595224
 
-- [ ] Erasmus+ (traineeships / mobility)  (grant)  <!--id:source::Erasmus+ (traineeships / mobility)-->
-   - note: Usually routed through your university's international office; note as a channel, not a direct call.
-   - https://erasmus-plus.ec.europa.eu/opportunities/individuals
-
-- [ ] ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
-   - note: Up to £10k (£15k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas — fine for Spain. No overheads.
-   - https://www.asab.org/research-grants
-
-- [ ] ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
-   - note: Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible.
-   - https://www.asab.org/grant-overview
-
-- [ ] Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
-   - note: Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing — factor membership into eligibility.
-   - https://www.animalbehaviorsociety.org/web/awards.php
-
-- [ ] Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
-   - note: Up to £3k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology.
-   - https://www.biologists.com/grants/travelling-fellowships/
-
-- [ ] Company of Biologists — DMM/JEB conference & partnership travel grants  (grant)  <!--id:source::Company of Biologists — DMM/JEB conference & partnership travel grants-->
-   - note: Smaller conference-attendance travel grants; some require SEB membership. Good for getting to a target conference cheaply.
-   - https://www.biologists.com/grants/
-
-- [ ] International Society for Behavioral Ecology (ISBE)  (grant)  <!--id:source::International Society for Behavioral Ecology (ISBE)-->
-   - note: Congress travel awards + occasional grants. Confirm current schemes on site.
-   - https://behavecol.org/
-
-- [ ] European Society for Evolutionary Biology (ESEB)  (grant)  <!--id:source::European Society for Evolutionary Biology (ESEB)-->
-   - note: Research exchange and outreach funding; relevant on the evolution/culture angle.
-   - https://eseb.org/prizes-funding/
-
-- [ ] Comparative Cognition Society (CO3)  (grant)  <!--id:source::Comparative Cognition Society (CO3)-->
-   - note: THE defining society for this exact profile. Early Career Award + travel/conference awards. Confirm current schemes and deadlines on site. Membership may be required.
-   - https://comparativecognition.org/
-
-- [ ] Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
-   - note: Animal-cognition-focused foundation; postdoc study grants (~€45k range) for mobility. Postdoc-stage — seed for after the PhD.
-   - https://www.fondationfyssen.fr/en/
-
-- [ ] UAB — Premis / Premi Extraordinari de Màster  (grant)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
-   - note: Replaces the old placeholder — your own UAB master's/thesis prizes. Confirm the exact faculty page for your programme; premi extraordinari is awarded on academic record.  [UNREACHABLE: HTTP Error 404: Not Found]
-   - https://www.uab.cat/premis-reconeixements/
-
-- [ ] SEEEE — Sociedad Española de Etología y Ecología Evolutiva  (grant)  <!--id:source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva-->
-   - note: Spanish ethology/evolutionary-ecology society — young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based.  [UNREACHABLE: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.etologia.org'. (_ssl.c:1016)>]
-   - https://www.etologia.org/
-
-- [ ] Euraxess (Spain) — jobs, funding & fellowships  (grant)  <!--id:source::Euraxess (Spain) — jobs, funding & fellowships-->
-   - note: Filter by field + country. Best all-round source for mobility/funding/jobs. Prioritise in every run.
-   - https://euraxess.ec.europa.eu/jobs/search
-
-- [ ] scientifyRESEARCH funding database  (grant)  <!--id:source::scientifyRESEARCH funding database-->
-   - note: Curated, structured grant/fellowship listings with deadlines — good for catching quarterly travel grants.
-   - https://www.scientifyresearch.org/
-
-- [ ] jobs.ac.uk  (grant)  <!--id:source::jobs.ac.uk-->
-   - note: Primary board for UK/European academic posts in the field. Cross-check hits against lab_discovery for warm-connection targets.
-   - https://www.jobs.ac.uk/search/?keywords=animal%20behaviour%20cognition
-
-- [ ] Nature Careers  (grant)  <!--id:source::Nature Careers-->
-   - note: Higher-profile research posts and fellowships across the life sciences.
-   - https://www.nature.com/naturecareers/jobs/animal-behaviour
-
-- [ ] jobRxiv  (grant)  <!--id:source::jobRxiv-->
-   - note: Life-sciences positions incl. PhD/RA. Cross-check hits against lab_discovery for warm-connection targets.
-   - https://jobrxiv.org/
-
-- [ ] ResearchGate / Bluesky / X open calls  (grant)  <!--id:source::ResearchGate / Bluesky / X open calls-->
-   - note: Informal but timely. Many labs post openings + collaboration calls here before formal portals. Treat as low-confidence signal; verify before acting.
-   - https://bsky.app/search?q=PhD%20position%20animal%20cognition
-
-- [ ] OpenAlex — author & institution discovery  (grant)  <!--id:source::OpenAlex — author & institution discovery-->
-   - note: Primary engine for finding labs/researchers by topic overlap. Query authors by concept + recent works; rank by overlap with profile.keywords_openalex. Feeds outreach targets to skill 2. No key needed.
-   - https://api.openalex.org/
-
-- [ ] ORCID  (grant)  <!--id:source::ORCID-->
-   - note: Resolve a discovered author to affiliation/email-visibility and recent outputs before drafting outreach.
-   - https://orcid.org/
-
-- [ ] Gary Landsberg  (person)  <!--id:person::https://openalex.org/A5050211051-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Behavior Problems of the Dog and Cat"
-   - https://openalex.org/A5050211051
-
-- [ ] Lowell Ackerman  (person)  <!--id:person::https://openalex.org/A5112787977-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Behavior Problems of the Dog and Cat"
-   - https://openalex.org/A5112787977
-
-- [ ] Jennifer R. S. Meadows  (person)  <!--id:person::https://openalex.org/A5049172746-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Genome sequencing of 2000 canids by the Dog10K consortium advances the understanding of demography, genome function and architecture"
-   - Uppsala University
-   - https://openalex.org/A5049172746
-
-- [ ] Elaine A. Ostrander  (person)  <!--id:person::https://openalex.org/A5045178497-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Genome sequencing of 2000 canids by the Dog10K consortium advances the understanding of demography, genome function and architecture"
-   - National Institutes of Health
-   - https://openalex.org/A5045178497
-
-- [ ] Amy Johnson Binder  (person)  <!--id:person::https://openalex.org/A5093776731-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Recommendations for uniform terminology in animal-assisted services (AAS)"
-   - University of North Florida
-   - https://openalex.org/A5093776731
-
-- [ ] Brigitte Wijnen  (person)  <!--id:person::https://openalex.org/A5068370986-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Recommendations for uniform terminology in animal-assisted services (AAS)"
-   - Don State Agrarian University
-   - https://openalex.org/A5068370986
-
-- [ ] Michaël Beaulieu  (person)  <!--id:person::https://openalex.org/A5054609558-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Capturing wild animal welfare: a physiological perspective"
-   - Women's Health Initiative
-   - https://openalex.org/A5054609558
-
-- [ ] Ana Maria Barcelos  (person)  <!--id:person::https://openalex.org/A5075455389-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Dog owner mental health is associated with dog behavioural problems, dog care and dog-facilitated social interaction: a prospective cohort s"
-   - University of Lincoln
-   - https://openalex.org/A5075455389
-
-- [ ] Daniel S. Mills  (person)  <!--id:person::https://openalex.org/A5009770853-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Dog owner mental health is associated with dog behavioural problems, dog care and dog-facilitated social interaction: a prospective cohort s"
-   - University of Lincoln
-   - https://openalex.org/A5009770853
-
-- [ ] Annalyse Ellis  (person)  <!--id:person::https://openalex.org/A5104235663-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "The Link between the Nature of the Human–Companion Animal Relationship and Well-Being Outcomes in Companion Animal Owners"
-   - University of Edinburgh
-   - https://openalex.org/A5104235663
-
-- [ ] Steve Loughnan  (person)  <!--id:person::https://openalex.org/A5043312930-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "The Link between the Nature of the Human–Companion Animal Relationship and Well-Being Outcomes in Companion Animal Owners"
-   - University of Edinburgh
-   - https://openalex.org/A5043312930
-
-- [ ] Péter Pongrácz  (person)  <!--id:person::https://openalex.org/A5010861157-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "What is a companion animal? An ethological approach based on Tinbergen's four questions. Critical review"
+- [ ] Zsófia Bognár  (person)  <!--id:person::https://openalex.org/A5088569425-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Age-related effects on a hierarchical structure of canine cognition"
    - Eötvös Loránd University
-   - https://openalex.org/A5010861157
+   - https://openalex.org/A5088569425
 
-- [ ] Petra Dobos  (person)  <!--id:person::https://openalex.org/A5014978170-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "What is a companion animal? An ethological approach based on Tinbergen's four questions. Critical review"
+- [ ] Enikő Kubinyi  (person)  <!--id:person::https://openalex.org/A5086539835-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Age-related effects on a hierarchical structure of canine cognition"
    - Eötvös Loránd University
-   - https://openalex.org/A5014978170
+   - https://openalex.org/A5086539835
 
-- [ ] Kirsten M. McMillan  (person)  <!--id:person::https://openalex.org/A5045274322-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Longevity of companion dog breeds: those at risk from early death"
-   - Dogs Trust
-   - https://openalex.org/A5045274322
+- [ ] Sam Sonnega  (person)  <!--id:person::https://openalex.org/A5036381816-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Harnessing the gut microbiome: a potential biomarker for wild animal welfare"
+   - University of Massachusetts Dartmouth
+   - https://openalex.org/A5036381816
 
-- [ ] Robert Christley  (person)  <!--id:person::https://openalex.org/A5008798809-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Longevity of companion dog breeds: those at risk from early death"
-   - Dogs Trust
-   - https://openalex.org/A5008798809
+- [ ] Michael J. Sheriff  (person)  <!--id:person::https://openalex.org/A5079072853-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Harnessing the gut microbiome: a potential biomarker for wild animal welfare"
+   - University of Massachusetts Dartmouth
+   - https://openalex.org/A5079072853
 
-- [ ] Yunbi Nam  (person)  <!--id:person::https://openalex.org/A5087763622-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Dog size and patterns of disease history across the canine age spectrum: Results from the Dog Aging Project"
-   - University of Washington
-   - https://openalex.org/A5087763622
+- [ ] Jennifer Vonk  (person)  <!--id:person::https://openalex.org/A5068748271-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Attachment as the Catalyst for the Attribution of Complex Cognition and Emotion to Companion Cats"
+   - Oakland University
+   - https://openalex.org/A5068748271
 
-- [ ] Robyn L. McClelland  (person)  <!--id:person::https://openalex.org/A5007236534-->
-   - Overlaps 1 of your topics (animal cognition); e.g. "Dog size and patterns of disease history across the canine age spectrum: Results from the Dog Aging Project"
-   - University of Washington
-   - https://openalex.org/A5007236534
+- [ ] Esther Bouma  (person)  <!--id:person::https://openalex.org/A5039706983-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Attachment as the Catalyst for the Attribution of Complex Cognition and Emotion to Companion Cats"
+   - University of Groningen
+   - https://openalex.org/A5039706983
 
-- [ ] Kateryna D. Makova  (person)  <!--id:person::https://openalex.org/A5042289737-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "The complete sequence and comparative analysis of ape sex chromosomes"
-   - Pennsylvania State University
-   - https://openalex.org/A5042289737
+- [ ] Mitra Madanchian  (person)  <!--id:person::https://openalex.org/A5024205210-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "A comprehensive guide to the TOPSIS method for multi-criteria decision making"
+   - https://openalex.org/A5024205210
 
-- [ ] Adam M. Phillippy  (person)  <!--id:person::https://openalex.org/A5086869042-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "The complete sequence and comparative analysis of ape sex chromosomes"
-   - National Institutes of Health
-   - https://openalex.org/A5086869042
+- [ ] Hamed Taherdoost  (person)  <!--id:person::https://openalex.org/A5081423238-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "A comprehensive guide to the TOPSIS method for multi-criteria decision making"
+   - University Canada West
+   - https://openalex.org/A5081423238
 
-- [ ] Dezun Zhao  (person)  <!--id:person::https://openalex.org/A5058014975-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Adaptive thresholding and coordinate attention-based tree-inspired network for aero-engine bearing health monitoring under strong noise"
-   - Beijing University of Technology
-   - https://openalex.org/A5058014975
+- [ ] Dragan Pamučar  (person)  <!--id:person::https://openalex.org/A5018974025-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis"
+   - University of Belgrade
+   - https://openalex.org/A5018974025
 
-- [ ] Lingli Cui  (person)  <!--id:person::https://openalex.org/A5086461425-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Adaptive thresholding and coordinate attention-based tree-inspired network for aero-engine bearing health monitoring under strong noise"
-   - Beijing University of Technology
-   - https://openalex.org/A5086461425
+- [ ] Muhammad Asif  (person)  <!--id:person::https://openalex.org/A5087152064-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem"
+   - Central South University
+   - https://openalex.org/A5087152064
 
-- [ ] Bhupinder Singh  (person)  <!--id:person::https://openalex.org/A5048903265-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Evolutionary Global Neuroscience for Cognition and Brain Health"
-   - Sharda University
-   - https://openalex.org/A5048903265
+- [ ] Ioannis K. Argyros  (person)  <!--id:person::https://openalex.org/A5087674067-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem"
+   - Cameron University
+   - https://openalex.org/A5087674067
 
-- [ ] Tao Zhou  (person)  <!--id:person::https://openalex.org/A5081745403-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Examining generative AI user addiction from a C-A-C perspective"
-   - Hangzhou Dianzi University
-   - https://openalex.org/A5081745403
+- [ ] Juan‐juan Peng  (person)  <!--id:person::https://openalex.org/A5103188568-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Picture fuzzy decision-making theories and methodologies: a systematic review"
+   - Zhejiang University of Finance and Economics
+   - https://openalex.org/A5103188568
 
-- [ ] Chunlei Zhang  (person)  <!--id:person::https://openalex.org/A5100458068-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Examining generative AI user addiction from a C-A-C perspective"
-   - Hangzhou Dianzi University
-   - https://openalex.org/A5100458068
+- [ ] Lv Jiang Yin  (person)  <!--id:person::https://openalex.org/A5111019504-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Picture fuzzy decision-making theories and methodologies: a systematic review"
+   - Hubei University of Automotive Technology
+   - https://openalex.org/A5111019504
 
-- [ ] Kewen Ding  (person)  <!--id:person::https://openalex.org/A5054768139-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Speech based detection of Alzheimer’s disease: a survey of AI techniques, datasets and challenges"
-   - Federation University
-   - https://openalex.org/A5054768139
+- [ ] Muhammad Akram  (person)  <!--id:person::https://openalex.org/A5001270995-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Enhanced CRITIC-REGIME method for decision making based on Pythagorean fuzzy rough number"
+   - University of the Punjab
+   - https://openalex.org/A5001270995
 
-- [ ] Britt Klein  (person)  <!--id:person::https://openalex.org/A5014851319-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Speech based detection of Alzheimer’s disease: a survey of AI techniques, datasets and challenges"
-   - Federation University
-   - https://openalex.org/A5014851319
+- [ ] Muhammet Deveci  (person)  <!--id:person::https://openalex.org/A5051710693-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Enhanced CRITIC-REGIME method for decision making based on Pythagorean fuzzy rough number"
+   - Naval Academy
+   - https://openalex.org/A5051710693
 
-- [ ] Walanchalee Wattanacharoensil  (person)  <!--id:person::https://openalex.org/A5033510221-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Determinants of traveler intention toward animal ethics in tourism: Developing a causal recipe combining cognition, affect, and norm factors"
-   - Mahidol University
-   - https://openalex.org/A5033510221
+- [ ] Raiha Imran  (person)  <!--id:person::https://openalex.org/A5012918572-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina "
+   - Riphah International University
+   - https://openalex.org/A5012918572
 
-- [ ] Heesup Han  (person)  <!--id:person::https://openalex.org/A5060663003-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Determinants of traveler intention toward animal ethics in tourism: Developing a causal recipe combining cognition, affect, and norm factors"
-   - Sejong University
-   - https://openalex.org/A5060663003
+- [ ] Maria Akram  (person)  <!--id:person::https://openalex.org/A5068905105-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina "
+   - Riphah International University
+   - https://openalex.org/A5068905105
 
-- [ ] James A. Cunningham  (person)  <!--id:person::https://openalex.org/A5050619268-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "MSME technology adoption, entrepreneurial mindset and value creation: a configurational approach"
-   - Lund University
-   - https://openalex.org/A5050619268
+- [ ] Bartłomiej Kizielewicz  (person)  <!--id:person::https://openalex.org/A5071163664-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Subjective weight determination methods in multi-criteria decision-making: a systematic review"
+   - National Institute of Telecommunications
+   - https://openalex.org/A5071163664
 
-- [ ] Femi Olan  (person)  <!--id:person::https://openalex.org/A5020578789-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "MSME technology adoption, entrepreneurial mindset and value creation: a configurational approach"
-   - University of Essex
-   - https://openalex.org/A5020578789
+- [ ] Wojciech Sałabun  (person)  <!--id:person::https://openalex.org/A5030757656-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Subjective weight determination methods in multi-criteria decision-making: a systematic review"
+   - West Pomeranian University of Technology in Szczecin
+   - https://openalex.org/A5030757656
 
-- [ ] Jonas A. Hosp  (person)  <!--id:person::https://openalex.org/A5091700617-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Cerebral microstructural alterations in Post-COVID-condition are related to cognitive impairment, olfactory dysfunction and fatigue"
-   - University Medical Center Freiburg
-   - https://openalex.org/A5091700617
+- [ ] Huchang Liao  (person)  <!--id:person::https://openalex.org/A5038996322-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Reimagining multi-criterion decision making by data-driven methods based on machine learning: A literature review"
+   - Vilnius Gediminas Technical University
+   - https://openalex.org/A5038996322
 
-- [ ] Alexander Rau  (person)  <!--id:person::https://openalex.org/A5085522049-->
-   - Overlaps 1 of your topics (comparative cognition); e.g. "Cerebral microstructural alterations in Post-COVID-condition are related to cognitive impairment, olfactory dysfunction and fatigue"
-   - University of Freiburg
-   - https://openalex.org/A5085522049
+- [ ] Romualdas Baušys  (person)  <!--id:person::https://openalex.org/A5024863473-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Reimagining multi-criterion decision making by data-driven methods based on machine learning: A literature review"
+   - Vilnius Gediminas Technical University
+   - https://openalex.org/A5024863473
 
-- [ ] Guanjie Li  (person)  <!--id:person::https://openalex.org/A5014036382-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "A biocompatible electrolyte enables highly reversible Zn anode for zinc ion battery"
-   - The University of Adelaide
-   - https://openalex.org/A5014036382
+- [ ] Alireza Sotoudeh-Anvari  (person)  <!--id:person::https://openalex.org/A5043720844-->
+   - [topic] overlaps 1 of your topics (decision making); e.g. "Root Assessment Method (RAM): A novel multi-criteria decision making method and its applications in sustainability challenges"
+   - Islamic Azad University, Science and Research Branch
+   - https://openalex.org/A5043720844
 
-- [ ] Chujun Ni  (person)  <!--id:person::https://openalex.org/A5018513787-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Shape memory polymer with programmable recovery onset"
-   - State Key Laboratory of Chemical Engineering
-   - https://openalex.org/A5018513787
+- [ ] Kevin D. Hyde  (person)  <!--id:person::https://openalex.org/A5087515883-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Current trends, limitations and future research in the fungi?"
+   - Kunming Institute of Botany
+   - https://openalex.org/A5087515883
 
-- [ ] Tao Xie  (person)  <!--id:person::https://openalex.org/A5055015997-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Shape memory polymer with programmable recovery onset"
-   - Ningbo University
-   - https://openalex.org/A5055015997
+- [ ] Arttapon Walker  (person)  <!--id:person::https://openalex.org/A5053153495-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Current trends, limitations and future research in the fungi?"
+   - Mae Fah Luang University
+   - https://openalex.org/A5053153495
 
-- [ ] Davy Tsz Kit Ng  (person)  <!--id:person::https://openalex.org/A5061992787-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Empowering student self‐regulated learning and science education through <scp>ChatGPT</scp> : A pioneering pilot study"
-   - University of Hong Kong
-   - https://openalex.org/A5061992787
+- [ ] José Manuel Torres Ruiz  (person)  <!--id:person::https://openalex.org/A5066462809-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change"
+   - Université Clermont Auvergne
+   - https://openalex.org/A5066462809
 
-- [ ] Jac Ka Lok Leung  (person)  <!--id:person::https://openalex.org/A5055574300-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Empowering student self‐regulated learning and science education through <scp>ChatGPT</scp> : A pioneering pilot study"
-   - Hong Kong University of Science and Technology
-   - https://openalex.org/A5055574300
+- [ ] Nicolas Martin‐StPaul  (person)  <!--id:person::https://openalex.org/A5017619838-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change"
+   - Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement
+   - https://openalex.org/A5017619838
 
-- [ ] Shiv Gautam  (person)  <!--id:person::https://openalex.org/A5102537562-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Concept of mental health and mental well-being, it's determinants and coping strategies"
-   - https://openalex.org/A5102537562
+- [ ] Rosetta C. Blackman  (person)  <!--id:person::https://openalex.org/A5009812326-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Environmental <scp>DNA</scp>: The next chapter"
+   - University of Zurich
+   - https://openalex.org/A5009812326
 
-- [ ] Sandeep Grover  (person)  <!--id:person::https://openalex.org/A5045394669-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Concept of mental health and mental well-being, it's determinants and coping strategies"
-   - Post Graduate Institute of Medical Education and Research
-   - https://openalex.org/A5045394669
+- [ ] Florian Altermatt  (person)  <!--id:person::https://openalex.org/A5053885667-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Environmental <scp>DNA</scp>: The next chapter"
+   - University of Zurich
+   - https://openalex.org/A5053885667
 
-- [ ] Liam Daly Manocchio  (person)  <!--id:person::https://openalex.org/A5009947894-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "FlowTransformer: A transformer framework for flow-based network intrusion detection systems"
-   - The University of Queensland
-   - https://openalex.org/A5009947894
+- [ ] Adam Porter  (person)  <!--id:person::https://openalex.org/A5051168598-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces"
+   - University of Exeter
+   - https://openalex.org/A5051168598
 
-- [ ] Marius Portmann  (person)  <!--id:person::https://openalex.org/A5078468070-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "FlowTransformer: A transformer framework for flow-based network intrusion detection systems"
-   - The University of Queensland
-   - https://openalex.org/A5078468070
+- [ ] Tamara S. Galloway  (person)  <!--id:person::https://openalex.org/A5048146972-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces"
+   - University of Exeter
+   - https://openalex.org/A5048146972
 
-- [ ] Brenden M. Lake  (person)  <!--id:person::https://openalex.org/A5011713946-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Human-like systematic generalization through a meta-learning neural network"
+- [ ] Claudia Lange  (person)  <!--id:person::https://openalex.org/A5037344885-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Impact of intraspecific variation in insect microbiomes on host phenotype and evolution"
+   - Manaaki Whenua – Landcare Research
+   - https://openalex.org/A5037344885
+
+- [ ] Martin Kaltenpoth  (person)  <!--id:person::https://openalex.org/A5059004438-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Impact of intraspecific variation in insect microbiomes on host phenotype and evolution"
+   - Max Planck Institute for Chemical Ecology
+   - https://openalex.org/A5059004438
+
+- [ ] Vasilis Dakos  (person)  <!--id:person::https://openalex.org/A5010240307-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Tipping point detection and early warnings in climate, ecological, and human systems"
+   - Centre National de la Recherche Scientifique
+   - https://openalex.org/A5010240307
+
+- [ ] Sonia Kéfi  (person)  <!--id:person::https://openalex.org/A5000648368-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Tipping point detection and early warnings in climate, ecological, and human systems"
+   - Centre National de la Recherche Scientifique
+   - https://openalex.org/A5000648368
+
+- [ ] Yaning Han  (person)  <!--id:person::https://openalex.org/A5018597400-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework"
+   - Chinese Academy of Sciences
+   - https://openalex.org/A5018597400
+
+- [ ] Pengfei Wei  (person)  <!--id:person::https://openalex.org/A5101506671-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework"
+   - Chinese Academy of Sciences
+   - https://openalex.org/A5101506671
+
+- [ ] Rajat Adhikari  (person)  <!--id:person::https://openalex.org/A5101834754-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Biological transmission in a magnetized reactive Casson–Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework"
+   - University of Gour Banga
+   - https://openalex.org/A5101834754
+
+- [ ] Sanatan Das  (person)  <!--id:person::https://openalex.org/A5028006160-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Biological transmission in a magnetized reactive Casson–Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework"
+   - University of Gour Banga
+   - https://openalex.org/A5028006160
+
+- [ ] Princess Oghenekeno Samuel  (person)  <!--id:person::https://openalex.org/A5065760034-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Effects of chemical contaminants on the ecology and evolution of organisms a review"
+   - Delta State University
+   - https://openalex.org/A5065760034
+
+- [ ] Joy Johnson Agbo  (person)  <!--id:person::https://openalex.org/A5056225572-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "Effects of chemical contaminants on the ecology and evolution of organisms a review"
+   - Cyprus International University
+   - https://openalex.org/A5056225572
+
+- [ ] Sam Lapp  (person)  <!--id:person::https://openalex.org/A5067680832-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "OpenSoundscape: An open‐source bioacoustics analysis package for Python"
+   - University of Pittsburgh
+   - https://openalex.org/A5067680832
+
+- [ ] Justin Kitzes  (person)  <!--id:person::https://openalex.org/A5073601081-->
+   - [fallback] overlaps 1 of your topics (behavioural ecology); e.g. "OpenSoundscape: An open‐source bioacoustics analysis package for Python"
+   - University of Pittsburgh
+   - https://openalex.org/A5073601081
+
+- [ ] Adam David Kain  (person)  <!--id:person::https://openalex.org/A5138299879-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "Relational Ground-State Dynamics at the φ⁻¹ Coupling Ratio: A ThreeTerm Force Model with Analogical Applications to Relational Systems"
+   - https://openalex.org/A5138299879
+
+- [ ] Gianfranco Minati  (person)  <!--id:person::https://openalex.org/A5017720360-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "De-emergence: Experimental Approaches to Deactivate Processes of Emergence"
+   - https://openalex.org/A5017720360
+
+- [ ] Dieter Walter Liedtke  (person)  <!--id:person::https://openalex.org/A5125408034-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "Study: Consciousness as recursive information alignment in self-sustaining systems"
+   - https://openalex.org/A5125408034
+
+- [ ] Dieter Liedtke  (person)  <!--id:person::https://openalex.org/A5135686300-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "Study: Consciousness as recursive information alignment in self-sustaining systems"
+   - https://openalex.org/A5135686300
+
+- [ ] Murali Krishna Pasupuleti  (person)  <!--id:person::https://openalex.org/A5019613463-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "Quantum Leaps: Modern Mechanics in the Physical World"
+   - https://openalex.org/A5019613463
+
+- [ ] Harasit Kumar Mandal  (person)  <!--id:person::https://openalex.org/A5124615702-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "From Equilibrium to Emergence: The Physical Foundations of Chemical Order – A Conceptual Framework Linking Thermodynamics, Quantum Mechanics"
+   - ASA College
+   - https://openalex.org/A5124615702
+
+- [ ] Tulika Ghosh  (person)  <!--id:person::https://openalex.org/A5124586442-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "From Equilibrium to Emergence: The Physical Foundations of Chemical Order – A Conceptual Framework Linking Thermodynamics, Quantum Mechanics"
+   - ASA College
+   - https://openalex.org/A5124586442
+
+- [ ] Parson Hsieh  (person)  <!--id:person::https://openalex.org/A5085799143-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "High-Entropy Intelligence: From Materials to Markets to Minds toward AGI"
+   - https://openalex.org/A5085799143
+
+- [ ] Vicky Hsieh  (person)  <!--id:person::https://openalex.org/A5090122095-->
+   - [topic] overlaps 1 of your topics (collective behaviour); e.g. "High-Entropy Intelligence: From Materials to Markets to Minds toward AGI"
+   - https://openalex.org/A5090122095
+
+- [ ] Lucy M. Aplin  (person)  <!--id:person::https://openalex.org/A5088537383-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social learning and culture in birds: emerging patterns and relevance to conservation"
+   - Australian National University
+   - https://openalex.org/A5088537383
+
+- [ ] Peter K. McGregor  (person)  <!--id:person::https://openalex.org/A5071467542-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social learning and culture in birds: emerging patterns and relevance to conservation"
+   - https://openalex.org/A5071467542
+
+- [ ] Nihaad Paraouty  (person)  <!--id:person::https://openalex.org/A5036342096-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Sensory cortex plasticity supports auditory social learning"
    - New York University
-   - https://openalex.org/A5011713946
+   - https://openalex.org/A5036342096
 
-- [ ] Marco Baroni  (person)  <!--id:person::https://openalex.org/A5038612405-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Human-like systematic generalization through a meta-learning neural network"
-   - Institució Catalana de Recerca i Estudis Avançats
-   - https://openalex.org/A5038612405
+- [ ] Dan H. Sanes  (person)  <!--id:person::https://openalex.org/A5050436328-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Sensory cortex plasticity supports auditory social learning"
+   - NYU Langone Health
+   - https://openalex.org/A5050436328
 
-- [ ] Mengqi Liu  (person)  <!--id:person::https://openalex.org/A5115595539-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Broadband mid-infrared non-reciprocal absorption using magnetized gradient epsilon-near-zero thin films"
-   - National University of Singapore
-   - https://openalex.org/A5115595539
+- [ ] Tore Slagsvold  (person)  <!--id:person::https://openalex.org/A5049590749-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Birds do not use social learning of landmarks to locate favorable nest sites"
+   - University of Oslo
+   - https://openalex.org/A5049590749
 
-- [ ] Cheng‐Wei Qiu  (person)  <!--id:person::https://openalex.org/A5089609880-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Broadband mid-infrared non-reciprocal absorption using magnetized gradient epsilon-near-zero thin films"
-   - National University of Singapore
-   - https://openalex.org/A5089609880
+- [ ] Karen L. Wiebe  (person)  <!--id:person::https://openalex.org/A5059431501-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Birds do not use social learning of landmarks to locate favorable nest sites"
+   - University of Saskatchewan
+   - https://openalex.org/A5059431501
 
-- [ ] Florian Auras  (person)  <!--id:person::https://openalex.org/A5043668057-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Dynamic two-dimensional covalent organic frameworks"
-   - University of Cambridge
-   - https://openalex.org/A5043668057
+- [ ] Erin M Wall  (person)  <!--id:person::https://openalex.org/A5072780949-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social experiences shape song preference learning independently of developmental exposure to song"
+   - Centre for Research on Brain Language and Music
+   - https://openalex.org/A5072780949
 
-- [ ] Thomas Bein  (person)  <!--id:person::https://openalex.org/A5015165857-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Dynamic two-dimensional covalent organic frameworks"
-   - Center for NanoScience
-   - https://openalex.org/A5015165857
+- [ ] Sarah C. Woolley  (person)  <!--id:person::https://openalex.org/A5082525133-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social experiences shape song preference learning independently of developmental exposure to song"
+   - Centre for Research on Brain Language and Music
+   - https://openalex.org/A5082525133
 
-- [ ] Jincheng Zhao  (person)  <!--id:person::https://openalex.org/A5110011555-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Parametric topology optimization design and analysis of additively manufactured joints in spatial grid structures"
-   - Shanghai Jiao Tong University
-   - https://openalex.org/A5110011555
+- [ ] Lioba Fortkord  (person)  <!--id:person::https://openalex.org/A5116165100-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social context affects sequence modification learning in birdsong"
+   - University of Tübingen
+   - https://openalex.org/A5116165100
 
-- [ ] Jinchao Chen  (person)  <!--id:person::https://openalex.org/A5086071901-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Global-and-Local Attention-Based Reinforcement Learning for Cooperative Behaviour Control of Multiple UAVs"
-   - Northwestern Polytechnical University
-   - https://openalex.org/A5086071901
+- [ ] Lena Veit  (person)  <!--id:person::https://openalex.org/A5007298237-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social context affects sequence modification learning in birdsong"
+   - University of Tübingen
+   - https://openalex.org/A5007298237
 
-- [ ] Neeraj Kumar  (person)  <!--id:person::https://openalex.org/A5100409306-->
-   - Overlaps 1 of your topics (behavioural flexibility); e.g. "Global-and-Local Attention-Based Reinforcement Learning for Cooperative Behaviour Control of Multiple UAVs"
-   - Thapar Institute of Engineering & Technology
-   - https://openalex.org/A5100409306
+- [ ] Katie M. Schroeder  (person)  <!--id:person::https://openalex.org/A5044603339-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social and auditory experience shapes forebrain responsiveness in zebra finches before the sensitive period of vocal learning"
+   - University of Massachusetts Amherst
+   - https://openalex.org/A5044603339
 
-- [ ] Cecilia Wong  (person)  <!--id:person::https://openalex.org/A5055553192-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Sentience: The Invention of Consciousness"
-   - https://openalex.org/A5055553192
+- [ ] Luke Remage‐Healey  (person)  <!--id:person::https://openalex.org/A5043650427-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social and auditory experience shapes forebrain responsiveness in zebra finches before the sensitive period of vocal learning"
+   - University of Massachusetts Amherst
+   - https://openalex.org/A5043650427
 
-- [ ] Ehsan Namaziandost  (person)  <!--id:person::https://openalex.org/A5042265263-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Emotion and cognition are two wings of the same bird: Insights into academic emotion regulation, critical thinking, self-efficacy beliefs, a"
-   - Ahvaz Jundishapur University of Medical Sciences
-   - https://openalex.org/A5042265263
+- [ ] Nikhil Phaniraj  (person)  <!--id:person::https://openalex.org/A5012419667-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Opportunities and mechanisms for learning through social interactions: lessons from marmosets"
+   - University of Zurich
+   - https://openalex.org/A5012419667
 
-- [ ] Mariusz Kruk  (person)  <!--id:person::https://openalex.org/A5076159734-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Emotion and cognition are two wings of the same bird: Insights into academic emotion regulation, critical thinking, self-efficacy beliefs, a"
-   - University of Zielona Góra
-   - https://openalex.org/A5076159734
+- [ ] Judith M. Burkart  (person)  <!--id:person::https://openalex.org/A5125138636-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Opportunities and mechanisms for learning through social interactions: lessons from marmosets"
+   - University of Zurich
+   - https://openalex.org/A5125138636
 
-- [ ] Onur Güntürkün  (person)  <!--id:person::https://openalex.org/A5000142659-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Why birds are smart"
-   - Ruhr University Bochum
-   - https://openalex.org/A5000142659
+- [ ] Malavika Madhavan  (person)  <!--id:person::https://openalex.org/A5090550289-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social environment affects vocal individuality in a non-learning species"
+   - University of South Bohemia in České Budějovice
+   - https://openalex.org/A5090550289
 
-- [ ] Jonas Rose  (person)  <!--id:person::https://openalex.org/A5050311500-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Why birds are smart"
-   - Ruhr University Bochum
-   - https://openalex.org/A5050311500
+- [ ] Pavel Linhart  (person)  <!--id:person::https://openalex.org/A5022904343-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Social environment affects vocal individuality in a non-learning species"
+   - University of South Bohemia in České Budějovice
+   - https://openalex.org/A5022904343
 
-- [ ] Márta Sobocinski  (person)  <!--id:person::https://openalex.org/A5039138009-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Capturing self‐regulated learning processes in virtual reality: Causal sequencing of multimodal data"
-   - Oulu University of Applied Sciences
-   - https://openalex.org/A5039138009
+- [ ] Jörg Müller  (person)  <!--id:person::https://openalex.org/A5057148458-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Soundscapes and deep learning enable tracking biodiversity recovery in tropical forests"
+   - University of Würzburg
+   - https://openalex.org/A5057148458
 
-- [ ] Sanna Järvelä  (person)  <!--id:person::https://openalex.org/A5054198262-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Capturing self‐regulated learning processes in virtual reality: Causal sequencing of multimodal data"
-   - Oulu University of Applied Sciences
-   - https://openalex.org/A5054198262
-
-- [ ] Sonja Hillemacher  (person)  <!--id:person::https://openalex.org/A5044511234-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Roosters do not warn the bird in the mirror: The cognitive ecology of mirror self-recognition"
-   - University of Bonn
-   - https://openalex.org/A5044511234
-
-- [ ] Inga Tiemann  (person)  <!--id:person::https://openalex.org/A5091295228-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Roosters do not warn the bird in the mirror: The cognitive ecology of mirror self-recognition"
-   - University of Bonn
-   - https://openalex.org/A5091295228
-
-- [ ] Lee Sharks  (person)  <!--id:person::https://openalex.org/A5129345481-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor"
-   - Swiss Institute of Comparative Law
-   - https://openalex.org/A5129345481
-
-- [ ] Rex Fraction  (person)  <!--id:person::https://openalex.org/A5129153921-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "EA-ROOM-DOLPHINDIANA v1.0 The Underwater Construction Authority / Cross-Species Semantic Labor"
-   - Semantic Designs (United States)
-   - https://openalex.org/A5129153921
-
-- [ ] Georgy А. Semenov  (person)  <!--id:person::https://openalex.org/A5012455029-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Genes and gene networks underlying spatial cognition in food-caching chickadees"
-   - University of Colorado Boulder
-   - https://openalex.org/A5012455029
-
-- [ ] Scott A. Taylor  (person)  <!--id:person::https://openalex.org/A5078189551-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Genes and gene networks underlying spatial cognition in food-caching chickadees"
-   - University of Colorado Boulder
-   - https://openalex.org/A5078189551
-
-- [ ] Suresh Neethirajan  (person)  <!--id:person::https://openalex.org/A5018954036-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "Rethinking Poultry Welfare—Integrating Behavioral Science and Digital Innovations for Enhanced Animal Well-Being"
-   - Dalhousie University
-   - https://openalex.org/A5018954036
-
-- [ ] Farrah N. Madison  (person)  <!--id:person::https://openalex.org/A5065841840-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "A bird's eye view of the hippocampus beyond space: Behavioral, neuroanatomical, and neuroendocrine perspectives"
+- [ ] Zuzana Buřivalová  (person)  <!--id:person::https://openalex.org/A5007899974-->
+   - [topic] overlaps 1 of your topics (social learning); e.g. "Soundscapes and deep learning enable tracking biodiversity recovery in tropical forests"
    - University of Wisconsin–Madison
-   - https://openalex.org/A5065841840
-
-- [ ] Christine R. Lattin  (person)  <!--id:person::https://openalex.org/A5079375127-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "A bird's eye view of the hippocampus beyond space: Behavioral, neuroanatomical, and neuroendocrine perspectives"
-   - Louisiana State University
-   - https://openalex.org/A5079375127
-
-- [ ] Emil Stobbe  (person)  <!--id:person::https://openalex.org/A5009646066-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "On how natural and urban soundscapes alter brain activity during cognitive performance"
-   - Max Planck Institute for Human Development
-   - https://openalex.org/A5009646066
-
-- [ ] Simone Kühn  (person)  <!--id:person::https://openalex.org/A5069589495-->
-   - Overlaps 1 of your topics (bird cognition); e.g. "On how natural and urban soundscapes alter brain activity during cognitive performance"
-   - Universität Hamburg
-   - https://openalex.org/A5069589495
-
-- [ ] Vinay Pandey  (person)  <!--id:person::https://openalex.org/A5103229009-->
-   - Overlaps 1 of your topics (decision making); e.g. "A review on TOPSIS method and its extensions for different applications with recent development"
-   - Doon University
-   - https://openalex.org/A5103229009
-
-- [ ] Hasan Dınçer  (person)  <!--id:person::https://openalex.org/A5089366076-->
-   - Overlaps 1 of your topics (decision making); e.g. "A review on TOPSIS method and its extensions for different applications with recent development"
-   - Istanbul Medipol University
-   - https://openalex.org/A5089366076
-
-- [ ] Gülay Demir  (person)  <!--id:person::https://openalex.org/A5038010204-->
-   - Overlaps 1 of your topics (decision making); e.g. "Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis"
-   - Sivas Cumhuriyet Üniversitesi
-   - https://openalex.org/A5038010204
+   - https://openalex.org/A5007899974

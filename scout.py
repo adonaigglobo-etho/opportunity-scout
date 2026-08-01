@@ -159,15 +159,16 @@ def discover_labs(profile, per_keyword=10):
         time.sleep(1.1)  # stay under the ~1/sec OpenAlex topics limit
         if tid:
             filt = f"primary_topic.id:{tid},from_publication_date:{since}"
-            # within a correct topic, relevance beats raw citations for on-profile hits
-            sort = "relevance_score:desc"
+            # relevance_score:desc is only a valid sort when a `search` term is present,
+            # so pair it with the keyword itself to rank on-topic hits by relevance.
+            extra = f"&search={urllib.parse.quote(kw)}&sort=relevance_score:desc"
             methods[kw] = f"topic:{tname}"
         else:
             filt = f"title_and_abstract.search:{urllib.parse.quote(kw)},from_publication_date:{since}"
-            sort = "cited_by_count:desc"
+            extra = "&sort=cited_by_count:desc"
             methods[kw] = "fallback"
         url = (f"https://api.openalex.org/works?filter={filt}"
-               f"&sort={sort}&per-page={per_keyword}{_oa_suffix()}")
+               f"{extra}&per-page={per_keyword}{_oa_suffix()}")
         try:
             data = json.loads(http_get(url)); time.sleep(1.1)
         except Exception as e:
