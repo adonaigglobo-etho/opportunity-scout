@@ -21,6 +21,7 @@ ROOT = Path(__file__).parent
 CTX = ROOT / "context"; OUT = ROOT / "output"
 CTX.mkdir(exist_ok=True); OUT.mkdir(exist_ok=True)
 CONFIG_FILES = ["config.yaml", "sources.yaml", "network.yaml"]
+PROFILE_REGION = {}
 MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
@@ -31,7 +32,11 @@ def load_yaml(name):
 def http_get(url, accept="application/json", timeout=25, insecure_fallback=False):
     mail = os.environ.get("OPENALEX_MAILTO", "").strip() or "opportunity-scout@example.com"
     req = urllib.request.Request(url, headers={
-        "User-Agent": f"Mozilla/5.0 (opportunity-scout; mailto:{mail})", "Accept": accept})
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/125.0 Safari/537.36"),
+        "Accept": accept,
+        "Accept-Language": "en,es;q=0.8,ca;q=0.6",
+        "X-Contact": f"mailto:{mail}"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             return r.read().decode("utf-8", "replace")
@@ -151,6 +156,8 @@ def resolve_topic_id(keyword):
     return None, None
 
 def discover_labs(profile, per_keyword=10):
+    global PROFILE_REGION
+    PROFILE_REGION = profile.get('region', {})
     since = (dt.date.today() - dt.timedelta(days=365 * 3)).isoformat()
     people = {}
     methods = {}  # keyword -> "topic:<name>" or "fallback"
@@ -205,6 +212,7 @@ def discover_labs(profile, per_keyword=10):
     for r in out:
         r["overlap"] = len(r["matched_topics"]); r["tags"] = list(r["matched_topics"])
         r["discovery"] = "topic" if any(m.startswith("topic:") for m in r["match_methods"]) else "fallback"
+        r["tier"] = _classify_tier(r, PROFILE_REGION)
         r["why_it_fits"] = (f"[{r['discovery']}] overlaps {r['overlap']} of your topics "
                             f"({', '.join(r['matched_topics'])}); e.g. \"{r['example_work']}\"")
     out.sort(key=lambda r: r["overlap"], reverse=True)
@@ -214,6 +222,21 @@ def discover_labs(profile, per_keyword=10):
 def _norm_tokens(name):
     return set(t for t in "".join(
         c.lower() if (c.isalnum() or c.isspace()) else " " for c in name).split() if len(t) > 1)
+
+def _classify_tier(rec, region):
+    """Tag a person hit as regional / national / international from institution text."""
+    inst = " ".join([rec.get("institution", ""), rec.get("raw_affiliation", "")]).lower()
+    if not inst.strip():
+        return "international"
+    homes = [h.lower() for h in region.get("home_institutions", [])]
+    provs = [p.lower() for p in region.get("regional_provinces", [])]
+    if any(h in inst for h in homes) or any(p in inst for p in provs):
+        return "regional"
+    # crude national check: Spain/Portugal mentions
+    if any(w in inst for w in ["spain", "españa", "espanya", "portugal", "madrid",
+                                "sevilla", "granada", "bilbao", "santiago", "lisbon", "porto"]):
+        return "national"
+    return "international"
 
 def attach_warm_ties(people, network):
     conns = network.get("connections", [])
@@ -246,7 +269,7 @@ def fetch_source(src):
             "source": src["name"], "url": src["url"], "deadline": None,
             "eligibility_notes": src.get("notes", ""), "why_it_fits": "",
             "tags": src.get("tags", []), "warm_tie": None, "reachable": False,
-            "cadence": src.get("cadence", "")}
+            "cadence": src.get("cadence", ""), "tier": src.get("tier", "international")}
     try:
         body = http_get(src["url"], accept="text/html", insecure_fallback=True)
         stub["reachable"] = True; stub["_page_excerpt"] = body[:4000]
@@ -274,24 +297,38 @@ def parse_cadence_deadlines(text, within_days, today=None):
 def render_digest(items, mode, checkboxes=False):
     today = dt.date.today().isoformat()
     lines = [f"Opportunity Scout - {mode} - {today}", ""]
-    for i, it in enumerate(items, 1):
-        flag = "[!] " if it.get("deadline") else ""
-        head = (f"- [ ] {flag}{it['title']}  ({it['kind']})  <!--id:{it['id']}-->"
-                if checkboxes else f"{i}. {flag}{it['title']}  ({it['kind']})")
-        lines.append(head)
-        if it.get("why_it_fits"): lines.append(f"   - {it['why_it_fits']}")
-        if it.get("institution"): lines.append(f"   - {it['institution']}")
-        if it.get("deadline"): lines.append(f"   - deadline: {it['deadline']}")
-        if it.get("eligibility_notes"): lines.append(f"   - note: {it['eligibility_notes']}")
-        if it.get("warm_tie"):
-            wt = it["warm_tie"]
-            cw = f" (confirm with {wt['confirm_with']})" if wt.get("confirm_with") else ""
-            lines.append(f"   - WARM TIE ({wt['usable_as']}, {wt['status']}){cw}: {wt['connection']}")
-        lines.append(f"   - {it['url']}")
+    order = ["regional", "national", "international"]
+    labels = {"regional": "REGIONAL (Catalonia + <2h of Barcelona)",
+              "national": "NATIONAL (Spain + Portugal)",
+              "international": "INTERNATIONAL (mostly Europe)"}
+    buckets = {k: [] for k in order}
+    for it in items:
+        buckets.get(it.get("tier", "international"), buckets["international"]).append(it)
+    n = 0
+    for tier in order:
+        group = buckets[tier]
+        if not group:
+            continue
+        lines.append(f"== {labels[tier]} ==")
         lines.append("")
+        for it in group:
+            n += 1
+            flag = "[!] " if it.get("deadline") else ""
+            head = (f"- [ ] {flag}{it['title']}  ({it['kind']})  <!--id:{it['id']}-->"
+                    if checkboxes else f"{n}. {flag}{it['title']}  ({it['kind']})")
+            lines.append(head)
+            if it.get("why_it_fits"): lines.append(f"   - {it['why_it_fits']}")
+            if it.get("institution"): lines.append(f"   - {it['institution']}")
+            if it.get("deadline"): lines.append(f"   - deadline: {it['deadline']}")
+            if it.get("eligibility_notes"): lines.append(f"   - note: {it['eligibility_notes']}")
+            if it.get("warm_tie"):
+                wt = it["warm_tie"]
+                cw = f" (confirm with {wt['confirm_with']})" if wt.get("confirm_with") else ""
+                lines.append(f"   - WARM TIE ({wt['usable_as']}, {wt['status']}){cw}: {wt['connection']}")
+            lines.append(f"   - {it['url']}")
+            lines.append("")
     return "\n".join(lines)
 
-# ------------------------------------------------------------------ Approval harvest
 def harvest_approvals():
     qp = CTX / "approved_queue.json"
     queue = json.loads(qp.read_text(encoding="utf-8")) if qp.exists() else []
@@ -319,6 +356,16 @@ def harvest_approvals():
     return added
 
 # ------------------------------------------------------------------ Runs
+def write_digest_map(items):
+    """Record the digest numbering so Telegram replies can be mapped to ids.
+    Numbering MUST match the order the Chair presents; the Chair should rewrite
+    this file if it reorders or trims the list when it composes the final digest."""
+    m = {"date": dt.date.today().isoformat(),
+         "items": [{"n": i, "id": it.get("id"), "title": it.get("title", "")}
+                   for i, it in enumerate(items, 1)]}
+    (CTX / "last_digest_map.json").write_text(
+        json.dumps(m, indent=2, ensure_ascii=False), encoding="utf-8")
+
 def run_sweep(cfg, sources, network, no_send=False):
     seen = load_seen(cfg); m = cfg["modes"]["sweep"]
     candidates = [fetch_source(s) for s in sources.get("active", [])]
@@ -331,7 +378,18 @@ def run_sweep(cfg, sources, network, no_send=False):
     (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
     (OUT / f"{stamp}_sweep_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
     digest = render_digest(fresh, "sweep", checkboxes=True)
+    digest += "\n\nReply to greenlight: e.g. 'yes Chittka' or the item number (name is safest)."
     (OUT / f"digest_{stamp}_sweep.md").write_text(digest, encoding="utf-8")
+
+    # Numbered index so you can greenlight by replying "yes 3, 5" in Telegram.
+    # Numbering follows the tier-grouped order the digest is rendered in.
+    order = ["regional", "national", "international"]
+    ordered = [it for t in order for it in fresh if it.get("tier", "international") == t]
+    index = {str(i): it for i, it in enumerate(ordered, 1)}
+    (CTX / "last_digest_index.json").write_text(
+        json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
+    # numbering map so Telegram replies ("yes 3, 5") can be resolved by harvest_telegram.py
+    write_digest_map(fresh)
 
     if no_send:
         print(f"--no-send: {len(fresh)} candidates written; Chair ranks & sends. "
