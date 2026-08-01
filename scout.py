@@ -223,6 +223,100 @@ def _norm_tokens(name):
     return set(t for t in "".join(
         c.lower() if (c.isalnum() or c.isspace()) else " " for c in name).split() if len(t) > 1)
 
+def discover_regional(profile, per_keyword=6):
+    """Second discovery pass filtered to Spanish institutions, so regional/national
+    researchers surface instead of being buried under high-citation international labs.
+    Uses OpenAlex institutions.country_code:ES. Ranked by relevance within Spain."""
+    global PROFILE_REGION
+    PROFILE_REGION = profile.get("region", {})
+    since = (dt.date.today() - dt.timedelta(days=365 * 4)).isoformat()
+    people = {}
+    for kw in profile.get("keywords_openalex", []):
+        tid, tname = resolve_topic_id(kw)
+        time.sleep(1.1)
+        if tid:
+            filt = (f"primary_topic.id:{tid},institutions.country_code:es,"
+                    f"from_publication_date:{since}")
+            search = f"&search={urllib.parse.quote(kw)}"
+            sort = "relevance_score:desc"
+            method = f"topic-ES:{tname}"
+        else:
+            filt = (f"title_and_abstract.search:{urllib.parse.quote(kw)},"
+                    f"institutions.country_code:es,from_publication_date:{since}")
+            search = ""
+            sort = "cited_by_count:desc"
+            method = "fallback-ES"
+        url = (f"https://api.openalex.org/works?filter={filt}{search}"
+               f"&sort={sort}&per-page={per_keyword}{_oa_suffix()}")
+        try:
+            data = json.loads(http_get(url)); time.sleep(1.1)
+        except Exception as e:
+            print(f"  [openalex ES] {kw}: {e}", file=sys.stderr); continue
+        for w in data.get("results", []):
+            auths = w.get("authorships", [])
+            pi = next((a.get("author", {}).get("display_name", "")
+                       for a in auths if a.get("author_position") == "last"), "")
+            for a in auths:
+                if a.get("author_position") == "middle":
+                    continue
+                author = a.get("author", {}); aid = author.get("id", "")
+                if not aid:
+                    continue
+                inst = (a.get("institutions") or [{}])
+                # only keep authors with a Spanish affiliation on this work
+                if not any((i.get("country_code") or "").lower() == "es" for i in inst):
+                    continue
+                rec = people.get(aid)
+                if not rec:
+                    rec = {"id": f"person::{aid}", "kind": "person",
+                           "title": author.get("display_name", "Unknown"),
+                           "source": "OpenAlex-ES", "url": aid,
+                           "orcid": author.get("orcid", "") or "", "deadline": None,
+                           "eligibility_notes": "",
+                           "institution": inst[0].get("display_name", "") if inst else "",
+                           "raw_affiliation": "; ".join(a.get("raw_affiliation_strings", []) or []),
+                           "pi_last_author": pi, "matched_topics": [], "match_methods": [],
+                           "example_work": w.get("title", "")[:140], "tags": []}
+                    people[aid] = rec
+                if kw not in rec["matched_topics"]:
+                    rec["matched_topics"].append(kw)
+                    rec["match_methods"].append(method)
+    out = list(people.values())
+    for r in out:
+        r["overlap"] = len(r["matched_topics"]); r["tags"] = list(r["matched_topics"])
+        r["discovery"] = "topic-ES" if any(m.startswith("topic-ES") for m in r["match_methods"]) else "fallback-ES"
+        r["tier"] = _classify_tier(r, PROFILE_REGION)
+        r["why_it_fits"] = (f"[{r['discovery']}] Spain-based; overlaps {r['overlap']} of your "
+                            f"topics ({', '.join(r['matched_topics'])}); e.g. \"{r['example_work']}\"")
+    out.sort(key=lambda r: r["overlap"], reverse=True)
+    return out
+
+def select_by_tier_quota(candidates, total, tiers=("regional","national","international")):
+    """Even split across tiers; unfilled slots redistribute to tiers with surplus.
+    Assumes `candidates` is already score-ordered (best first)."""
+    from math import ceil
+    buckets = {t: [c for c in candidates if c.get("tier","international") == t] for t in tiers}
+    base = total // len(tiers)
+    picked, used = [], {t: 0 for t in tiers}
+    # first pass: give each tier its base share
+    for t in tiers:
+        take = buckets[t][:base]
+        picked += take; used[t] = len(take)
+    # redistribute leftover slots to tiers that still have candidates
+    remaining = total - len(picked)
+    while remaining > 0:
+        progressed = False
+        for t in tiers:
+            if remaining <= 0: break
+            if len(buckets[t]) > used[t]:
+                picked.append(buckets[t][used[t]]); used[t] += 1
+                remaining -= 1; progressed = True
+        if not progressed:
+            break  # no tier has more candidates
+    # keep overall score order in the final list
+    picked_ids = {c["id"] for c in picked}
+    return [c for c in candidates if c["id"] in picked_ids]
+
 def _classify_tier(rec, region):
     """Tag a person hit as regional / national / international from institution text."""
     inst = " ".join([rec.get("institution", ""), rec.get("raw_affiliation", "")]).lower()
@@ -370,9 +464,18 @@ def run_sweep(cfg, sources, network, no_send=False):
     seen = load_seen(cfg); m = cfg["modes"]["sweep"]
     candidates = [fetch_source(s) for s in sources.get("active", [])]
     if m.get("do_lab_discovery"):
-        candidates += attach_warm_ties(discover_labs(sources["profile"]), network)
+        people = discover_labs(sources["profile"])
+        people += discover_regional(sources["profile"])   # Spain-filtered pass
+        # dedupe people by id (a Spanish author may appear in both passes)
+        seen_ids, deduped = set(), []
+        for pr in people:
+            if pr["id"] not in seen_ids:
+                seen_ids.add(pr["id"]); deduped.append(pr)
+        candidates += attach_warm_ties(deduped, network)
     fresh = [c for c in candidates if is_fresh(seen, c["id"], cfg["dedup"]["suppress_days"])]
-    fresh = fresh[:m.get("max_candidates", len(fresh))]
+    # apply an even-tier quota so regional/national aren't crowded out by international
+    quota_total = m.get("quota_total", m.get("max_candidates", 100))
+    fresh = select_by_tier_quota(fresh, quota_total)
 
     stamp = dt.date.today().isoformat()
     (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
@@ -381,15 +484,19 @@ def run_sweep(cfg, sources, network, no_send=False):
     digest += "\n\nReply to greenlight: e.g. 'yes Chittka' or the item number (name is safest)."
     (OUT / f"digest_{stamp}_sweep.md").write_text(digest, encoding="utf-8")
 
-    # Numbered index so you can greenlight by replying "yes 3, 5" in Telegram.
-    # Numbering follows the tier-grouped order the digest is rendered in.
-    order = ["regional", "national", "international"]
-    ordered = [it for t in order for it in fresh if it.get("tier", "international") == t]
-    index = {str(i): it for i, it in enumerate(ordered, 1)}
-    (CTX / "last_digest_index.json").write_text(
-        json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
-    # numbering map so Telegram replies ("yes 3, 5") can be resolved by harvest_telegram.py
-    write_digest_map(fresh)
+    # Numbered index so you can greenlight by replying "yes Chittka" in Telegram.
+    # IMPORTANT: only (re)write the index when this run actually produced candidates.
+    # An empty run must NOT clobber the last real digest's index (that caused a 404
+    # when the harvester fetched it). Quiet runs preserve the previous index.
+    if fresh:
+        order = ["regional", "national", "international"]
+        ordered = [it for t in order for it in fresh if it.get("tier", "international") == t]
+        index = {str(i): it for i, it in enumerate(ordered, 1)}
+        (CTX / "last_digest_index.json").write_text(
+            json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
+        write_digest_map(fresh)
+    else:
+        print("empty run: preserving previous last_digest_index.json (not overwriting).")
 
     if no_send:
         print(f"--no-send: {len(fresh)} candidates written; Chair ranks & sends. "

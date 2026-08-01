@@ -8,7 +8,8 @@ modes:
     do_lab_discovery: true     # run OpenAlex author/lab discovery
     propose_new_sources: true  # let the council nominate new sources
     max_candidates: 100         # pre-filter cap handed to the council
-    top_n_to_push: 8           # how many ranked hits to send to Telegram
+    top_n_to_push: 9
+    quota_total: 9        # even split across regional/national/international; leftovers redistribute           # how many ranked hits to send to Telegram
   deadlines:
     lookback_days: 0           # no new discovery
     recheck_known: true        # re-scan active sources + context doc for deadlines
