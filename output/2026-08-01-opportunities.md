@@ -57,3 +57,86 @@ cold outreach. Selecting 4 of 8 possible slots rather than padding to 8.
    - eligibility flags: none identified
    - warm-tie note: none found in network.yaml — cold
    - link: https://openalex.org/A5079375127
+
+---
+
+## Second sweep, same day (2026-08-01, re-run)
+
+**Chair's note:** This sweep re-ran a few hours after the one above (both dated
+2026-08-01) — recorded here rather than run silently. `seen.json` from the first
+run suppressed most of the same sources/authors, so this pass surfaced a fresh
+batch: 88 raw OpenAlex person hits, zero new dated source calls (the 29 recurring
+source stubs are unchanged from this morning's note — same unreachable entries,
+still nothing to list). Of the 88, the large majority are keyword-collision noise
+(`"animal culture"` hitting cell-culture/microbiome papers, `"behavioural ecology"`
+hitting plant hydraulics/nanofluids/mycology, `"animal cognition"` hitting
+companion-animal welfare and human-animal-bond papers) — same pattern flagged this
+morning. 6 genuinely on-profile targets selected from the `collective animal
+behaviour` / `animal social learning` / `animal cognition` clusters, none padded.
+**Zero warm ties** matched `network.yaml` this run — all cold outreach.
+
+- [ ] Fumihiro Kano (with Urs Waldmann) — collective animal behaviour, pigeon tracking methods  (person)  <!--id:person::https://openalex.org/A5012288315-->
+   - why it fits: Centre for the Advanced Study of Collective Behaviour / Max
+     Planck Institute of Animal Behavior, University of Konstanz. Senior author
+     on "3D-MuPPET: 3D Multi-Pigeon Pose Estimation and Tracking" — Kano's group
+     works on comparative cognition and collective behaviour in birds and
+     primates; strong methods/collaboration fit for avian behavioural-flexibility
+     tracking work.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified (informal contact, no formal eligibility gate applies)
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5012288315
+
+- [ ] Elisabetta Versace (with Uğur Özentürk) — precocial-bird cognition & behavioural flexibility  (person)  <!--id:person::https://openalex.org/A5048646553-->
+   - why it fits: School of Biological and Behavioural Sciences, Queen Mary
+     University of London. Versace's core body of work is filial imprinting and
+     early cognitive flexibility in domestic chicks — a close match to
+     cross-species cognition comparison and behavioural-flexibility interests,
+     even though the co-authored example paper here is a poultry-robotics piece.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5048646553
+
+- [ ] Per Jensen (with Vitor Hugo Bessa Ferreira) — domestication effects on cognitive performance  (person)  <!--id:person::https://openalex.org/A5071463695-->
+   - why it fits: AVIAN Behavioural Genomics and Physiology group, Linköping
+     University. Corresponding author on a review of domestication effects on
+     animal cognitive performance (red junglefowl/chicken model) — directly
+     relevant to comparative cognition and behavioural flexibility under
+     domestication.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5071463695
+
+- [ ] Lars Chittka (with Alice Bridges) — insect social learning & cognition  (person)  <!--id:person::https://openalex.org/A5062244917-->
+   - why it fits: School of Biological and Behavioural Sciences, Queen Mary
+     University of London. Senior author on "Bumblebees socially learn
+     behaviour too complex to innovate alone" — leading figure in insect
+     cognition/social learning, adjacent comparative system to the profile's
+     social-learning interest.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5062244917
+
+- [ ] Simon Gingins (with Eduardo Sampaio) — cross-species collective hunting behaviour  (person)  <!--id:person::https://openalex.org/A5086336318-->
+   - why it fits: Centre for the Advanced Study of Collective Behaviour,
+     University of Konstanz / Max Planck Institute of Animal Behavior. Senior
+     author on "Multidimensional social influence drives leadership and
+     composition-dependent success in octopus–fish hunting groups" — strong
+     cross-species collective-behaviour fit.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5086336318
+
+- [ ] Michael M. Yartsev (with Angelo Forli) — collective spatial cognition in bats  (person)  <!--id:person::https://openalex.org/A5024610282-->
+   - why it fits: Dept. of Bioengineering / Helen Wills Neuroscience Institute,
+     UC Berkeley. Senior author on "Hippocampal representation during collective
+     spatial behaviour in bats" — spatial-cognition angle in a collective,
+     non-avian comparative system.
+   - deadline: none — cold-outreach target
+   - eligibility flags: none identified
+   - warm-tie note: none found in network.yaml — cold
+   - link: https://openalex.org/A5024610282
