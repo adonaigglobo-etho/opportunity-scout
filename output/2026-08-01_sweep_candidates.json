@@ -2195,5 +2195,1523 @@
     "overlap": 1,
     "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis\"",
     "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5018974025",
+    "kind": "person",
+    "title": "Dragan Pamu\u010dar",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5018974025",
+    "orcid": "https://orcid.org/0000-0001-8522-1942",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Belgrade",
+    "raw_affiliation": "College of Engineering, Yuan Ze University, Taiwan; Department of Computer Science and Mathematics, Lebanese American University, Byblos, Lebanon; Department of Operations Research and Statistics, Faculty of Organizational Sciences, University of Belgrade, Belgrade, Serbia",
+    "pi_last_author": "Dragan Pamu\u010dar",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5080202324",
+    "kind": "person",
+    "title": "Jakub Wi\u0119ckowski",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5080202324",
+    "orcid": "https://orcid.org/0000-0002-9324-3241",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "West Pomeranian University of Technology in Szczecin",
+    "raw_affiliation": "Research Team on Intelligent Decision Support Systems, Department of Artificial Intelligence and Applied Mathematics, Faculty of Computer Science and Information Technology, West Pomeranian University of Technology in Szczecin, ul. \u017bo\u0142nierska 49, 71-210, Szczecin, Poland",
+    "pi_last_author": "Wojciech Sa\u0142abun",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Sensitivity analysis approaches in multi-criteria decision analysis: A systematic review",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Sensitivity analysis approaches in multi-criteria decision analysis: A systematic review\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5030757656",
+    "kind": "person",
+    "title": "Wojciech Sa\u0142abun",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5030757656",
+    "orcid": "https://orcid.org/0000-0001-7076-2519",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "West Pomeranian University of Technology in Szczecin",
+    "raw_affiliation": "National Institute of Telecommunications, ul. Szachowa 1, Warsaw, 04-894, Poland; Research Team on Intelligent Decision Support Systems, Department of Artificial Intelligence and Applied Mathematics, Faculty of Computer Science and Information Technology, West Pomeranian University of Technology in Szczecin, ul. \u017bo\u0142nierska 49, 71-210, Szczecin, Poland",
+    "pi_last_author": "Wojciech Sa\u0142abun",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Sensitivity analysis approaches in multi-criteria decision analysis: A systematic review",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Sensitivity analysis approaches in multi-criteria decision analysis: A systematic review\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5024205210",
+    "kind": "person",
+    "title": "Mitra Madanchian",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5024205210",
+    "orcid": "https://orcid.org/0000-0003-0664-5865",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "",
+    "raw_affiliation": "Hamta Group/Hamta Business Corporation",
+    "pi_last_author": "Hamed Taherdoost",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "A comprehensive guide to the TOPSIS method for multi-criteria decision making",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"A comprehensive guide to the TOPSIS method for multi-criteria decision making\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5081423238",
+    "kind": "person",
+    "title": "Hamed Taherdoost",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5081423238",
+    "orcid": "https://orcid.org/0000-0002-6503-6739",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University Canada West",
+    "raw_affiliation": "University Canada West",
+    "pi_last_author": "Hamed Taherdoost",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "A comprehensive guide to the TOPSIS method for multi-criteria decision making",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"A comprehensive guide to the TOPSIS method for multi-criteria decision making\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5039318171",
+    "kind": "person",
+    "title": "Shankar Chakraborty",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5039318171",
+    "orcid": "https://orcid.org/0000-0002-9624-5656",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "",
+    "raw_affiliation": "",
+    "pi_last_author": "Partha Protim Das",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Analytic Hierarchy Process (Ahp)",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Analytic Hierarchy Process (Ahp)\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5033675480",
+    "kind": "person",
+    "title": "Partha Protim Das",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5033675480",
+    "orcid": "https://orcid.org/0000-0003-1646-4443",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "",
+    "raw_affiliation": "",
+    "pi_last_author": "Partha Protim Das",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Analytic Hierarchy Process (Ahp)",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Analytic Hierarchy Process (Ahp)\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5012918572",
+    "kind": "person",
+    "title": "Raiha Imran",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5012918572",
+    "orcid": "https://orcid.org/0009-0002-8678-504X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Riphah International University",
+    "raw_affiliation": "Department of Mathematics, Riphah Institute of Computing & Applied Sciences (RICAS), Riphah International University (Lahore Campus), 54000, Lahore, Pakistan",
+    "pi_last_author": "Maria Akram",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina ",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina \"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5068905105",
+    "kind": "person",
+    "title": "Maria Akram",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5068905105",
+    "orcid": "https://orcid.org/0000-0001-5786-0480",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Riphah International University",
+    "raw_affiliation": "Department of Mathematics, Riphah Institute of Computing & Applied Sciences (RICAS), Riphah International University (Lahore Campus), 54000, Lahore, Pakistan",
+    "pi_last_author": "Maria Akram",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina ",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"A Multi-Criteria Group Decision-Making Approach for Robot Selection Using Interval-Valued Intuitionistic Fuzzy Information and Aczel-Alsina \"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5089246664",
+    "kind": "person",
+    "title": "Mijanur Rahaman Seikh",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5089246664",
+    "orcid": "https://orcid.org/0000-0003-4746-5369",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Kazi Nazrul University",
+    "raw_affiliation": "Department of Mathematics, Kazi Nazrul University, Asansol 713 340, India",
+    "pi_last_author": "Prayosi Chatterjee",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Determination of best renewable energy sources in India using SWARA-ARAS in confidence level based interval-valued Fermatean fuzzy environme",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Determination of best renewable energy sources in India using SWARA-ARAS in confidence level based interval-valued Fermatean fuzzy environme\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5114178029",
+    "kind": "person",
+    "title": "Prayosi Chatterjee",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5114178029",
+    "orcid": "https://orcid.org/0009-0008-9462-0716",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Kazi Nazrul University",
+    "raw_affiliation": "Department of Mathematics, Kazi Nazrul University, Asansol 713 340, India",
+    "pi_last_author": "Prayosi Chatterjee",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Determination of best renewable energy sources in India using SWARA-ARAS in confidence level based interval-valued Fermatean fuzzy environme",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Determination of best renewable energy sources in India using SWARA-ARAS in confidence level based interval-valued Fermatean fuzzy environme\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5087152064",
+    "kind": "person",
+    "title": "Muhammad Asif",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5087152064",
+    "orcid": "https://orcid.org/0000-0001-5684-4737",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Central South University",
+    "raw_affiliation": "School of Mathematics and Statistics, Central South University, Changsha 4100083, China",
+    "pi_last_author": "Ioannis K. Argyros",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5087674067",
+    "kind": "person",
+    "title": "Ioannis K. Argyros",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5087674067",
+    "orcid": "https://orcid.org/0000-0002-9189-9298",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Cameron University",
+    "raw_affiliation": "Department of Computing and Mathematical Sciences, Cameron University, Lawton, OK 73505, USA",
+    "pi_last_author": "Ioannis K. Argyros",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Hamacher Aggregation Operators for Pythagorean Fuzzy Set and its Application in Multi-Attribute Decision-Making Problem\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5043720844",
+    "kind": "person",
+    "title": "Alireza Sotoudeh-Anvari",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5043720844",
+    "orcid": "https://orcid.org/0000-0001-8944-836X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Islamic Azad University, Science and Research Branch",
+    "raw_affiliation": "Department of Industrial Engineering, Science and Research Branch, Islamic Azad University, Tehran, Iran",
+    "pi_last_author": "",
+    "matched_topics": [
+      "decision making"
+    ],
+    "example_work": "Root Assessment Method (RAM): A novel multi-criteria decision making method and its applications in sustainability challenges",
+    "tags": [
+      "decision making"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (decision making); e.g. \"Root Assessment Method (RAM): A novel multi-criteria decision making method and its applications in sustainability challenges\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5087515883",
+    "kind": "person",
+    "title": "Kevin D. Hyde",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5087515883",
+    "orcid": "https://orcid.org/0000-0002-2191-0762",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Kunming Institute of Botany",
+    "raw_affiliation": "Beijing Key Laboratory of Environment-Friendly Management On Fruit Diseases and Pests in North China, Institute of Plant Protection, Beijing Academy of Agriculture and Forestry Sciences, Beijing, 100097, People\u2019s Republic of China; Center of Excellence in Fungal Research, Mae Fah Luang University, Chiang Rai, 57100, Thailand; Department of Botany and Microbiology, College of Science, King Saud University, P.O. Box 2455, 11451, Riyadh, Saudi Arabia; Innovative Institute for Plant Health/Key Laboratory of Green Prevention and Control on Fruits and Vegetables in South China, Ministry of Agriculture and Rural Affairs, Zhongkai University of Agriculture and Engineering, Haizhu District, Guangzhou, 510225, Guangdong, China; Key Laboratory of Economic Plants and Biotechnology and the Yunnan Key Laboratory for Wild Plant Resources, Kunming Institute of Botany, Chinese Academy of Sciences, Kunming, 650201, China",
+    "pi_last_author": "Arttapon Walker",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Current trends, limitations and future research in the fungi?",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Current trends, limitations and future research in the fungi?\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5053153495",
+    "kind": "person",
+    "title": "Arttapon Walker",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5053153495",
+    "orcid": "https://orcid.org/0000-0002-3855-4522",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Mae Fah Luang University",
+    "raw_affiliation": "Center of Excellence in Fungal Research, Mae Fah Luang University, Chiang Rai, 57100, Thailand; School of Science, Mae Fah Luang University, Chiang Rai, 57100, Thailand",
+    "pi_last_author": "Arttapon Walker",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Current trends, limitations and future research in the fungi?",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Current trends, limitations and future research in the fungi?\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5066462809",
+    "kind": "person",
+    "title": "Jos\u00e9 Manuel Torres Ruiz",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5066462809",
+    "orcid": "https://orcid.org/0000-0003-1367-7056",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universit\u00e9 Clermont Auvergne",
+    "raw_affiliation": "Universit\u00e9 Clermont\u2010Auvergne, INRAE, PIAF  63000 Clermont\u2010Ferrand France",
+    "pi_last_author": "Nicolas Martin\u2010StPaul",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5017619838",
+    "kind": "person",
+    "title": "Nicolas Martin\u2010StPaul",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5017619838",
+    "orcid": "https://orcid.org/0000-0001-7574-0108",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement",
+    "raw_affiliation": "INRAE, URFM  Avignon 84140 France; INRAE, URFM, Avignon, 84140 France",
+    "pi_last_author": "Nicolas Martin\u2010StPaul",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Plant hydraulics at the heart of plant, crops and ecosystem functions in the face of climate change\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5009812326",
+    "kind": "person",
+    "title": "Rosetta C. Blackman",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5009812326",
+    "orcid": "https://orcid.org/0000-0002-6182-8691",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Zurich",
+    "raw_affiliation": "Department of Aquatic Ecology Eawag, Swiss Federal Institute of Aquatic Science and Technology  D\u00fcbendorf Switzerland; Department of Evolutionary Biology and Environmental Studies University of Zurich  Z\u00fcrich Switzerland",
+    "pi_last_author": "Florian Altermatt",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Environmental <scp>DNA</scp>: The next chapter",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Environmental <scp>DNA</scp>: The next chapter\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5053885667",
+    "kind": "person",
+    "title": "Florian Altermatt",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5053885667",
+    "orcid": "https://orcid.org/0000-0002-4831-6958",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Zurich",
+    "raw_affiliation": "Department of Aquatic Ecology Eawag, Swiss Federal Institute of Aquatic Science and Technology  D\u00fcbendorf Switzerland; Department of Evolutionary Biology and Environmental Studies University of Zurich  Z\u00fcrich Switzerland",
+    "pi_last_author": "Florian Altermatt",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Environmental <scp>DNA</scp>: The next chapter",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Environmental <scp>DNA</scp>: The next chapter\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5051168598",
+    "kind": "person",
+    "title": "Adam Porter",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5051168598",
+    "orcid": "https://orcid.org/0000-0002-8493-3216",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Exeter",
+    "raw_affiliation": "Department of Biosciences, University of Exeter, Geoffrey Pope Building, Exeter, EX4 4QD, UK. a.porter@exeter.ac.uk; Department of Biosciences, University of Exeter, Geoffrey Pope Building, Exeter, EX4 4QD, UK",
+    "pi_last_author": "Tamara S. Galloway",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5048146972",
+    "kind": "person",
+    "title": "Tamara S. Galloway",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5048146972",
+    "orcid": "https://orcid.org/0000-0002-7466-6775",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Exeter",
+    "raw_affiliation": "Department of Biosciences, University of Exeter, Geoffrey Pope Building, Exeter, EX4 4QD, UK",
+    "pi_last_author": "Tamara S. Galloway",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Microplastic burden in marine benthic invertebrates depends on species traits and feeding ecology within biogeographical provinces\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5037344885",
+    "kind": "person",
+    "title": "Claudia Lange",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5037344885",
+    "orcid": "https://orcid.org/0000-0003-1936-4528",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Manaaki Whenua \u2013 Landcare Research",
+    "raw_affiliation": "Manaaki Whenua Landcare Research , Lincoln, New Zealand",
+    "pi_last_author": "Martin Kaltenpoth",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Impact of intraspecific variation in insect microbiomes on host phenotype and evolution",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Impact of intraspecific variation in insect microbiomes on host phenotype and evolution\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5059004438",
+    "kind": "person",
+    "title": "Martin Kaltenpoth",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5059004438",
+    "orcid": "https://orcid.org/0000-0001-9450-0345",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Max Planck Institute for Chemical Ecology",
+    "raw_affiliation": "Department of Insect Symbiosis, Max Planck Institute for Chemical Ecology , Jena, Germany",
+    "pi_last_author": "Martin Kaltenpoth",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Impact of intraspecific variation in insect microbiomes on host phenotype and evolution",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Impact of intraspecific variation in insect microbiomes on host phenotype and evolution\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5010240307",
+    "kind": "person",
+    "title": "Vasilis Dakos",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5010240307",
+    "orcid": "https://orcid.org/0000-0001-8862-718X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Centre National de la Recherche Scientifique",
+    "raw_affiliation": "ISEM, Univ Montpellier, CNRS, EPHE, IRD, 34095 Montpellier, France",
+    "pi_last_author": "Sonia K\u00e9fi",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Tipping point detection and early warnings in climate, ecological, and human systems",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Tipping point detection and early warnings in climate, ecological, and human systems\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5000648368",
+    "kind": "person",
+    "title": "Sonia K\u00e9fi",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5000648368",
+    "orcid": "https://orcid.org/0000-0002-9678-7770",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Centre National de la Recherche Scientifique",
+    "raw_affiliation": "ISEM, Univ Montpellier, CNRS, EPHE, IRD, 34095 Montpellier, France; Santa Fe Institute, 1399 Hyde Park Road, Santa Fe, NM 87501, USA",
+    "pi_last_author": "Sonia K\u00e9fi",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Tipping point detection and early warnings in climate, ecological, and human systems",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Tipping point detection and early warnings in climate, ecological, and human systems\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5018597400",
+    "kind": "person",
+    "title": "Yaning Han",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5018597400",
+    "orcid": "https://orcid.org/0000-0002-1650-2262",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Chinese Academy of Sciences",
+    "raw_affiliation": "CAS Key Laboratory of Brain Connectome and Manipulation, the Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China; Guangdong Provincial Key Laboratory of Brain Connectome and Behavior, the Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China; Shenzhen Key Laboratory of Neuropsychiatric Modulation and Collaborative Innovation Center for Brain Science, Shenzhen-Hong Kong Institute of Brain Science, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China; University of Chinese Academy of Sciences, Beijing, China",
+    "pi_last_author": "Pengfei Wei",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5101506671",
+    "kind": "person",
+    "title": "Pengfei Wei",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5101506671",
+    "orcid": "https://orcid.org/0000-0003-1845-8856",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Chinese Academy of Sciences",
+    "raw_affiliation": "CAS Key Laboratory of Brain Connectome and Manipulation, the Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China; Guangdong Provincial Key Laboratory of Brain Connectome and Behavior, the Brain Cognition and Brain Disease Institute, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China; Shenzhen Key Laboratory of Neuropsychiatric Modulation and Collaborative Innovation Center for Brain Science, Shenzhen-Hong Kong Institute of Brain Science, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China",
+    "pi_last_author": "Pengfei Wei",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5101834754",
+    "kind": "person",
+    "title": "Rajat Adhikari",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5101834754",
+    "orcid": "https://orcid.org/0009-0008-2123-3301",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Gour Banga",
+    "raw_affiliation": "Department of Mathematics, University of Gour Banga, Malda 732 103, India",
+    "pi_last_author": "Sanatan Das",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Biological transmission in a magnetized reactive Casson\u2013Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Biological transmission in a magnetized reactive Casson\u2013Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5028006160",
+    "kind": "person",
+    "title": "Sanatan Das",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5028006160",
+    "orcid": "https://orcid.org/0000-0001-9050-5499",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Gour Banga",
+    "raw_affiliation": "Department of Mathematics, University of Gour Banga, Malda 732 103, India",
+    "pi_last_author": "Sanatan Das",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Biological transmission in a magnetized reactive Casson\u2013Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Biological transmission in a magnetized reactive Casson\u2013Maxwell nanofluid over a tilted stretchy cylinder in an entropy framework\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5065760034",
+    "kind": "person",
+    "title": "Princess Oghenekeno Samuel",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5065760034",
+    "orcid": "https://orcid.org/0009-0006-5525-6013",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Delta State University",
+    "raw_affiliation": "Faculty of Science, Department of Petroleum Chemistry, Delta State University of Science and Technology, Ozoro, Nigeria",
+    "pi_last_author": "Joy Johnson Agbo",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Effects of chemical contaminants on the ecology and evolution of organisms a review",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Effects of chemical contaminants on the ecology and evolution of organisms a review\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5056225572",
+    "kind": "person",
+    "title": "Joy Johnson Agbo",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5056225572",
+    "orcid": "https://orcid.org/0000-0003-4244-8324",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Cyprus International University",
+    "raw_affiliation": "Faculty of Health Sciences, Department of Nursing, Cyprus International University, Nicosia, Turkey",
+    "pi_last_author": "Joy Johnson Agbo",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "Effects of chemical contaminants on the ecology and evolution of organisms a review",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"Effects of chemical contaminants on the ecology and evolution of organisms a review\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5067680832",
+    "kind": "person",
+    "title": "Sam Lapp",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5067680832",
+    "orcid": "https://orcid.org/0000-0003-1637-6822",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Pittsburgh",
+    "raw_affiliation": "Department of Biological Sciences University of Pittsburgh  Pittsburgh Pennsylvania USA; Department of Biological Sciences, University of Pittsburgh, Pittsburgh, Pennsylvania, USA",
+    "pi_last_author": "Justin Kitzes",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "OpenSoundscape: An open\u2010source bioacoustics analysis package for Python",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"OpenSoundscape: An open\u2010source bioacoustics analysis package for Python\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5073601081",
+    "kind": "person",
+    "title": "Justin Kitzes",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5073601081",
+    "orcid": "https://orcid.org/0000-0001-7839-3594",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Pittsburgh",
+    "raw_affiliation": "Department of Biological Sciences University of Pittsburgh  Pittsburgh Pennsylvania USA; Department of Biological Sciences, University of Pittsburgh, Pittsburgh, Pennsylvania, USA",
+    "pi_last_author": "Justin Kitzes",
+    "matched_topics": [
+      "behavioural ecology"
+    ],
+    "example_work": "OpenSoundscape: An open\u2010source bioacoustics analysis package for Python",
+    "tags": [
+      "behavioural ecology"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (behavioural ecology); e.g. \"OpenSoundscape: An open\u2010source bioacoustics analysis package for Python\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5074491420",
+    "kind": "person",
+    "title": "Ilaria Morella",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5074491420",
+    "orcid": "https://orcid.org/0000-0001-5691-5400",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Cardiff University",
+    "raw_affiliation": "Neuroscience and Mental Health Innovation Institute, School of Biosciences, Cardiff University, Cardiff, UK",
+    "pi_last_author": "Giuseppe D\u2019Antona",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Gut-muscle-brain axis: Molecular mechanisms in neurodegenerative disorders and potential therapeutic efficacy of probiotic supplementation c",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Gut-muscle-brain axis: Molecular mechanisms in neurodegenerative disorders and potential therapeutic efficacy of probiotic supplementation c\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5065781460",
+    "kind": "person",
+    "title": "Giuseppe D\u2019Antona",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5065781460",
+    "orcid": "https://orcid.org/0000-0002-0683-5565",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Pavia",
+    "raw_affiliation": "Centro di Ricerca Interdipartimentale Nelle Attivit\u00e0 Motorie e Sportive (CRIAMS)-Sport Medicine Centre, University of Pavia, Voghera, Italy; Department of Public Health, Experimental and Forensic Medicine, University of Pavia, Pavia, Italy. Electronic address: giuseppe.dantona@unipv.it; Centro di Ricerca Interdipartimentale Nelle Attivit\u00e0 Motorie e Sportive (CRIAMS)-Sport Medicine Centre, University of Pavia, Voghera, Italy; Department of Public Health, Experimental and Forensic Medicine, University of Pavia, Pavia, Italy",
+    "pi_last_author": "Giuseppe D\u2019Antona",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Gut-muscle-brain axis: Molecular mechanisms in neurodegenerative disorders and potential therapeutic efficacy of probiotic supplementation c",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Gut-muscle-brain axis: Molecular mechanisms in neurodegenerative disorders and potential therapeutic efficacy of probiotic supplementation c\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5032193561",
+    "kind": "person",
+    "title": "Eduardo Sampaio",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5032193561",
+    "orcid": "https://orcid.org/0000-0002-9222-2553",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Lisbon",
+    "raw_affiliation": "Centre for the Advanced Study of Collective Behaviour, University of Konstanz, Konstanz, Germany. esampaio@ab.mpg.de; Department of Biology, University of Konstanz, Konstanz, Germany. esampaio@ab.mpg.de; Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany. esampaio@ab.mpg.de; MARE-Marine and Environmental Sciences Centre, Laborat\u00f3rio Mar\u00edtimo da Guia, Faculdade de Ci\u00eancias, Universidade de Lisboa, Lisbon, Portugal. esampaio@ab.mpg.de",
+    "pi_last_author": "Simon Gingins",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5086336318",
+    "kind": "person",
+    "title": "Simon Gingins",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5086336318",
+    "orcid": "https://orcid.org/0000-0002-8824-7467",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Konstanz",
+    "raw_affiliation": "Centre for the Advanced Study of Collective Behaviour, University of Konstanz, Konstanz, Germany; Department of Biology, University of Konstanz, Konstanz, Germany; Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Konstanz, Germany",
+    "pi_last_author": "Simon Gingins",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Multidimensional social influence drives leadership and composition-dependent success in octopus\u2013fish hunting groups\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5074916699",
+    "kind": "person",
+    "title": "Grandhi Sandeep Ganesh",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5074916699",
+    "orcid": "",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Hindu College of Pharmacy",
+    "raw_affiliation": "Department of Pharmacology, Shri Vishnu College of Pharmacy, Bhimavaram, Andhra Pradesh 534202, India",
+    "pi_last_author": "Pavan Kumar Samudrala",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Neuroprotective Effect of Saroglitazar on Scopolamine-Induced Alzheimer\u2019s in Rats: Insights into the Underlying Mechanisms",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Neuroprotective Effect of Saroglitazar on Scopolamine-Induced Alzheimer\u2019s in Rats: Insights into the Underlying Mechanisms\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5001261169",
+    "kind": "person",
+    "title": "Pavan Kumar Samudrala",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5001261169",
+    "orcid": "https://orcid.org/0000-0001-5496-6845",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Hindu College of Pharmacy",
+    "raw_affiliation": "Department of Pharmacology, Shri Vishnu College of Pharmacy, Bhimavaram, Andhra Pradesh 534202, India",
+    "pi_last_author": "Pavan Kumar Samudrala",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Neuroprotective Effect of Saroglitazar on Scopolamine-Induced Alzheimer\u2019s in Rats: Insights into the Underlying Mechanisms",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Neuroprotective Effect of Saroglitazar on Scopolamine-Induced Alzheimer\u2019s in Rats: Insights into the Underlying Mechanisms\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5092085306",
+    "kind": "person",
+    "title": "Sebastian Reyes-Lizaola",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5092085306",
+    "orcid": "",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universidad Popular Aut\u00f3noma del Estado de Puebla",
+    "raw_affiliation": "Departamento de Ciencias de la Salud, Licenciatura en Medicina, Universidad Popular del Estado de Puebla (UPAEP), Puebla, Mexico",
+    "pi_last_author": "Gonzalo Flores",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Structural and biochemical alterations in dendritic spines as key mechanisms for severe mental illnesses",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Structural and biochemical alterations in dendritic spines as key mechanisms for severe mental illnesses\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5012752153",
+    "kind": "person",
+    "title": "Gonzalo Flores",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5012752153",
+    "orcid": "https://orcid.org/0000-0002-4100-2104",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Benem\u00e9rita Universidad Aut\u00f3noma de Puebla",
+    "raw_affiliation": "Laboratorio de Neuropsiquiatr\u00eda, Instituto de Fisiolog\u00eda, Benem\u00e9rita Universidad Aut\u00f3noma de Puebla (BUAP), Puebla, Mexico. Electronic address: gonzaloflores56@gmail.com",
+    "pi_last_author": "Gonzalo Flores",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Structural and biochemical alterations in dendritic spines as key mechanisms for severe mental illnesses",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Structural and biochemical alterations in dendritic spines as key mechanisms for severe mental illnesses\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5086578854",
+    "kind": "person",
+    "title": "Daniel Villegas V\u00e9lez",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5086578854",
+    "orcid": "https://orcid.org/0000-0001-7295-8312",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "",
+    "raw_affiliation": "",
+    "pi_last_author": "",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Nothing but Noise: Timbre and Musical Meaning at the Edge",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Nothing but Noise: Timbre and Musical Meaning at the Edge\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5092690582",
+    "kind": "person",
+    "title": "David Mezey",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5092690582",
+    "orcid": "https://orcid.org/0000-0003-2031-2565",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Humboldt-Universit\u00e4t zu Berlin",
+    "raw_affiliation": "Institute for Theoretical Biology, Humboldt University Berlin, Berlin, Germany; Science of Intelligence Excellence Cluster, Technical University Berlin, Berlin, Germany",
+    "pi_last_author": "Pawe\u0142 Roma\u0144czuk",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Visual social information use in collective foraging",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Visual social information use in collective foraging\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5081171729",
+    "kind": "person",
+    "title": "Pawe\u0142 Roma\u0144czuk",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5081171729",
+    "orcid": "https://orcid.org/0000-0002-4733-998X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Humboldt-Universit\u00e4t zu Berlin",
+    "raw_affiliation": "Institute for Theoretical Biology, Humboldt University Berlin, Berlin, Germany; Science of Intelligence Excellence Cluster, Technical University Berlin, Berlin, Germany",
+    "pi_last_author": "Pawe\u0142 Roma\u0144czuk",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Visual social information use in collective foraging",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Visual social information use in collective foraging\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5040072751",
+    "kind": "person",
+    "title": "Anastasia K. Yocum",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5040072751",
+    "orcid": "https://orcid.org/0000-0002-1592-0825",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Michigan",
+    "raw_affiliation": "Department of Psychiatry, University of Michigan , Ann Arbor, MI, USA",
+    "pi_last_author": "Melvin G. McInnis",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Cohort Profile Update: The Heinz C. Prechter Longitudinal Study of Bipolar Disorder",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Cohort Profile Update: The Heinz C. Prechter Longitudinal Study of Bipolar Disorder\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5013242137",
+    "kind": "person",
+    "title": "Melvin G. McInnis",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5013242137",
+    "orcid": "https://orcid.org/0000-0002-0375-6247",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Michigan",
+    "raw_affiliation": "Department of Psychiatry, University of Michigan , Ann Arbor, MI, USA",
+    "pi_last_author": "Melvin G. McInnis",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Cohort Profile Update: The Heinz C. Prechter Longitudinal Study of Bipolar Disorder",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Cohort Profile Update: The Heinz C. Prechter Longitudinal Study of Bipolar Disorder\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5045967000",
+    "kind": "person",
+    "title": "Kenneth Kay",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5045967000",
+    "orcid": "https://orcid.org/0000-0003-3161-7217",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Columbia University",
+    "raw_affiliation": "Center for Theoretical Neuroscience, Columbia University, New York, New York, United States of America; Grossman Center for the Statistics of Mind, Columbia University, New York, New York, United States of America; Mortimer B. Zuckerman Mind Brain Behavior Institute, Columbia University, New York, New York, United States of America",
+    "pi_last_author": "L. F. Abbott",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Emergent neural dynamics and geometry for generalization in a transitive inference task",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Emergent neural dynamics and geometry for generalization in a transitive inference task\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5079185098",
+    "kind": "person",
+    "title": "L. F. Abbott",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5079185098",
+    "orcid": "https://orcid.org/0000-0003-1163-5688",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Columbia University Irving Medical Center",
+    "raw_affiliation": "Center for Theoretical Neuroscience, Columbia University, New York, New York, United States of America; Department of Neuroscience, Columbia University Medical Center, New York, New York, United States of America; Mortimer B. Zuckerman Mind Brain Behavior Institute, Columbia University, New York, New York, United States of America; The Kavli Institute for Brain Science, Columbia University, New York, New York, United States of America",
+    "pi_last_author": "L. F. Abbott",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Emergent neural dynamics and geometry for generalization in a transitive inference task",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Emergent neural dynamics and geometry for generalization in a transitive inference task\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5091539685",
+    "kind": "person",
+    "title": "Kevin Schilbrack",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5091539685",
+    "orcid": "https://orcid.org/0000-0002-8930-0290",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Appalachian State University",
+    "raw_affiliation": "Appalachian State University",
+    "pi_last_author": "",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "The Revival of Realism and the Study of Religions",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"The Revival of Realism and the Study of Religions\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5001466381",
+    "kind": "person",
+    "title": "Steven A. Peterson",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5001466381",
+    "orcid": "https://orcid.org/0000-0002-0589-9487",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Arizona State University",
+    "raw_affiliation": "Arizona State University, Tempe, AZ, United States",
+    "pi_last_author": "",
+    "matched_topics": [
+      "collective animal cognition"
+    ],
+    "example_work": "Addressing student use of generative AI in schools and universities through academic integrity reporting",
+    "tags": [
+      "collective animal cognition"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (collective animal cognition); e.g. \"Addressing student use of generative AI in schools and universities through academic integrity reporting\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5066293484",
+    "kind": "person",
+    "title": "Samantha M. Ayoub",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5066293484",
+    "orcid": "https://orcid.org/0009-0006-1846-3232",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of California San Diego",
+    "raw_affiliation": "Department of Psychiatry, University of California San Diego, 9500 Gilman Drive MC 0804, La Jolla, CA, 92093-0804, USA. sayoub@health.ucsd.edu; Department of Psychiatry, University of California San Diego, 9500 Gilman Drive MC 0804, La Jolla, CA, 92093-0804, USA",
+    "pi_last_author": "Ronald J. Ellis",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "The Impact of Cannabis Use on Cognition in People with HIV: Evidence of Function-Dependent Effects and Mechanisms from Clinical and Preclini",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"The Impact of Cannabis Use on Cognition in People with HIV: Evidence of Function-Dependent Effects and Mechanisms from Clinical and Preclini\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5040325066",
+    "kind": "person",
+    "title": "Ronald J. Ellis",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5040325066",
+    "orcid": "https://orcid.org/0000-0003-4931-752X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of California San Diego",
+    "raw_affiliation": "Department of Neuroscience, University of California San Diego, La Jolla, CA, USA",
+    "pi_last_author": "Ronald J. Ellis",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "The Impact of Cannabis Use on Cognition in People with HIV: Evidence of Function-Dependent Effects and Mechanisms from Clinical and Preclini",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"The Impact of Cannabis Use on Cognition in People with HIV: Evidence of Function-Dependent Effects and Mechanisms from Clinical and Preclini\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5091615888",
+    "kind": "person",
+    "title": "Katie J. Harrington",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5091615888",
+    "orcid": "https://orcid.org/0000-0002-3974-1020",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Veterinary Medicine Vienna",
+    "raw_affiliation": "Comparative Cognition Unit, Messerli Research Institute, University of Veterinary Medicine Vienna, Veterin\u00e4rplatz 1, 1210 Vienna, Austria. Electronic address: katherine.harrington@vetmeduni.ac.at; Comparative Cognition Unit, Messerli Research Institute, University of Veterinary Medicine Vienna, Veterin\u00e4rplatz 1, 1210 Vienna, Austria",
+    "pi_last_author": "Megan L. Lambert",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Innovative problem solving by wild falcons",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Innovative problem solving by wild falcons\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5089942902",
+    "kind": "person",
+    "title": "Megan L. Lambert",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5089942902",
+    "orcid": "https://orcid.org/0000-0003-3618-7260",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Veterinary Medicine Vienna",
+    "raw_affiliation": "Comparative Cognition Unit, Messerli Research Institute, University of Veterinary Medicine Vienna, Veterin\u00e4rplatz 1, 1210 Vienna, Austria",
+    "pi_last_author": "Megan L. Lambert",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Innovative problem solving by wild falcons",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Innovative problem solving by wild falcons\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5085412488",
+    "kind": "person",
+    "title": "Lara A. Wood",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5085412488",
+    "orcid": "https://orcid.org/0000-0002-3261-4862",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Abertay University",
+    "raw_affiliation": "Psychology, Abertay University",
+    "pi_last_author": "Bruce Rawlings",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Cross-species Comparisons of Human and Non-human Culture",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Cross-species Comparisons of Human and Non-human Culture\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5010736580",
+    "kind": "person",
+    "title": "Bruce Rawlings",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5010736580",
+    "orcid": "https://orcid.org/0000-0001-9682-9216",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Durham University",
+    "raw_affiliation": "Psychology, Durham University",
+    "pi_last_author": "Bruce Rawlings",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Cross-species Comparisons of Human and Non-human Culture",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Cross-species Comparisons of Human and Non-human Culture\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5005962026",
+    "kind": "person",
+    "title": "Zegni Triki",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5005962026",
+    "orcid": "https://orcid.org/0000-0001-5592-8963",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Neuch\u00e2tel",
+    "raw_affiliation": "Institute of Biology, University of Neuchatel, Neuch\u00e2tel 2000, Switzerland",
+    "pi_last_author": "Redouan Bshary",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "The fish challenge to vertebrate cognitive evolution",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"The fish challenge to vertebrate cognitive evolution\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5038519232",
+    "kind": "person",
+    "title": "Redouan Bshary",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5038519232",
+    "orcid": "https://orcid.org/0000-0001-7198-8472",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Neuch\u00e2tel",
+    "raw_affiliation": "Institute of Biology, University of Neuchatel, Neuch\u00e2tel 2000, Switzerland",
+    "pi_last_author": "Redouan Bshary",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "The fish challenge to vertebrate cognitive evolution",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"The fish challenge to vertebrate cognitive evolution\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5054567222",
+    "kind": "person",
+    "title": "Furahini Tluway",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5054567222",
+    "orcid": "https://orcid.org/0000-0002-3130-3616",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of the Witwatersrand",
+    "raw_affiliation": "Sydney Brenner Institute for Molecular Bioscience, Faculty of Health Sciences, University of the Witwatersrand , Johannesburg,",
+    "pi_last_author": "Zan\u00e9 Lombard",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Cohort Profile: Africa Wits-INDEPTH partnership for Genomic studies (AWI-Gen) in four sub-Saharan African countries",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Cohort Profile: Africa Wits-INDEPTH partnership for Genomic studies (AWI-Gen) in four sub-Saharan African countries\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5102798345",
+    "kind": "person",
+    "title": "Zan\u00e9 Lombard",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5102798345",
+    "orcid": "https://orcid.org/0000-0002-7997-2616",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "",
+    "raw_affiliation": "",
+    "pi_last_author": "Zan\u00e9 Lombard",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Cohort Profile: Africa Wits-INDEPTH partnership for Genomic studies (AWI-Gen) in four sub-Saharan African countries",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Cohort Profile: Africa Wits-INDEPTH partnership for Genomic studies (AWI-Gen) in four sub-Saharan African countries\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5129204800",
+    "kind": "person",
+    "title": "James E. Dunn",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5129204800",
+    "orcid": "",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "North Medical Center",
+    "raw_affiliation": "39 North LLC",
+    "pi_last_author": "",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Paper 131: Orbital Geospatial Perception \u2014 Endogenous Sensory Architecture and the Governance of High-Permeability Cognition",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Paper 131: Orbital Geospatial Perception \u2014 Endogenous Sensory Architecture and the Governance of High-Permeability Cognition\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5091244471",
+    "kind": "person",
+    "title": "Gianluca Malatesta",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5091244471",
+    "orcid": "https://orcid.org/0000-0002-7658-2364",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Chieti-Pescara",
+    "raw_affiliation": "Department of Psychology, University \u201cG. d\u2019Annunzio\u201d of Chieti-Pescara, Chieti, Italy",
+    "pi_last_author": "Gillian S. Forrester",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Hand, Limb, and Other Motor Preferences",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Hand, Limb, and Other Motor Preferences\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5018887547",
+    "kind": "person",
+    "title": "Gillian S. Forrester",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5018887547",
+    "orcid": "https://orcid.org/0000-0001-8321-719X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Sussex",
+    "raw_affiliation": "School of Psychology, University of Sussex, Brighton, UK",
+    "pi_last_author": "Gillian S. Forrester",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Hand, Limb, and Other Motor Preferences",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Hand, Limb, and Other Motor Preferences\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5028559117",
+    "kind": "person",
+    "title": "Jared W. Young",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5028559117",
+    "orcid": "https://orcid.org/0000-0003-3732-5776",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of California San Diego",
+    "raw_affiliation": "Department of Psychiatry, University of California, San Diego, CA, United States; Research Service, VA San Diego Healthcare System, San Diego, CA, United States",
+    "pi_last_author": "Jared W. Young",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Using cross-species behavioral tools to determine mechanisms contributing to HIV-associated neurocognitive disorder and comorbid substance u",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Using cross-species behavioral tools to determine mechanisms contributing to HIV-associated neurocognitive disorder and comorbid substance u\"",
+    "warm_tie": null
+  },
+  {
+    "id": "person::https://openalex.org/A5088428080",
+    "kind": "person",
+    "title": "Rachel Dalley",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5088428080",
+    "orcid": "https://orcid.org/0000-0001-7461-7845",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Allen Institute",
+    "raw_affiliation": "Allen Institute for Brain Science; Seattle, WA, 98109",
+    "pi_last_author": "",
+    "matched_topics": [
+      "cross-species cognition comparison"
+    ],
+    "example_work": "Human Neocortical Glutamatergic Neurons Revealed Through Multimodal Profiling",
+    "tags": [
+      "cross-species cognition comparison"
+    ],
+    "overlap": 1,
+    "why_it_fits": "Overlaps 1 of your topics (cross-species cognition comparison); e.g. \"Human Neocortical Glutamatergic Neurons Revealed Through Multimodal Profiling\"",
+    "warm_tie": null
   }
 ]
