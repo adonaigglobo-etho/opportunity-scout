@@ -26,9 +26,7 @@ profile:
   fields: [comparative cognition, animal behaviour, behavioural flexibility, collective animal cognition, cross-species cognition comparison]
   methods: [GLM-HMM, PsychoPy, Pavlovia/PsychoJS, behavioural modelling, linear regression, bayesian regression]
   pi: "Alex Taylor"
-  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility,
-                      bird cognition, decision making, behavioural ecology,
-                      collective behaviour, social learning]
+  keywords_openalex: [animal cognition, comparative cognition, behavioural flexibility, bird cognition, animal social learning, behavioural ecology, collective animal behaviour, animal culture]
   language: [English, Spanish]
 
 # ----------------------------------------------------------------------------
@@ -157,11 +155,11 @@ active:
     notes: "Research exchange and outreach funding; relevant on the evolution/culture angle."
 
   - name: "Comparative Cognition Society (CO3)"
-    url: "https://comparativecognition.org/"
+    url: "https://www.comparativecognition.org/student_awards.php"
     type: society
     tags: [grant, travel, thesis-prize, cognition, animal-behaviour]
-    cadence: "Annual (around the CO3 conference / early spring)"
-    notes: "THE defining society for this exact profile. Early Career Award + travel/conference awards. Confirm current schemes and deadlines on site. Membership may be required."
+    cadence: "Student-award deadlines ~Dec (a few months before CO3, held ~April); Stan Kuczaj travel grant ~Feb 28"
+    notes: "THE defining society for this exact profile. Student awards (publication, best talk/poster, travel) + Stan Kuczaj Memorial Travel Grant to CO3; separate Early Career Award for early-career faculty (first 5 yrs of first post, $1000). MUST be a current CCS member to apply; you now apply for all awards. Confirm current-cycle deadlines on the student-awards page."
 
   - name: "Fondation Fyssen — postdoctoral study grants"
     url: "https://www.fondationfyssen.fr/en/"
@@ -172,18 +170,18 @@ active:
 
   # === Thesis prizes (premios TFM/TFG) =====================================
   - name: "UAB — Premis / Premi Extraordinari de Màster"
-    url: "https://www.uab.cat/premis-reconeixements/"
+    url: "https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html"
     type: portal
     tags: [thesis-prize, spain]
-    cadence: "Annual (per your own institution)"
-    notes: "Replaces the old placeholder — your own UAB master's/thesis prizes. Confirm the exact faculty page for your programme; premi extraordinari is awarded on academic record."
+    cadence: "Awarded once per academic year for the previous year's graduates"
+    notes: "UAB premi extraordinari de titulacio is AWARDED AUTOMATICALLY - you do NOT apply. Eligible if you finished the master in the previous academic year with global GPA >= 8.0; a faculty tribunal decides on academic record. Nothing to submit. Your master is at the Institut de Neurociencies (INc): https://www.uab.cat/en/incuab - confirm the master-level prize with your programme academic-affairs office (the INc site currently lists doctorate-level prizes)."
 
   - name: "SEEEE — Sociedad Española de Etología y Ecología Evolutiva"
-    url: "https://www.etologia.org/"
+    url: "https://etologia.org/"
     type: society
     tags: [thesis-prize, travel, animal-behaviour, ecology, spain]
     cadence: "Annual, around the society congress"
-    notes: "Spanish ethology/evolutionary-ecology society — young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based."
+    notes: "Spanish ethology/evolutionary-ecology society - young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based. NOTE: www.etologia.org threw an SSL cert error last run; entry now uses etologia.org (no www)."
 
   # === Aggregators & discovery feeds =======================================
   - name: "Euraxess (Spain) — jobs, funding & fellowships"

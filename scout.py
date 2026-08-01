@@ -157,16 +157,20 @@ def discover_labs(profile, per_keyword=10):
     for kw in profile.get("keywords_openalex", []):
         tid, tname = resolve_topic_id(kw)
         time.sleep(1.1)  # stay under the ~1/sec OpenAlex topics limit
+        search = ""
         if tid:
             filt = f"primary_topic.id:{tid},from_publication_date:{since}"
-            # within a correct topic, relevance beats raw citations for on-profile hits
+            # relevance_score sort is ONLY valid when a search term is present, so
+            # pair the topic filter with search=<keyword>. Without this, OpenAlex
+            # returns HTTP 400 and the query silently yields nothing.
+            search = f"&search={urllib.parse.quote(kw)}"
             sort = "relevance_score:desc"
             methods[kw] = f"topic:{tname}"
         else:
             filt = f"title_and_abstract.search:{urllib.parse.quote(kw)},from_publication_date:{since}"
             sort = "cited_by_count:desc"
             methods[kw] = "fallback"
-        url = (f"https://api.openalex.org/works?filter={filt}"
+        url = (f"https://api.openalex.org/works?filter={filt}{search}"
                f"&sort={sort}&per-page={per_keyword}{_oa_suffix()}")
         try:
             data = json.loads(http_get(url)); time.sleep(1.1)
