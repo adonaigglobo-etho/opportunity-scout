@@ -291,34 +291,63 @@ def discover_regional(profile, per_keyword=6):
     out.sort(key=lambda r: r["overlap"], reverse=True)
     return out
 
+def _score(c):
+    """Relevance score for ordering within a tier. People rank by topic overlap;
+    grants get a mid score so a strongly-matching researcher can outrank a generic
+    portal, but grants still place."""
+    if c.get("kind") == "person":
+        return 10 + int(c.get("overlap", 1))   # people with more topic overlap rank higher
+    # grants: reachable, on-profile-tagged ones rank a touch higher
+    base = 5
+    if c.get("reachable"): base += 1
+    return base
+
 def select_by_tier_quota(candidates, total, tiers=("regional","national","international"), quota=None):
-    """Fill each tier up to its quota; unfilled slots redistribute to tiers with
-    surplus. `quota` is a dict like {'regional':4,'national':6,'international':8}.
-    If quota is None, split `total` evenly. Assumes candidates are score-ordered."""
-    buckets = {t: [c for c in candidates if c.get("tier","international") == t] for t in tiers}
+    """Fill each tier up to its quota, BLENDING grants and people so neither type is
+    shut out by file order. Within a tier we interleave the (score-sorted) grants and
+    people, starting with a grant so funding always shows. Unfilled slots redistribute
+    to tiers with surplus. `quota` e.g. {'regional':4,'national':6,'international':8}."""
     if quota:
         want = {t: int(quota.get(t, 0)) for t in tiers}
     else:
         base = total // len(tiers)
         want = {t: base for t in tiers}
+
+    def blend_for(t):
+        pool = [c for c in candidates if c.get("tier", "international") == t]
+        grants = sorted([c for c in pool if c.get("kind") != "person"],
+                        key=_score, reverse=True)
+        people = sorted([c for c in pool if c.get("kind") == "person"],
+                        key=_score, reverse=True)
+        out, gi, pi, turn = [], 0, 0, "g"
+        while gi < len(grants) or pi < len(people):
+            if turn == "g" and gi < len(grants):
+                out.append(grants[gi]); gi += 1; turn = "p"
+            elif turn == "p" and pi < len(people):
+                out.append(people[pi]); pi += 1; turn = "g"
+            elif gi < len(grants):
+                out.append(grants[gi]); gi += 1
+            elif pi < len(people):
+                out.append(people[pi]); pi += 1
+        return out
+
+    blended = {t: blend_for(t) for t in tiers}
     picked, used = [], {t: 0 for t in tiers}
-    # first pass: each tier gets up to its quota
     for t in tiers:
-        take = buckets[t][:want[t]]
+        take = blended[t][:want[t]]
         picked += take; used[t] = len(take)
-    # redistribute any unfilled slots to tiers that still have surplus candidates
     remaining = total - len(picked)
     while remaining > 0:
         progressed = False
         for t in tiers:
             if remaining <= 0: break
-            if len(buckets[t]) > used[t]:
-                picked.append(buckets[t][used[t]]); used[t] += 1
+            if len(blended[t]) > used[t]:
+                picked.append(blended[t][used[t]]); used[t] += 1
                 remaining -= 1; progressed = True
         if not progressed:
             break
     picked_ids = {c["id"] for c in picked}
-    return [c for c in candidates if c["id"] in picked_ids]
+    return [c for c in picked]  # already in tier+blend order
 
 def _classify_tier(rec, region):
     """Tag a person hit as regional / national / international from institution text."""
