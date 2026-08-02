@@ -302,6 +302,37 @@ def _score(c):
     if c.get("reachable"): base += 1
     return base
 
+def enforce_type_floor(picked, all_candidates, min_grants=2, min_people=2):
+    """Guarantee the final digest has at least `min_grants` grants and `min_people`
+    people. If a type is short, swap in the best available candidates of that type
+    (by _score), displacing the lowest-scored items of the over-represented type."""
+    def kindof(c): return "person" if c.get("kind") == "person" else "grant"
+    picked = list(picked)
+    have = {"grant": [c for c in picked if kindof(c) == "grant"],
+            "person": [c for c in picked if kindof(c) == "person"]}
+    want = {"grant": min_grants, "person": min_people}
+    picked_ids = {c["id"] for c in picked}
+
+    for need_type, other_type in (("person", "grant"), ("grant", "person")):
+        short = want[need_type] - len(have[need_type])
+        if short <= 0:
+            continue
+        # best candidates of the needed type not already picked
+        pool = sorted([c for c in all_candidates
+                       if kindof(c) == need_type and c["id"] not in picked_ids],
+                      key=_score, reverse=True)
+        # lowest-scored of the other type we can afford to drop
+        droppable = sorted([c for c in picked if kindof(c) == other_type],
+                           key=_score)
+        for _ in range(min(short, len(pool), max(0, len(droppable) - want[other_type]))):
+            add = pool.pop(0)
+            drop = droppable.pop(0)
+            picked = [add if c["id"] == drop["id"] else c for c in picked]
+            picked_ids.add(add["id"]); picked_ids.discard(drop["id"])
+            have[need_type].append(add)
+    return picked
+
+
 def select_by_tier_quota(candidates, total, tiers=("regional","national","international"), quota=None):
     """Fill each tier up to its quota, BLENDING grants and people so neither type is
     shut out by file order. Within a tier we interleave the (score-sorted) grants and
@@ -508,6 +539,10 @@ def run_sweep(cfg, sources, network, no_send=False):
     # apply the per-tier quota so regional/national aren't crowded out by international
     quota_total = m.get("quota_total", m.get("max_candidates", 100))
     fresh = select_by_tier_quota(fresh, quota_total, quota=m.get("tier_quota"))
+    # safety floor: never an all-one-type digest
+    fresh = enforce_type_floor(fresh, candidates,
+                               min_grants=m.get("min_grants", 2),
+                               min_people=m.get("min_people", 2))
 
     stamp = dt.date.today().isoformat()
     (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
