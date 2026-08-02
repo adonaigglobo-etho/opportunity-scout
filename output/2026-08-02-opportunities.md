@@ -5,143 +5,104 @@ independent Eligibility Gate (disqualifiers only, can veto/flag regardless of
 score). Red flags and confirm-before-naming notes sit at the top of the item
 they affect.
 
-18 candidates surfaced this run (2 regional / 7 national / 9 international).
-This sweep drew entirely from the fixed `active:` source list in
-sources.yaml — see the note at the bottom of this file on why no individual
-researchers/labs made the cut this time, and why the regional tier came in
-under its 4-item quota.
+14 candidates selected this run (2 regional / 6 national / 6 international)
+out of 18 raw hits. Two items were cut or merged by the council — see the
+note at the bottom of this file for why.
 
 == REGIONAL (Catalonia + <2h of Barcelona) ==
 
-- [ ] UAB — Premi Extraordinari de Màster  (grant)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
-   - CONFIRM FIRST: this prize is awarded automatically, not applied for — but only if your TFM's global GPA is ≥ 8.0. Confirm your final grade with the programme office before counting on this. Also confirm with UAB/Institut de Neurociències academic affairs that a master's-level prize actually runs this cycle — their site currently only lists doctorate-level prizes.
-   - Why it fits: zero-effort if eligible — a faculty tribunal decides from academic record, nothing to submit. Directly rewards the TFM you just finished.
-   - Deadline: awarded once per academic year for the previous year's graduates (no fixed date published; check with programme office).
-   - https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html
+- [ ] AGAUR Joan Oró FI — Catalan predoctoral grant  (grant)  <!--id:source::AGAUR Joan Oró FI — Catalan predoctoral grant-->
+   - ELIGIBILITY FLAG: requires enrolment/admission in a Catalan doctoral programme — you're not yet enrolled (currently RA at Animal Minds Lab). Only actionable once you've secured a PhD place.
+   - DEADLINE FLAG: the 2026 call closed ~30 Jan — already past. Next call expected ~Jan 2027; nothing to act on right now beyond noting the window.
+   - Why it fits: THE Catalan predoc grant (3-year contract), direct regional fit if you do your PhD at UAB/UB/UPF/CREAF etc.
+   - Warm tie (per network.yaml, needs_confirmation, confirm with Alex Taylor): relevant if you target CREAF/CSIC Barcelona — Alex co-supervises/co-authors a PhD student with Daniel Sol Rueda there, an existing working relationship not yet confirmed nameable in outreach.
+   - Deadline: annual call; 2026 round closed ~30 Jan, next ~Jan 2027 (unconfirmed).
+   - https://agaur.gencat.cat/es/beques-i-ajuts/Research-grants/ajuts-predoctorals/index.html
 
-- [ ] Generalitat de Catalunya — FI predoctoral (AGAUR)  (grant)  <!--id:source::Generalitat de Catalunya — FI predoctoral (AGAUR)-->
-   - ELIGIBILITY FLAG: FI grants require admission/enrolment in a Catalan doctoral programme — you're not yet enrolled (currently RA at Animal Minds Lab). Only actionable once you've secured a PhD place.
-   - Why it fits: regional predoc funding for Catalan institutions; relevant if you (or Alex Taylor's group) target CREAF/CSIC Barcelona for a PhD placement.
-   - Warm tie (per network.yaml, needs_confirmation, confirm with Alex Taylor): Alex co-supervises/co-authors a PhD student with Daniel Sol Rueda (CREAF/CSIC Barcelona) — an existing working relationship, not yet confirmed nameable in outreach.
-   - Deadline: annual call (exact 2026/27 dates not yet published on the portal).
-   - https://agaur.gencat.cat/en/beques-i-ajuts/
+- [ ] Marta Díaz Boladeras  (person)  <!--id:person::https://openalex.org/A5029348330-->
+   - Why it fits: UPC BarcelonaTech / CETpD (Vilanova i la Geltrú, ~1h from Barcelona) — works on human-animal/human-robot bond formation (e.g. "Bond formation with pet-robots: An integrative approach"), adjacent to your animal-cognition/human-animal-interaction interests. Genuine topic-scoped match (not a generic fallback hit).
+   - Deadline: n/a — a potential collaboration/lab contact, not a call.
+   - https://openalex.org/A5029348330
 
 == NATIONAL (Spain + Portugal) ==
 
-- [ ] SEEEE — Sociedad Española de Etología y Ecología Evolutiva  (grant)  <!--id:source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva-->
-   - Why it fits: Spain's own ethology/evolutionary-ecology society — young-researcher and best-thesis awards plus congress travel support, directly on-profile (animal behaviour, ecology) and could apply to your TFM.
-   - Deadline: annual, timed around the society congress — check current cycle on site.
-   - Note: site entry uses etologia.org (no "www" — the www. variant threw an SSL error on a previous run).
-   - https://etologia.org/
-
 - [ ] la Caixa INPhINIT Doctoral Fellowships  (grant)  <!--id:source::la Caixa INPhINIT Doctoral Fellowships-->
-   - ELIGIBILITY FLAG: two tracks exist — Incoming (must NOT have been resident in ES/PT for >12 of the last 36 months) and Retaining (resident in ES/PT). You're Spain-resident, so only the Retaining track applies to you; do not apply Incoming. Host institution must hold Severo Ochoa/María de Maeztu accreditation for the Incoming track (check whether this also gates Retaining before assuming UAB/Animal Minds Lab qualifies).
-   - Site returned HTTP 403 (Forbidden) this run — likely bot-blocking on their end, not a real outage; verify manually before relying on the cadence date below.
+   - ELIGIBILITY FLAG: two tracks — Incoming (must NOT have been resident in ES/PT for >12 of the last 36 months) and Retaining (resident in ES/PT). You're Spain-resident, so only Retaining applies; do not apply Incoming. Host institution must hold Severo Ochoa/María de Maeztu accreditation for the Incoming track — confirm whether this also gates Retaining before assuming UAB/Animal Minds Lab qualifies.
+   - Site returned HTTP 403 this run (likely bot-blocking, not a real outage) — verify the deadline manually before relying on it.
    - Why it fits: STEM/life-sciences eligible, well-funded predoc fellowship.
    - Deadline: Retaining track ~18 Feb (2026 dates verified; confirm 2027 dates once published).
    - https://lacaixafoundation.org/en/doctoral-inphinit-fellowships
 
-- [ ] Euraxess (Spain) — jobs, funding & fellowships  (grant)  <!--id:source::Euraxess (Spain) — jobs, funding & fellowships-->
-   - Why it fits: the richest structured aggregator for mobility/funding/jobs filtered to Spain — best used as an ongoing monitoring source rather than a single call.
-   - Deadline: rolling.
-   - https://euraxess.ec.europa.eu/jobs/search
-
-- [ ] FPI — Ayudas para contratos predoctorales (AEI)  (grant)  <!--id:source::FPI — Ayudas para contratos predoctorales (AEI)-->
-   - Why it fits: predoc funding attached to a specific AEI-funded project. Actionable path: ask Alex Taylor whether Animal Minds Lab (or a collaborating Spanish PI) currently holds an active AEI grant — that's the actual entry point, not a direct open application.
-   - Deadline: annual, tied to funded-project calendar.
-   - https://www.aei.gob.es/convocatorias
+- [ ] Eduardo Sampaio  (person)  <!--id:person::https://openalex.org/A5032193561-->
+   - Note: primary base is Max Planck Institute of Animal Behavior / University of Konstanz, Germany — the Portugal affiliation (MARE, University of Lisbon) is secondary. Filed under national (Spain+Portugal) on that tie, but treat as effectively an international contact in practice.
+   - Why it fits: collective animal behaviour — "Multidimensional social influence drives leadership and composition-dependent success in octopus–fish hunting groups." Strong thematic overlap with multi-species collective/social behaviour research.
+   - Deadline: n/a — potential collaboration contact.
+   - https://openalex.org/A5032193561
 
 - [ ] FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)  (grant)  <!--id:source::FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)-->
-   - ELIGIBILITY FLAG: requires enrolment/admission in a doctoral programme — you're not yet enrolled. Only actionable once you've secured a PhD place; worth tracking now if you're applying to programmes for next cycle.
-   - Deadline: annual ministry call, usually late autumn/winter. Confirm the exact call URL each cycle — the ministry restructures its pages.
+   - ELIGIBILITY FLAG: requires enrolment/admission in a doctoral programme — not yet actionable until you have a PhD place.
+   - Why it fits: standard national predoc funding line, worth tracking for when you enrol.
+   - Deadline: annual ministry call, usually late autumn/winter (confirm exact URL each cycle — ministry restructures pages).
    - https://www.universidades.gob.es/formacion-de-profesorado-universitario-fpu/
 
-- [ ] AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
-   - Why it fits: master index of Spanish state research funding — broad and largely duplicative of FPU/FPI above; keep as a reference/filter-by-tag source rather than a distinct opportunity.
-   - Deadline: rolling.
-   - https://www.aei.gob.es/convocatorias/buscador-convocatorias
+- [ ] Antonio Benítez‐Burraco  (person)  <!--id:person::https://openalex.org/A5012649250-->
+   - Why it fits: University of Seville (Spain-based); animal cognition/self-domestication work — "Elephants as an animal model for self-domestication." Genuine topic-scoped match on animal cognition.
+   - Deadline: n/a — potential collaboration contact.
+   - https://openalex.org/A5012649250
 
-- [ ] la Caixa Junior Leader (postdoc)  (grant)  <!--id:source::la Caixa Junior Leader (postdoc)-->
-   - ELIGIBILITY FLAG: postdoc-stage only — you're pre-PhD, not eligible now. Site also returned HTTP 403 this run. Listed as a seed for after the PhD, not actionable this cycle.
-   - Deadline: annual, typically an autumn call.
-   - https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships
+- [ ] FPI — Ayudas para contratos predoctorales (AEI)  (grant)  <!--id:source::FPI — Ayudas para contratos predoctorales (AEI)-->
+   - Process note: FPI is attached to a specific funded project/PI, not a direct open application. Actionable path: ask Alex Taylor whether Animal Minds Lab (or a collaborating Spanish PI) currently holds an active AEI grant — that's the real entry point.
+   - Why it fits: predoc funding line worth having in view once a project/PI match is found.
+   - Deadline: annual, tied to funded research projects.
+   - https://www.aei.gob.es/convocatorias
+
+- [ ] Juan Olvido Perea-Garcia  (person)  <!--id:person::https://openalex.org/A5129301060-->
+   - Why it fits: Universidad de Las Palmas de Gran Canaria; directly on-profile — "Designing research interfaces for non-human minds: a biocentric design approach for animal cognition research." Closest topical match of this round's national people.
+   - Deadline: n/a — potential collaboration contact.
+   - https://openalex.org/A5129301060
 
 == INTERNATIONAL (mostly Europe) ==
 
-- [ ] ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
-   - Why it fits: up to £10k (£15k with justification) explicitly for travel to conduct collaborative research or host a collaborator — strong fit for extending the GLM-HMM/behavioural-modelling work with an outside group. Confirmed fine for Spain-based applicants (restriction is on Americas-based applicants).
-   - Deadline: three rounds/year — 1 Feb, 1 Jun, 1 Oct. Next round ~1 Oct 2026 (~2 months out).
-   - https://www.asab.org/research-grants
+- [ ] Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships  (grant)  <!--id:source::Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships-->
+   - Process note: Doctoral Networks are applied for by consortia — you'd join as a recruited fellow (watch for open recruited positions, not a direct application). Postdoctoral Fellowships are postdoc-stage.
+   - Why it fits: flagship EU mobility funding, broad relevance across career stages.
+   - Deadline: annual per action; PF call typically opens spring, closes ~Sep.
+   - https://marie-sklodowska-curie-actions.ec.europa.eu/actions
 
-- [ ] Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
-   - Why it fits: up to £3k for ECRs (grad students & postdocs) for collaborative lab visits, no nationality restriction. Journal of Experimental Biology is the best-fit journal for a behaviour/physiology angle.
-   - Deadline: rolling.
-   - https://www.biologists.com/grants/travelling-fellowships/
+- [ ] EMBO Postdoctoral Fellowships  (grant)  <!--id:source::EMBO Postdoctoral Fellowships-->
+   - ELIGIBILITY FLAG: postdoc-stage fellowship. You're pre-PhD (RA at Animal Minds Lab), so not yet eligible — file away as a future target once you hold a PhD, not actionable now.
+   - Why it fits: prestigious, well-funded international postdoc mobility fellowship for when the time comes.
+   - Deadline: two rounds/year (spring & autumn); autumn-round deadline ~23 Jan (2026 rules verified) — next spring-round date not confirmed, check site.
+   - https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/
 
 - [ ] EMBO Scientific Exchange Grants  (grant)  <!--id:source::EMBO Scientific Exchange Grants-->
-   - Why it fits: funds research visits up to 3 months to another lab to learn a technique — a good vehicle for a short modelling-methods exchange.
+   - Why it fits: funds research visits up to 3 months to another lab to learn techniques — a good fit for a short methods exchange (e.g. a modelling collaboration), and likely open to your current career stage.
    - Deadline: rolling.
    - https://www.embo.org/funding/fellowships-grants-and-career-support/scientific-exchange-grants/
 
-- [ ] Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
-   - ELIGIBILITY FLAG: many of these (Early Career Research Grants, Student Research Grants, Travel Awards, named awards) require current ABS or ASAB membership in good standing — confirm your membership status before picking a specific award.
-   - Why it fits: directly on-profile (animal behaviour); several sub-award types worth screening once membership is sorted.
-   - Deadline: annual, varies per award.
-   - https://www.animalbehaviorsociety.org/web/awards.php
-
-- [ ] ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
-   - Why it fits: conference support, education grants, caregiver grants — worth a manual skim for anything ECR-eligible; not enough structure on the page yet to point to a specific scheme.
-   - Deadline: various.
-   - https://www.asab.org/grant-overview
-
-- [ ] Company of Biologists — DMM/JEB conference & partnership travel grants  (grant)  <!--id:source::Company of Biologists — DMM/JEB conference & partnership travel grants-->
-   - ELIGIBILITY FLAG: some of these smaller conference-attendance grants require SEB membership — confirm before applying.
-   - Deadline: quarterly (SEB-linked travel grant: 31 Mar / 30 Jun / 30 Sep / 31 Dec). Next round ~30 Sep 2026.
-   - https://www.biologists.com/grants/
-
-- [ ] Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships  (grant)  <!--id:source::Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships-->
-   - Note: Doctoral Networks aren't applied for directly — you'd join as a recruited fellow inside a consortium, so this is a "watch for open positions" source, not a call with its own deadline. The Postdoctoral Fellowship (PF) track is postdoc-stage, not your current stage.
-   - Deadline: PF call typically opens spring, closes ~Sep, per action.
-   - https://marie-sklodowska-curie-actions.ec.europa.eu/actions
-
 - [ ] Erasmus+ (traineeships / mobility)  (grant)  <!--id:source::Erasmus+ (traineeships / mobility)-->
-   - Note: this is a channel routed through UAB's international office, not a direct call — lowest priority of this batch, included for completeness.
-   - Deadline: via home institution.
+   - Process note: usually routed through your university's international office — a channel to keep in mind, not a direct call.
+   - Why it fits: mobility/traineeship funding via UAB's international office.
+   - Deadline: via home institution (check UAB's internal calendar).
    - https://erasmus-plus.ec.europa.eu/opportunities/individuals
 
-- [ ] EMBO Postdoctoral Fellowships  (grant)  <!--id:source::EMBO Postdoctoral Fellowships-->
-   - ELIGIBILITY FLAG: postdoc-stage and requires international mobility — not eligible now (pre-PhD). Seed for after the PhD; lowest priority this cycle.
-   - Deadline: two rounds/year; autumn round deadline ~23 Jan (2026 rules verified — confirm for next cycle).
-   - https://www.embo.org/funding/fellowships-grants-and-career-support/postdoctoral-fellowships/
+- [ ] Pengfei Wei lab (Shenzhen Institute of Advanced Technology, CAS)  (person)  <!--id:person::https://openalex.org/A5101506671-->
+   - Why it fits: strongest topical match of the round (2 tags: animal social learning, behavioural ecology) — "Multi-animal 3D social pose estimation, identification and behaviour embedding with a few-shot learning framework." Directly relevant methods (multi-animal behaviour tracking/embedding) for GLM-HMM-style behavioural-state work. PI/last author on the paper; key coauthor Yaning Han (same lab) also surfaced independently this run and is merged in here rather than listed twice.
+   - Deadline: n/a — potential collaboration/PhD-host contact.
+   - https://openalex.org/A5101506671
+
+- [ ] Kara D. Federmeier lab (University of Illinois Urbana-Champaign)  (person)  <!--id:person::https://openalex.org/A5006526693-->
+   - Why it fits: animal cognition topic match via "Animal cognition: Dogs build semantic expectations between spoken words and objects." Last author on the piece; coauthor Micah M. Murray (Lausanne/Vanderbilt) also surfaced independently this run and is merged in here rather than listed twice.
+   - Deadline: n/a — potential collaboration contact.
+   - https://openalex.org/A5006526693
 
 ---
 
-**Note on this run (for you, not part of the ranking):** every item above comes
-from the fixed `active:` list in sources.yaml — none of the researcher/lab
-discovery results made it into this digest, even though the OpenAlex passes
-found genuine on-topic candidates (142 in the international pass, 48 in the
-Spain-filtered pass). The tier-quota code (`select_by_tier_quota` in
-scout.py) fills each tier from `latest_candidates.json` in file order rather
-than by relevance score before bucketing, so the fixed portal sources —
-listed first — always fill the quota before any discovered person is
-considered, and the same happened on last month's run. It also means a few
-strong, clearly on-profile sources further down sources.yaml's active list
-(Comparative Cognition Society — "THE defining society for this exact
-profile" per its own notes — plus Fondation Fyssen, ISBE, ESEB) were crowded
-out of the international tier's 8 slots by weaker/less-actionable ones (e.g.
-Erasmus+, DMM/JEB) purely because of list position, not fit. This is also
-why the regional tier landed at 2 rather than its 4-item quota — there are
-only two `tier: regional` sources defined at all, and no discovered person
-can ever be tagged regional because sources.yaml's `profile:` block has no
-`region:` (home_institutions / regional_provinces) for `_classify_tier` to
-match against. Flagging this so you can decide whether to fix the selection
-order and add the missing `region:` block before the next sweep — I haven't
-changed scout.py or sources.yaml to do that myself.
+Council notes (why 14, not 18):
+- Two "regional" grant sources — "AGAUR Joan Oró FI" and "Generalitat de Catalunya — FI predoctoral (AGAUR)" — are the same underlying Catalan predoctoral grant (`FI`/`Joan Oró FI`) listed twice in sources.yaml under different names. Merged into one item; only the AGAUR Joan Oró FI entry (more detail) is kept. Worth deduping sources.yaml itself at some point.
+- Marco Baroni (ICREA/UPF, meta-learning neural networks for compositional generalization) was cut as off-profile: the only overlap was a generic "behavioural flexibility" tag via the weakest ("fallback") discovery method, and his actual line of work is computational linguistics/AI, not animal behaviour. Not padding a thin regional tier with a weak match.
+- Two international "person" pairs were each the PI and a coauthor surfaced independently from the *same single paper* (Yaning Han + Pengfei Wei on the multi-animal pose-estimation paper; Micah Murray + Kara Federmeier on the dog-cognition piece). Merged each pair into one lab-level item under the PI/last author, noting the coauthor, rather than presenting the same paper as two separate "candidates."
+- Regional and international tiers therefore came in under their 4/8 targets (2 and 6 respectively); national hit its quota of 6 exactly. No tier was padded to hit a number.
+- Two grants (AGAUR/Joan Oró FI, FPU) require doctoral enrolment you don't yet have; EMBO Postdoctoral Fellowships require a PhD you don't yet hold. All three are eligibility-flagged above as "watch for later," not "act now."
 
----
-
-Greenlight by replying in Telegram with the name from the title (e.g. "yes
-SEEEE" or "yes AGAUR") — name is safest. No individual researchers were
-surfaced this run, so there's no person name to reply with this time; the
-source title is the next best identifier and still round-trips through
-`harvest_approvals()` via the `<!--id:...-->` tag on each ticked line.
+To greenlight items for drafting, reply in Telegram with the researcher's/grant's NAME (e.g. "yes Perea-Garcia, la Caixa INPhINIT") — name is safest, since numbering can shift between runs.
