@@ -1,95 +1,95 @@
 {
-  "date": "2026-08-02",
+  "date": "2026-09-01",
   "items": [
     {
       "n": 1,
-      "id": "source::AGAUR Joan Oró FI — Catalan predoctoral grant",
-      "title": "AGAUR Joan Oró FI — Catalan predoctoral grant"
+      "id": "source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)",
+      "title": "Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)"
     },
     {
       "n": 2,
-      "id": "person::https://openalex.org/A5038612405",
-      "title": "Marco Baroni"
+      "id": "person::https://openalex.org/A5093194507",
+      "title": "Edoardo Fazzari"
     },
     {
       "n": 3,
-      "id": "source::Generalitat de Catalunya — FI predoctoral (AGAUR)",
-      "title": "Generalitat de Catalunya — FI predoctoral (AGAUR)"
+      "id": "source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)",
+      "title": "Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)"
     },
     {
       "n": 4,
-      "id": "person::https://openalex.org/A5029348330",
-      "title": "Marta Díaz Boladeras"
+      "id": "person::https://openalex.org/A5067436187",
+      "title": "Cesare Stefanini"
     },
     {
       "n": 5,
-      "id": "source::la Caixa INPhINIT Doctoral Fellowships",
-      "title": "la Caixa INPhINIT Doctoral Fellowships"
+      "id": "source::AEI — Agencia Estatal de Investigación (all calls)",
+      "title": "AEI — Agencia Estatal de Investigación (all calls)"
     },
     {
       "n": 6,
-      "id": "person::https://openalex.org/A5032193561",
-      "title": "Eduardo Sampaio"
+      "id": "person::https://openalex.org/A5101772132",
+      "title": "Andrea Vera"
     },
     {
       "n": 7,
-      "id": "source::FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)",
-      "title": "FPU — Ayudas para la Formación de Profesorado Universitario (MEFP)"
+      "id": "source::Fondation Fyssen — postdoctoral study grants",
+      "title": "Fondation Fyssen — postdoctoral study grants"
     },
     {
       "n": 8,
-      "id": "person::https://openalex.org/A5012649250",
-      "title": "Antonio Benítez‐Burraco"
+      "id": "person::https://openalex.org/A5001223146",
+      "title": "Bernardo Hernández"
     },
     {
       "n": 9,
-      "id": "source::FPI — Ayudas para contratos predoctorales (AEI)",
-      "title": "FPI — Ayudas para contratos predoctorales (AEI)"
+      "id": "source::UAB — Premis / Premi Extraordinari de Màster",
+      "title": "UAB — Premis / Premi Extraordinari de Màster"
     },
     {
       "n": 10,
-      "id": "person::https://openalex.org/A5129301060",
-      "title": "Juan Olvido Perea-Garcia"
+      "id": "person::https://openalex.org/A5062885870",
+      "title": "David J. Menor-Campos"
     },
     {
       "n": 11,
-      "id": "source::Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships",
-      "title": "Marie Skłodowska-Curie Actions — Doctoral Networks & Postdoctoral Fellowships"
+      "id": "source::ASAB Research Grants",
+      "title": "ASAB Research Grants"
     },
     {
       "n": 12,
-      "id": "person::https://openalex.org/A5018597400",
-      "title": "Yaning Han"
+      "id": "person::https://openalex.org/A5088217940",
+      "title": "Vitor Hugo Bessa Ferreira"
     },
     {
       "n": 13,
-      "id": "source::EMBO Postdoctoral Fellowships",
-      "title": "EMBO Postdoctoral Fellowships"
+      "id": "source::ASAB Scholarships & smaller grants",
+      "title": "ASAB Scholarships & smaller grants"
     },
     {
       "n": 14,
-      "id": "person::https://openalex.org/A5101506671",
-      "title": "Pengfei Wei"
+      "id": "person::https://openalex.org/A5071463695",
+      "title": "Per Jensen"
     },
     {
       "n": 15,
-      "id": "source::EMBO Scientific Exchange Grants",
-      "title": "EMBO Scientific Exchange Grants"
+      "id": "source::Animal Behavior Society — Grants & Awards",
+      "title": "Animal Behavior Society — Grants & Awards"
     },
     {
       "n": 16,
-      "id": "person::https://openalex.org/A5029520140",
-      "title": "Micah M. Murray"
+      "id": "person::https://openalex.org/A5135575064",
+      "title": "Elodie P. Remoissenet"
     },
     {
       "n": 17,
-      "id": "source::Erasmus+ (traineeships / mobility)",
-      "title": "Erasmus+ (traineeships / mobility)"
+      "id": "source::Company of Biologists — Travelling Fellowships",
+      "title": "Company of Biologists — Travelling Fellowships"
     },
     {
       "n": 18,
-      "id": "person::https://openalex.org/A5006526693",
-      "title": "Kara D. Federmeier"
+      "id": "person::https://openalex.org/A5036381816",
+      "title": "Sam Sonnega"
     }
   ]
 }
