@@ -451,7 +451,7 @@ def parse_cadence_deadlines(text, within_days, today=None):
     return sorted(set(found))
 
 # ------------------------------------------------------------------ Digest
-def render_digest(items, mode, checkboxes=False):
+def render_digest(items, mode, checkboxes=False, ids=False):
     today = dt.date.today().isoformat()
     lines = [f"Opportunity Scout - {mode} - {today}", ""]
     order = ["regional", "national", "international"]
@@ -471,8 +471,12 @@ def render_digest(items, mode, checkboxes=False):
         for it in group:
             n += 1
             flag = "[!] " if it.get("deadline") else ""
-            head = (f"- [ ] {flag}{it['title']}  ({it['kind']})  <!--id:{it['id']}-->"
-                    if checkboxes else f"{n}. {flag}{it['title']}  ({it['kind']})")
+            if checkboxes:
+                head = f"- [ ] {flag}{it['title']}  ({it['kind']})  <!--id:{it['id']}-->"
+            else:
+                head = f"{n}. {flag}{it['title']}  ({it['kind']})"
+                if ids:
+                    head += f"  <!--id:{it['id']}-->"
             lines.append(head)
             if it.get("why_it_fits"): lines.append(f"   - {it['why_it_fits']}")
             if it.get("institution"): lines.append(f"   - {it['institution']}")
@@ -523,6 +527,38 @@ def write_digest_map(items):
     (CTX / "last_digest_map.json").write_text(
         json.dumps(m, indent=2, ensure_ascii=False), encoding="utf-8")
 
+def build_index_from_digest_file(path):
+    """Rebuild last_digest_index.json from the digest file that was actually sent,
+    numbering ids in the order they appear. This guarantees the numbers the user
+    sees == the numbers the harvester matches, even if the Chair reordered/trimmed
+    the list when composing the message."""
+    try:
+        text = io.open(path, encoding="utf-8").read()
+    except Exception:
+        return 0
+    ids = re.findall(r"<!--id:(.*?)-->", text)
+    if not ids:
+        print("send-file: no <!--id--> markers found; index not rebuilt.")
+        return 0
+    # full records come from latest_candidates.json (the pre-send record store)
+    records = {}
+    lc = OUT / "latest_candidates.json"
+    if lc.exists():
+        try:
+            for c in json.loads(lc.read_text(encoding="utf-8")):
+                records.setdefault(c.get("id"), c)
+        except Exception:
+            pass
+    index, ordered = {}, []
+    for i, cid in enumerate(ids, 1):
+        rec = records.get(cid, {"id": cid, "title": cid, "kind": "unknown"})
+        index[str(i)] = rec
+        ordered.append(rec)
+    (CTX / "last_digest_index.json").write_text(
+        json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
+    write_digest_map(ordered)
+    return len(index)
+
 def run_sweep(cfg, sources, network, no_send=False):
     seen = load_seen(cfg); m = cfg["modes"]["sweep"]
     candidates = [fetch_source(s) for s in sources.get("active", [])]
@@ -547,8 +583,10 @@ def run_sweep(cfg, sources, network, no_send=False):
     stamp = dt.date.today().isoformat()
     (OUT / "latest_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
     (OUT / f"{stamp}_sweep_candidates.json").write_text(json.dumps(fresh, indent=2), encoding="utf-8")
-    digest = render_digest(fresh, "sweep", checkboxes=True)
-    digest += "\n\nReply to greenlight: e.g. 'yes Chittka' or the item number (name is safest)."
+    digest = render_digest(fresh, "sweep", checkboxes=False, ids=True)
+    digest += ("\n\nTo greenlight, reply in Telegram with the NUMBER(S): e.g. 'yes 1, 3' "
+               "(or 'no 4' to drop; 'all' / 'none'). Names also work as a fallback, "
+               "e.g. 'yes Sonnega, Company of Biologists'.")
     (OUT / f"digest_{stamp}_sweep.md").write_text(digest, encoding="utf-8")
 
     # Numbered index so you can greenlight by replying "yes Chittka" in Telegram.
@@ -611,7 +649,8 @@ if __name__ == "__main__":
             lc = OUT / "latest_candidates.json"
             if lc.exists():
                 mark_seen_and_save(cfg, [c.get("id") for c in json.loads(lc.read_text(encoding="utf-8"))])
-            print("sent; seen.json updated on confirmed delivery.")
+            n_idx = build_index_from_digest_file(args.send_file)
+            print(f"sent; seen.json updated; rebuilt digest index from sent file ({n_idx} items).")
         else:
             print("send failed / not configured; seen.json untouched.")
         sys.exit(0)

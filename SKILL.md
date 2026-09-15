@@ -42,10 +42,14 @@ Deadlines are handled in code (`scout.py` parses cadence dates), not by a person
    independent Eligibility Gate. Rank; pull red flags and any "confirm-before-
    naming" notes to the top. Select up to `top_n_to_push` — fewer or zero on a
    quiet month, never pad.
-4. Write the ranked digest to `output/<date>-opportunities.md`. Render each item as
-   a **tickable checkbox line** carrying its id:
-   `- [ ] <title>  (<kind>)  <!--id:<candidate id>-->`
+4. Write the ranked digest to `output/<date>-opportunities.md`. Number the items
+   **sequentially 1..N in the exact order you present them**, each carrying its id:
+   `<n>. <title>  (<kind>)  <!--id:<candidate id>-->`
    followed by why-it-fits, deadline, eligibility flags, warm-tie note, and link.
+   The numbers you write ARE the greenlight numbers: `--send-file` rebuilds
+   `context/last_digest_index.json` from this file's id order, so the harvester
+   matches exactly what you sent. End the message telling the user to reply with the
+   NUMBER(S) — e.g. "yes 1, 3" — with names as a fallback.
 5. If the council agreed (both seats) on a genuinely new source that resolved,
    append it to `pending_sources:` in `sources.yaml` (never to `active:`).
 6. Persist: `git add context/seen.json context/approved_queue.json sources.yaml output/`
@@ -59,13 +63,21 @@ out of each active source's `cadence:` note and pushes anything closing within
 `urgent_within_days` straight to Telegram. Does not dedup or mark seen (these are
 recurring reminders). Then commit any changes.
 
-## Approvals (git-checkbox, no Telegram polling)
-The digest is committed to the repo with `- [ ]` checkboxes. You tick the items you
-want (in the file, on GitHub, or your editor) and commit. On the **next** sweep,
-`harvest_approvals()` reads the ticked `- [x] ... <!--id:X-->` lines and appends
-those candidate records to `context/approved_queue.json`. Skill 2 (the drafter)
-reads only that file. Because the drafter always has a final human step, there is
-no time pressure on ticking — approvals live in git, where state already lives.
+## Approvals (reply in Telegram with numbers)
+The delivered digest is numbered. The user greenlights by replying to the bot with
+the item NUMBER(S) — `yes 1, 3`, `no 4`, `all`, `none` — and names work as a
+fallback. The drafter repo's `harvest_telegram.py` (its own daily routine) reads
+those replies, matches them against `context/last_digest_index.json` (which it
+re-fetches fresh from this repo on every run), and appends the approved records to
+`context/approved_queue.json`, which skill 2 (the drafter) reads.
+
+Because the numbers the user sees are rebuilt from the exact digest that was sent
+(`--send-file` → `build_index_from_digest_file`), reply-number N always maps to the
+item printed as N. Never renumber a digest after sending without re-sending.
+
+(Legacy: a git-checkbox path via `harvest_approvals()` also exists — ticking
+`- [x] ... <!--id:X-->` lines in a committed digest — but the Telegram-number flow
+above is the primary one.)
 
 ## Hard rules
 - **Never invent a connection.** Warm ties come only from `network.yaml`. A computed
