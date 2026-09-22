@@ -3,8 +3,8 @@
   "items": [
     {
       "n": 1,
-      "id": "source::Gobierno de Aragón — ayudas predoctorales (DGA)",
-      "title": "Gobierno de Aragón — ayudas predoctorales (DGA)"
+      "id": "person::https://openalex.org/A5035178188",
+      "title": "Louis Lefebvre"
     },
     {
       "n": 2,
@@ -13,8 +13,8 @@
     },
     {
       "n": 3,
-      "id": "person::https://openalex.org/A5035178188",
-      "title": "Louis Lefebvre"
+      "id": "source::Gobierno de Aragón — ayudas predoctorales (DGA)",
+      "title": "Gobierno de Aragón — ayudas predoctorales (DGA)"
     },
     {
       "n": 4,
@@ -28,68 +28,33 @@
     },
     {
       "n": 6,
-      "id": "person::https://openalex.org/A5010679213",
-      "title": "Daniel Ruiz‐Equihua"
-    },
-    {
-      "n": 7,
       "id": "source::la Caixa Junior Leader (postdoc)",
       "title": "la Caixa Junior Leader (postdoc)"
     },
     {
-      "n": 8,
-      "id": "person::https://openalex.org/A5070783543",
-      "title": "Eduardo C. Garrido‐Merchán"
-    },
-    {
-      "n": 9,
-      "id": "person::https://openalex.org/A5074268487",
-      "title": "Santiago González-Carvajal"
-    },
-    {
-      "n": 10,
-      "id": "person::https://openalex.org/A5038590259",
-      "title": "Marcos Tostado‐Véliz"
-    },
-    {
-      "n": 11,
-      "id": "source::Company of Biologists — DMM/JEB conference & partnership travel grants",
-      "title": "Company of Biologists — DMM/JEB conference & partnership travel grants"
-    },
-    {
-      "n": 12,
-      "id": "person::https://openalex.org/A5079072853",
-      "title": "Michael J. Sheriff"
-    },
-    {
-      "n": 13,
-      "id": "source::International Society for Behavioral Ecology (ISBE)",
-      "title": "International Society for Behavioral Ecology (ISBE)"
-    },
-    {
-      "n": 14,
-      "id": "person::https://openalex.org/A5104235663",
-      "title": "Annalyse Ellis"
-    },
-    {
-      "n": 15,
-      "id": "source::European Society for Evolutionary Biology (ESEB)",
-      "title": "European Society for Evolutionary Biology (ESEB)"
-    },
-    {
-      "n": 16,
-      "id": "person::https://openalex.org/A5043312930",
-      "title": "Steve Loughnan"
-    },
-    {
-      "n": 17,
+      "n": 7,
       "id": "source::Comparative Cognition Society (CO3)",
       "title": "Comparative Cognition Society (CO3)"
     },
     {
-      "n": 18,
-      "id": "person::https://openalex.org/A5102663523",
-      "title": "Anjali Arya"
+      "n": 8,
+      "id": "source::European Society for Evolutionary Biology (ESEB)",
+      "title": "European Society for Evolutionary Biology (ESEB)"
+    },
+    {
+      "n": 9,
+      "id": "source::International Society for Behavioral Ecology (ISBE)",
+      "title": "International Society for Behavioral Ecology (ISBE)"
+    },
+    {
+      "n": 10,
+      "id": "source::Company of Biologists — DMM/JEB conference & partnership travel grants",
+      "title": "Company of Biologists — DMM/JEB conference & partnership travel grants"
+    },
+    {
+      "n": 11,
+      "id": "person::https://openalex.org/A5079072853",
+      "title": "Michael J. Sheriff"
     }
   ]
 }
