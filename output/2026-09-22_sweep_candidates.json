@@ -1,0 +1,440 @@
+[
+  {
+    "id": "source::Govern Illes Balears \u2014 ajuts predoctorals (GOIB/DGPRI)",
+    "kind": "grant",
+    "title": "Govern Illes Balears \u2014 ajuts predoctorals (GOIB/DGPRI)",
+    "source": "Govern Illes Balears \u2014 ajuts predoctorals (GOIB/DGPRI)",
+    "url": "https://www.caib.es/seucaib/es/tramites/",
+    "deadline": null,
+    "eligibility_notes": "Balearic Islands regional predoc/research aid. Confirm the exact current call URL; the CAIB seu electr\u00f2nica lists open tr\u00e1mites. Relevant given your <2h/ferry regional reach.  [UNREACHABLE: HTTP Error 400: Petici?n incorrecta]",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": false,
+    "cadence": "Annual (confirm current call on the Balearic science/education portal)",
+    "tier": "regional"
+  },
+  {
+    "id": "person::https://openalex.org/A5062985659",
+    "kind": "person",
+    "title": "Loreta M. Medina",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5062985659",
+    "orcid": "https://orcid.org/0000-0001-7327-8167",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universitat de Lleida",
+    "raw_affiliation": "Department of Experimental Medicine, University of Lleida, Lleida, Spain; Laboratory of Evolutionary and Developmental Neurobiology, Lleida's Institute for Biomedical Research - Dr. Pifarr\u00e9 Foundation (IRBLleida), Lleida, Spain; Laboratory of Evolutionary and Developmental Neurobiology, Lleida\u2019s Institute for Biomedical Research \u2013 Dr. Pifarr\u00e9 Foundation (IRBLleida), Lleida, Spain",
+    "pi_last_author": "Ester Desfilis",
+    "matched_topics": [
+      "comparative cognition"
+    ],
+    "match_methods": [
+      "fallback-ES"
+    ],
+    "example_work": "Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond",
+    "tags": [
+      "comparative cognition"
+    ],
+    "overlap": 1,
+    "discovery": "fallback-ES",
+    "tier": "regional",
+    "why_it_fits": "[fallback-ES] Spain-based; overlaps 1 of your topics (comparative cognition); e.g. \"Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::Generalitat Valenciana \u2014 ajudes predoctorals (GVA/Conselleria)",
+    "kind": "grant",
+    "title": "Generalitat Valenciana \u2014 ajudes predoctorals (GVA/Conselleria)",
+    "source": "Generalitat Valenciana \u2014 ajudes predoctorals (GVA/Conselleria)",
+    "url": "https://innova.gva.es/es/ayudas",
+    "deadline": null,
+    "eligibility_notes": "Valencian regional predoctoral grants (ACIF/Santiago Grisol\u00eda historically). Confirm the current-year call on the GVA innovation portal.  [UNREACHABLE: <urlopen error Tunnel connection failed: 502 Bad Gateway>]",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": false,
+    "cadence": "Annual (GVA predoc calls typically autumn)",
+    "tier": "regional"
+  },
+  {
+    "id": "person::https://openalex.org/A5050751356",
+    "kind": "person",
+    "title": "Ester Desfilis",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5050751356",
+    "orcid": "https://orcid.org/0000-0002-7765-0584",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universitat de Lleida",
+    "raw_affiliation": "Department of Experimental Medicine, University of Lleida, Lleida, Spain; Laboratory of Evolutionary and Developmental Neurobiology, Lleida's Institute for Biomedical Research - Dr. Pifarr\u00e9 Foundation (IRBLleida), Lleida, Spain; Laboratory of Evolutionary and Developmental Neurobiology, Lleida\u2019s Institute for Biomedical Research \u2013 Dr. Pifarr\u00e9 Foundation (IRBLleida), Lleida, Spain",
+    "pi_last_author": "Ester Desfilis",
+    "matched_topics": [
+      "comparative cognition"
+    ],
+    "match_methods": [
+      "fallback-ES"
+    ],
+    "example_work": "Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond",
+    "tags": [
+      "comparative cognition"
+    ],
+    "overlap": 1,
+    "discovery": "fallback-ES",
+    "tier": "regional",
+    "why_it_fits": "[fallback-ES] Spain-based; overlaps 1 of your topics (comparative cognition); e.g. \"Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::AEI \u2014 Agencia Estatal de Investigaci\u00f3n (all calls)",
+    "kind": "grant",
+    "title": "AEI \u2014 Agencia Estatal de Investigaci\u00f3n (all calls)",
+    "source": "AEI \u2014 Agencia Estatal de Investigaci\u00f3n (all calls)",
+    "url": "https://www.aei.gob.es/convocatorias/buscador-convocatorias",
+    "deadline": null,
+    "eligibility_notes": "Master call index for Spanish state research funding. Broad \u2014 filter hard by tags.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "predoc",
+      "postdoc",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Rolling",
+    "tier": "national",
+    "_page_excerpt": "<!DOCTYPE html>\n<html  lang=\"es\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\" />\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-VW72V68TSZ\"></script>\n<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag(\"js\", new Date());gtag(\"set\", \"developer_id.dMDhkMT\", true);gtag(\"config\", \"G-VW72V68TSZ\", {\"groups\":\"default\",\"page_placeholder\":\"PLACEHOLDER_page_location\"});</script>\n<meta name=\"description\" content=\"Encuentra toda la informaci\u00f3n relativa a las convocatorias de proyectos y ayudas de I+D+i de las distintas l\u00edneas de actuaci\u00f3n de la Agencia Estatal de Investigaci\u00f3n\" />\n<link rel=\"canonical\" href=\"http://www.aei.gob.es/convocatorias/buscador-convocatorias\" />\n<meta name=\"Generator\" content=\"Drupal 9 (https://www.drupal.org)\" />\n<meta name=\"MobileOptimized\" content=\"width\" />\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #264c80} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />\n<script src=\"https://www.google.com/recaptcha/api.js?hl=es\" async defer></script>\n<link rel=\"icon\" href=\"/themes/custom/vartheme_aei/favicon.ico\" type=\"image/vnd.microsoft.icon\" />\n\n    <title>Buscador de Convocatorias | Agencia Estatal de Investigaci\u00f3n</title>\n    <link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/ajax-progress.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/align.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/autocomplete-loading.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/fieldgroup.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/container-inline.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/clearfix.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/details.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/hidden.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/item-list.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/js.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/nowrap.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/position-container.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/progress.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/reset-appearance.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/resize.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/sticky-header.module.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-counter.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-report-counters.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/system-status-report-general-info.css?tjcjhj\" />\n<link rel=\"stylesheet\" media=\"all\" href=\"/core/modules/system/css/components/tabl"
+  },
+  {
+    "id": "person::https://openalex.org/A5062885870",
+    "kind": "person",
+    "title": "David Jos\u00e9 Menor-Campos",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5062885870",
+    "orcid": "https://orcid.org/0000-0003-3033-4936",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of C\u00f3rdoba",
+    "raw_affiliation": "Departamento de Medicina y Cirug\u00eda Animal, Universidad de C\u00f3rdoba, 14071 C\u00f3rdoba, Spain",
+    "pi_last_author": "David Jos\u00e9 Menor-Campos",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Beliefs About Cats and Dogs Among Pet Owners and Former Owners",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Beliefs About Cats and Dogs Among Pet Owners and Former Owners\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::Fondation Fyssen \u2014 postdoctoral study grants",
+    "kind": "grant",
+    "title": "Fondation Fyssen \u2014 postdoctoral study grants",
+    "source": "Fondation Fyssen \u2014 postdoctoral study grants",
+    "url": "https://www.fondationfyssen.fr/en/",
+    "deadline": null,
+    "eligibility_notes": "Animal-cognition-focused foundation; postdoc study grants (~\u20ac45k range) for mobility. Postdoc-stage \u2014 seed for after the PhD.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "postdoc",
+      "mobility",
+      "cognition",
+      "animal-behaviour"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Annual \u2014 application window roughly Feb\u2013Mar (confirm on site)",
+    "tier": "national",
+    "_page_excerpt": "<!doctype html>\n<html lang=\"en-US\">\n\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n<link rel=\"alternate\" href=\"https://www.fondationfyssen.fr/\" hreflang=\"fr\" />\n<link rel=\"alternate\" href=\"https://www.fondationfyssen.fr/en/home/\" hreflang=\"en\" />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>Home - fyssen</title>\n<link data-rocket-prefetch href=\"https://www.googletagmanager.com\" rel=\"dns-prefetch\">\n<link data-rocket-prefetch href=\"https://www.gstatic.com\" rel=\"dns-prefetch\">\n<link data-rocket-prefetch href=\"https://www.google.com\" rel=\"dns-prefetch\"><link rel=\"preload\" data-rocket-preload as=\"image\" href=\"https://www.fondationfyssen.fr/wp-content/uploads/2024/09/image-11-1-1.png\" fetchpriority=\"high\">\n\t<link rel=\"canonical\" href=\"https://www.fondationfyssen.fr/en/home/\" />\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:locale:alternate\" content=\"fr_FR\" />\n\t<meta property=\"og:type\" content=\"website\" />\n\t<meta property=\"og:title\" content=\"Home - fyssen\" />\n\t<meta property=\"og:description\" content=\"Our actions Post-doctoral study grants The grants are aimed at post-doctoral level researchers, working in research disciplines such as ethology, psychology, paleontology, archaeology, social anthropology and neurobiology Research Grants Fyssen Foundation research grants aim to facilitate the execution of research projects that enhance understanding of the mechanisms of behaviour and cognition in living beings, as [&hellip;]\" />\n\t<meta property=\"og:url\" content=\"https://www.fondationfyssen.fr/en/home/\" />\n\t<meta property=\"og:site_name\" content=\"fyssen\" />\n\t<meta property=\"article:modified_time\" content=\"2025-11-28T09:30:48+00:00\" />\n\t<meta property=\"og:image\" content=\"https://www.fondationfyssen.fr/wp-content/uploads/2025/04/shutterstock_17089694891-scaled.jpg\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/\",\"url\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/\",\"name\":\"Home - fyssen\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#organization\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.fondationfyssen.fr\\/wp-content\\/uploads\\/2025\\/04\\/shutterstock_17089694891-scaled.jpg\",\"datePublished\":\"2024-10-28T09:56:56+00:00\",\"dateModified\":\"2025-11-28T09:30:48+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#primaryimage\",\"url\":\"https:\\/\\/www.fondationfyssen.fr\\/wp-content\\/uploads\\/2025\\/04\\/shutterstock_17089694891-scaled.jpg\",\"contentUrl\":\"https:\\/\\/www.fondationfyssen.fr\\/wp-content\\/uploads\\/2025\\/04\\/shutterstock_17089694891-scaled.jpg\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#website\",\"url\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/\",\"name\":\"fyssen\",\"description\":\"Un site utilisant WordPress\",\"publisher\":{\"@id\":\"https:\\/\\/www.fondationfyssen.fr\\/en\\/home\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAc"
+  },
+  {
+    "id": "person::https://openalex.org/A5101772132",
+    "kind": "person",
+    "title": "Andrea Jeanette V\u00e9lez Vera",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5101772132",
+    "orcid": "https://orcid.org/0000-0003-4590-5009",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universidad de La Laguna",
+    "raw_affiliation": "Departamento de Psicolog\u00eda Cognitiva, Social y Organizacional, Universidad de La Laguna, La Laguna, Spain",
+    "pi_last_author": "Bernardo Hern\u00e1ndez",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Pets, protected animals and farm animals: three perceptual spaces of animal abuse",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Pets, protected animals and farm animals: three perceptual spaces of animal abuse\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::SEEEE \u2014 Sociedad Espa\u00f1ola de Etolog\u00eda y Ecolog\u00eda Evolutiva",
+    "kind": "grant",
+    "title": "SEEEE \u2014 Sociedad Espa\u00f1ola de Etolog\u00eda y Ecolog\u00eda Evolutiva",
+    "source": "SEEEE \u2014 Sociedad Espa\u00f1ola de Etolog\u00eda y Ecolog\u00eda Evolutiva",
+    "url": "https://etologia.org/",
+    "deadline": null,
+    "eligibility_notes": "Spanish ethology/evolutionary-ecology society - young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based. NOTE: www.etologia.org threw an SSL cert error last run; entry now uses etologia.org (no www).",
+    "why_it_fits": "",
+    "tags": [
+      "thesis-prize",
+      "travel",
+      "animal-behaviour",
+      "ecology",
+      "spain"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Annual, around the society congress",
+    "tier": "national",
+    "_page_excerpt": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n<title>SEEEE</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n<meta name=\"title\" content=\"SEEEE\"/>\n<meta name=\"description\" content=\"Sociedad Espa\u00f1ola de Etolog\u00eda y Ecolog\u00eda Evolutiva\"/>\n<meta name=\"author\" content=\"Jos\u00e9 M. Hern\u00e1ndez\"/>\n\n<link href=\"/librerias/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\"/>\n<link href=\"/css/principal.css\" rel=\"stylesheet\"/>\n<link href=\"/plantillas/templates/seee/css/estilos.css\" rel=\"stylesheet\"/>\n<link href=\"/librerias/fontawesome/css/all.min.css\" rel=\"stylesheet\"/>\n\t\n\n</head>\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n    <div class=\"container\">\n      <a class=\"navbar-brand\" href=\"http://etoecoevo.org/\"><img alt=\"SEEEE\" src=\"/plantillas/templates/seee/images/logo.png\" />SEEEE</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n        <ul class=\"navbar-nav ml-auto\">\n        \t<li class=\"nav-item active\"><a class=\"nav-link\" href=\"seeee\">La SEEEE</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"publicaciones\">Publicaciones</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"noticias\">Noticias</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"actividades\">Actividades</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"hacerse-socio\">Socios</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"recursos\">Recursos</a></li><li class=\"nav-item active\"><a class=\"nav-link\" href=\"contacto\">Contacto</a></li>\n\t\t&nbsp;&nbsp;<a href=\"https://www.facebook.com/etoespana\" target=\"_blank\">\n\t\t<img src=\"/imagenes/fb.png\" style=\"width:24px; height:24px; margin-top:8px\"/>\t \n\t\t</a>\n\t\t\n        </ul>\n      </div>\n    </div>\n  </nav>\n<div class=\"contenido\"><div class=\"container\">    <!-- Jumbotron Header -->    <div class=\"jumbotron my-4 cuadro-3\">      <h1 class=\"display-3 blanco\">SEEEE</h1>      <p class=\"lead blanco\">Sociedad Espa\u00f1ola de Etolog\u00eda y Ecolog\u00eda Evolutiva</p>      <a href=\"contacto\" class=\"btn btn-primary btn-lg\">Contacta con nosotros</a>    </div>    <!-- Page Features -->\n    <div class=\"row text-center\">\n\n      <div class=\"col-lg-3 col-md-6 mb-4\">\n        <div class=\"card h-100\">\n          <img class=\"card-img-top\" src=\"/imagenes/donana.jpg\" alt=\"\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">XIX  Congreso Nacional y XVI Iberoamericano de Etolog\u00eda y Ecolog\u00eda  Evolutiva</h4>\n            <p class=\"card-text\">Sevilla del 2 al 5 de septiembre de  2025</p>\n          </div>\n          <div class=\"card-footer\">\n            <a href=\"xix-congreso\" class=\"btn btn-primary\">M\u00e1s informaci\u00f3n</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 col-md-6 mb-4\">\n        <div class=\"card h-100\">\n          <img class=\"card-img-top\" src=\"cont/fotos/Fotonot_18.jpg\" alt=\"\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Convocatoria de ayudas a la investigaci\u00f3n de la SEEEE</h4>\n            <p class=\"card-text\">Resoluci\u00f3n de la convocatoria de Ayudas a la Investigaci\u00f3n de la SEEEE A\u00f1o 2022</p>\n          </div>\n          <div class=\"card-footer\">\n            <a href=\"http://etoecoevo.org/resolucin-de-la-convocatoria-de-ayudas-a-la-investigacin-de-la-seeee-ao-2022\" class=\"btn btn-primary\">M\u00e1s informaci\u00f3n</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 col-md-6 mb-4\">\n        <div class=\"card h-100\">\n          <img class=\"card-img-top\" src=\"cont/docs/cursoeto.jpg\" alt=\"\">\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">Pr\u00f3xima edici\u00f3n \u201cAproximaciones actuales en ecolog\u00eda del comportamiento\u201d</h4>\n   "
+  },
+  {
+    "id": "person::https://openalex.org/A5001223146",
+    "kind": "person",
+    "title": "Bernardo Hern\u00e1ndez",
+    "source": "OpenAlex-ES",
+    "url": "https://openalex.org/A5001223146",
+    "orcid": "https://orcid.org/0000-0003-0860-3722",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Universidad de La Laguna",
+    "raw_affiliation": "Departamento de Psicolog\u00eda Cognitiva, Social y Organizacional, Universidad de La Laguna, La Laguna, Spain",
+    "pi_last_author": "Bernardo Hern\u00e1ndez",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic-ES:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Pets, protected animals and farm animals: three perceptual spaces of animal abuse",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic-ES",
+    "tier": "national",
+    "why_it_fits": "[topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. \"Pets, protected animals and farm animals: three perceptual spaces of animal abuse\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::ASAB Research Grants",
+    "kind": "grant",
+    "title": "ASAB Research Grants",
+    "source": "ASAB Research Grants",
+    "url": "https://www.asab.org/research-grants",
+    "deadline": null,
+    "eligibility_notes": "Up to \u00a310k (\u00a315k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas \u2014 fine for Spain. No overheads.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "travel",
+      "collaboration",
+      "animal-behaviour"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Three rounds/year \u2014 deadlines 1 Feb, 1 Jun, 1 Oct (verified)",
+    "tier": "international",
+    "_page_excerpt": "<!doctype html>\n<html xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://www.facebook.com/2008/fbml\" lang=\"en-GB\"  >\n  <head>\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <!-- This is Squarespace. --><!-- asab -->\n<base href=\"\">\n<meta charset=\"utf-8\" />\n<title>Research Grants &mdash; ASAB</title>\n<meta http-equiv=\"Accept-CH\" content=\"Sec-CH-UA-Platform-Version, Sec-CH-UA-Model\" /><link rel=\"icon\" type=\"image/x-icon\" href=\"https://images.squarespace-cdn.com/content/v1/55759105e4b0156262b76f6f/1609841031124-FY3C2ZQS8F4RR3K4Z093/favicon.ico?format=100w\"/>\n<link rel=\"canonical\" href=\"https://www.asab.org/research-grants\"/>\n<meta property=\"og:site_name\" content=\"ASAB\"/>\n<meta property=\"og:title\" content=\"Research Grants &mdash; ASAB\"/>\n<meta property=\"og:url\" content=\"https://www.asab.org/research-grants\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:description\" content=\"Research Grants of up to \u00a310,000 support original research projects.\"/>\n<meta property=\"og:image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta property=\"og:image:width\" content=\"400\"/>\n<meta property=\"og:image:height\" content=\"400\"/>\n<meta itemprop=\"name\" content=\"Research Grants \u2014 ASAB\"/>\n<meta itemprop=\"url\" content=\"https://www.asab.org/research-grants\"/>\n<meta itemprop=\"description\" content=\"Research Grants of up to \u00a310,000 support original research projects.\"/>\n<meta itemprop=\"thumbnailUrl\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<link rel=\"image_src\" href=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\" />\n<meta itemprop=\"image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta name=\"twitter:title\" content=\"Research Grants \u2014 ASAB\"/>\n<meta name=\"twitter:image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta name=\"twitter:url\" content=\"https://www.asab.org/research-grants\"/>\n<meta name=\"twitter:card\" content=\"summary\"/>\n<meta name=\"twitter:description\" content=\"Research Grants of up to \u00a310,000 support original research projects.\"/>\n<meta name=\"description\" content=\" Research Grants of up to \u00a310,000 support original research projects. \" />\n<link rel=\"preconnect\" href=\"https://images.squarespace-cdn.com\">\n<link rel=\"preconnect\" href=\"https://use.typekit.net\" crossorigin>\n<link rel=\"preconnect\" href=\"https://p.typekit.net\" crossorigin>\n<script type=\"text/javascript\" src=\"//use.typekit.net/ik/7Ygx-OiXE4XjggQ34nhRvsAjAPGnaFaVe9zplQRPg-wfe1wJXnX1IyvhF2jtFRZLFQ9aFQqUw2m8FeJ3wQ9hwRjkjRShZRZce6MK2YgkdayTdAIldcNhjPG4fHvgIMMjgfMfH6qJnbIbMg6eJMJ7fbKOMsMMeMS6MKG4fOMgIMMj2KMfH6qJRMIbMg6sJMHbMZW_3Sbe.js\" async fetchpriority=\"high\" onload=\"try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');\"></script>\n<script>document.documentElement.classList.add('wf-loading')</script>\n<style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>\n<script type=\"text/javascript\" crossorigin=\"anonymous\" defer=\"true\" nomodule=\"nomodule\" src=\"//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js\"></script>\n<script type=\"text/javascript\" crossorigin=\"anonymous\" defer=\"true\" src=\"//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js\"></script>\n<script data-name=\"static-context\">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {\"betaFeatureFlags\":[\"campaigns_table_v2\",\"commerce_product_payment_plan_editing\",\"campaigns_discount_section_in_blasts\",\"enable_modernized_pdp_m3_fluid"
+  },
+  {
+    "id": "person::https://openalex.org/A5088217940",
+    "kind": "person",
+    "title": "Vitor Hugo Bessa Ferreira",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5088217940",
+    "orcid": "https://orcid.org/0000-0001-7752-2382",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Link\u00f6ping University",
+    "raw_affiliation": "IFM Biology, AVIAN Behavioural Genomics and Physiology group, Link\u00f6ping University, 581 83 Link\u00f6ping, Sweden; INRAE, CNRS, IFCE, Universit\u00e9 de Tours, Centre Val de Loire UMR Physiologie de la Reproduction et des Comportements, 37380 Nouzilly, France. Electronic address: vitor.ferreira@inrae.fr; LIU - Link\u00f6ping University (SE-581 83 Link\u00f6ping - Sweden); PRC - Physiologie de la reproduction et des comportements [Nouzilly] (Centre de Recherches de Tours 37380 Nouzilly - France)",
+    "pi_last_author": "Per Jensen",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic",
+    "tier": "international",
+    "why_it_fits": "[topic] overlaps 1 of your topics (animal cognition); e.g. \"Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::ASAB Scholarships & smaller grants",
+    "kind": "grant",
+    "title": "ASAB Scholarships & smaller grants",
+    "source": "ASAB Scholarships & smaller grants",
+    "url": "https://www.asab.org/grant-overview",
+    "deadline": null,
+    "eligibility_notes": "Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "travel",
+      "animal-behaviour",
+      "sci-comm"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Various",
+    "tier": "international",
+    "_page_excerpt": "<!doctype html>\n<html xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://www.facebook.com/2008/fbml\" lang=\"en-GB\"  >\n  <head>\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <!-- This is Squarespace. --><!-- asab -->\n<base href=\"\">\n<meta charset=\"utf-8\" />\n<title>Grants  Overview &mdash; ASAB</title>\n<meta http-equiv=\"Accept-CH\" content=\"Sec-CH-UA-Platform-Version, Sec-CH-UA-Model\" /><link rel=\"icon\" type=\"image/x-icon\" href=\"https://images.squarespace-cdn.com/content/v1/55759105e4b0156262b76f6f/1609841031124-FY3C2ZQS8F4RR3K4Z093/favicon.ico?format=100w\"/>\n<link rel=\"canonical\" href=\"https://www.asab.org/grant-overview\"/>\n<meta property=\"og:site_name\" content=\"ASAB\"/>\n<meta property=\"og:title\" content=\"Grants  Overview &mdash; ASAB\"/>\n<meta property=\"og:url\" content=\"https://www.asab.org/grant-overview\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta property=\"og:image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta property=\"og:image:width\" content=\"400\"/>\n<meta property=\"og:image:height\" content=\"400\"/>\n<meta itemprop=\"name\" content=\"Grants  Overview \u2014 ASAB\"/>\n<meta itemprop=\"url\" content=\"https://www.asab.org/grant-overview\"/>\n<meta itemprop=\"thumbnailUrl\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<link rel=\"image_src\" href=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\" />\n<meta itemprop=\"image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta name=\"twitter:title\" content=\"Grants  Overview \u2014 ASAB\"/>\n<meta name=\"twitter:image\" content=\"http://static1.squarespace.com/static/55759105e4b0156262b76f6f/t/5ff4424af90c08416ceb867e/1609843276449/asab+logo.jpg?format=1500w\"/>\n<meta name=\"twitter:url\" content=\"https://www.asab.org/grant-overview\"/>\n<meta name=\"twitter:card\" content=\"summary\"/>\n<meta name=\"description\" content=\"\" />\n<link rel=\"preconnect\" href=\"https://images.squarespace-cdn.com\">\n<link rel=\"preconnect\" href=\"https://use.typekit.net\" crossorigin>\n<link rel=\"preconnect\" href=\"https://p.typekit.net\" crossorigin>\n<script type=\"text/javascript\" src=\"//use.typekit.net/ik/7Ygx-OiXE4XjggQ34nhRvsAjAPGnaFaVe9zplQRPg-wfe1wJXnX1IyvhF2jtFRZLFQ9aFQqUw2m8FeJ3wQ9hwRjkjRShZRZce6MK2YgkdayTdAIldcNhjPG4fHvgIMMjgfMfH6qJnbIbMg6eJMJ7fbKOMsMMeMS6MKG4fOMgIMMj2KMfH6qJRMIbMg6sJMHbMZW_3Sbe.js\" async fetchpriority=\"high\" onload=\"try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');\"></script>\n<script>document.documentElement.classList.add('wf-loading')</script>\n<style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>\n<script type=\"text/javascript\" crossorigin=\"anonymous\" defer=\"true\" nomodule=\"nomodule\" src=\"//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js\"></script>\n<script type=\"text/javascript\" crossorigin=\"anonymous\" defer=\"true\" src=\"//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js\"></script>\n<script data-name=\"static-context\">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {\"betaFeatureFlags\":[\"campaigns_new_image_layout_picker\",\"campaigns_discount_section_in_blasts\",\"modernized-pdp-m2-enabled\",\"campaigns_thumbnail_layout\",\"enable_form_submission_trigger\",\"commerce_product_payment_plan_editing\",\"contacts_and_campaigns_redesign\",\"campaigns_discount_section_in_automations\",\"supports_versioned_template_assets\",\"scripts_defer\",\"member_areas_feature\",\"cdk_website_components_video_lazy_loading_enabled\",\"enable_modernized_standalone_pages\",\"override_block_styles\",\"output_template_css_assets\",\"enable_modernized_pdp_m3_fluid\",\"cam"
+  },
+  {
+    "id": "person::https://openalex.org/A5071463695",
+    "kind": "person",
+    "title": "Per Jensen",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5071463695",
+    "orcid": "https://orcid.org/0000-0001-5491-0649",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Link\u00f6ping University",
+    "raw_affiliation": "IFM Biology, AVIAN Behavioural Genomics and Physiology group, Link\u00f6ping University, 581 83 Link\u00f6ping, Sweden. Electronic address: per.jensen@liu.se; LIU - Link\u00f6ping University (SE-581 83 Link\u00f6ping - Sweden)",
+    "pi_last_author": "Per Jensen",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic",
+    "tier": "international",
+    "why_it_fits": "[topic] overlaps 1 of your topics (animal cognition); e.g. \"Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::Animal Behavior Society \u2014 Grants & Awards",
+    "kind": "grant",
+    "title": "Animal Behavior Society \u2014 Grants & Awards",
+    "source": "Animal Behavior Society \u2014 Grants & Awards",
+    "url": "https://www.animalbehaviorsociety.org/web/awards.php",
+    "deadline": null,
+    "eligibility_notes": "Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing \u2014 factor membership into eligibility.",
+    "why_it_fits": "",
+    "tags": [
+      "grant",
+      "travel",
+      "thesis-prize",
+      "animal-behaviour"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Annual cycles per award",
+    "tier": "international",
+    "_page_excerpt": "\n<!DOCTYPE html>\n<html lang=\"en\" >\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <!-- Change Website title here -->\n    <title>The Animal Behavior Society</title>\n    \n    <!--Bootstrap Framework Version 4.0.0 Beta --> \n    <link href=\"css/bootstrap.min.css\" type=\"text/css\" rel=\"stylesheet\">\n    \n    <!--Font Awesome Version 4.7.0 --> \n  <script src=\"https://kit.fontawesome.com/11e002d99b.js\" crossorigin=\"anonymous\"></script>\n    \n    <!--EDUComp Stylesheets --> \n    <link href=\"css/vendors.min.css\" type=\"text/css\" rel=\"stylesheet\">\n    <link href=\"css/style.min.css\" type=\"text/css\" rel=\"stylesheet\" id=\"style\">\n    <link href=\"css/components.min.css\" type=\"text/css\" rel=\"stylesheet\" id=\"components\">\n    \n    <!--Google Fonts--> \n    <link href=\"https://fonts.googleapis.com/css?family=Noto+Serif:400,400i\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700\" rel=\"stylesheet\">\n    \n    \n    <link href=\"css/color-options/Green/components.css\" type=\"text/css\" rel=\"stylesheet\">\n    <link href=\"css/color-options/Green/style.css\" type=\"text/css\" rel=\"stylesheet\">\n    \n    <!-- Respond.js and HTML shiv provide HTML5 support in older browsers like IE9 and 8 -->\n    <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n        <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n<style>\n    \n    \n    .bold {font-weight:bold!important;}\n    \n    \n    .brief {font-size:14px;}    \n    \n    .row.fw-row.coloured-box-wrap .coloured-box-inner {\n    padding: 12%;\n    color: #ffffff;\n        \n        \n}\n    \n    .row.fw-row.coloured-box-wrap .col-sm-2,\n.row.fw-row.coloured-box-wrap .col-sm-3,\n.row.fw-row.coloured-box-wrap .col-sm-4 {\n    padding-left: 0px;\n    padding-right: 0px;\n}\n\n.row.fw-row.coloured-box-wrap .btn.v-btn {\n    margin-top: 10px;\n}\n\n.row.fw-row.coloured-box-wrap .coloured-box-inner {\n    padding: 12%;\n    color: #ffffff;\n}\n    \n    \n    .coloured-box-inner:hover {opacity:.8;}    \n  \n</style>\n    \n    <script>\n        \n        function divToggle(id) {\n  var x = document.getElementById(id);\n  if (x.style.display === \"none\") {\n    x.style.display = \"inline\";\n      \n      var x = document.getElementById('searchShow');  \n         x.style.display = \"none\";\n      \n      \n  } else {\n    x.style.display = \"none\";\n  }\n}\n        \n        \n</script>\n</head>\n\n<body >\n\n    <div class=\"loader-backdrop\">           <!-- Loader -->\n        <div class=\"loader\">\n            <div class=\"ball-1\"></div>\n            <div class=\"ball-2\"></div>\n        </div>\n    </div>\n    \n    <header class=\"header-2\">            <!-- Header = Topbar + Navigation Bar -->\n        <div class=\"topbar-wrapper\">\n            <div class=\"container\">            <!-- Dark Blue Topbar -->\n                <div class=\"topbar\">\n                    <div >\n                        <a href=\"index.php\" style=\"color:#fff!important;font=weight:normal!important;font-size:16px;\">Animal Behavior Society </a>    <!-- Change Topbar Contact Number here -->\n                    </div>\n                    <div>\n                        <ul class=\"topbar-widgets\">         <!-- Topbar Widgets - Cart, Language Select & Login Signup -->\n                            <!--<li>\n                                <span data-toggle=\"modal\" data-target=\"#cart-modal\">\n                                    <i class=\"fa fa-shopping-cart\"></i>\n                                </span>\n                            </li>\n                            <li>\n                                <span data-toggle=\"modal\" data-target=\"#lang-modal\">\n                                    <i class=\"fa fa-globe\"></i>\n                                </span>\n                            </li>-->\n      "
+  },
+  {
+    "id": "person::https://openalex.org/A5135575064",
+    "kind": "person",
+    "title": "Elodie P. Remoissenet",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5135575064",
+    "orcid": "https://orcid.org/0009-0004-6031-659X",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "Barnsley College",
+    "raw_affiliation": "Barkley AI",
+    "pi_last_author": "",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic:Human-Animal Interaction Studies"
+    ],
+    "example_work": "From Surveillance to Cognition: A Unified Framework for Precision Behavioral and Metabolic Intelligence in Companion Animals",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic",
+    "tier": "international",
+    "why_it_fits": "[topic] overlaps 1 of your topics (animal cognition); e.g. \"From Surveillance to Cognition: A Unified Framework for Precision Behavioral and Metabolic Intelligence in Companion Animals\"",
+    "warm_tie": null
+  },
+  {
+    "id": "source::Company of Biologists \u2014 Travelling Fellowships",
+    "kind": "grant",
+    "title": "Company of Biologists \u2014 Travelling Fellowships",
+    "source": "Company of Biologists \u2014 Travelling Fellowships",
+    "url": "https://www.biologists.com/grants/travelling-fellowships/",
+    "deadline": null,
+    "eligibility_notes": "Up to \u00a33k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology.",
+    "why_it_fits": "",
+    "tags": [
+      "travel",
+      "collaboration",
+      "mobility"
+    ],
+    "warm_tie": null,
+    "reachable": true,
+    "cadence": "Rolling / journal-specific",
+    "tier": "international",
+    "_page_excerpt": "\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003\ufffd\ufffd\ufffdz\ufffd\u01b2(\ufffd\ufffd\ufffd\ufffd\ufffd\u000e\u001d\ufffd[\u0011\ufffd\ufffd\u0002\ufffdw\ufffdr\ufffd-\u06c9\ufffdvb\ufffd\ufffdI\ufffd\u06b6G\u0007\u0004@\u00126\b0\u0000(YK\ufffd|\ufffd5\ufffd\ufffd3\u007f\ufffd5\u03bc\ufffd<\ufffdTUw\u0003\r\u0010 A\ufffdv.\ufffd\ufffdX\"\ufffdR]]]]]U]\ufffd}\ufffd\ufffd\ufffd/\ufffd^\ufffd\ufffd\ufffd\u00136\ufffd\u0017\u0783\ufffd\ufffd\ufffd\u000f\ufffdL\u007fvZs\ufffd\u05b7\ufffdj\ufffd\ufffd\ufffd\ufffd\ufffdw\ufffd/\ufffd\ufffdd\ufffd\ufffd\f#'>\ufffd\ufffd\ufffd\ufffdikTc\u001d\ufffda\ufffds?\ufffdBw\u0019\ufffd\ufffdj\ufffd\ufffdb\ufffdc\ufffdyo^\ufffd<\u0015\ufffd0\ufffds\ufffd\ufffdV\ufffd\ufffdi\ufffd\u001e\ufffd\ufffd\ufffd\ufffd\ufffd\u31ef\u001f\ufffd\ufffdt\u001e`bR\ufffd>]\ufffdV\ufffd\u0006~\ufffdn\ufffd\ufffd$\u0019\u007f.\u0310Y\ufffd?ug\ufffd4\ufffd%\u007f>\ufffd\ufffd3\ufffd\ufffd\u001d\ufffd\ufffd\ufffd\ufffd\ufffd\u001b\u001f5\u000bKq\ufffd^\ufffd\u000b'X\ufffd\u01ec\ufffdi\ufffdZ\ufffd\ufffd\ufffd\ufffd\ufffdS\ufffdm\u0007\ufffdj\ufffd\ufffd\ufffd\u0013\ufffd\ufffd?\ufffd\ufffd\u0014\ufffd! \ufffd\ufffd7\ufffd\ufffdm\ufffd3\ufffd\ufffd\u0007s\ufffd*\ufffd\u06e1\ufffd\ufffdL\u02e9w\ufffdN.\ufffd-/0m\u05df\ufffd\ufffdtf\u0363\ufffd\ufffd\ufffdG\f\u0012]\ufffd\u0004(\u0017\ufffd\ufffd\ufffdM\ufffdw\ufffd\ufffdA\ufffd\u044c?\u0000&V\u8631#\ufffd\u001f\ufffd\"G\ufffd\ufffd\ufffdtjz\ufffd\u04cc\ufffd\ufffd\u0311\ufffdF\ufffd\ufffd^\ufffd3D!-\ufffdF{\ufffd4O\u0014\ufffd>%\u0004\u0004VG'\ufffdv\u0014Z\ufffdG\ufffd8^F\u01dd\ufffd*r\ufffd8\ufffd@\ufffd\ufffd\u011d\ufffd\ufffd\u0005~D\ufffd\ufffd\ufffd\ufffd\uf8e3\u0013\u0006\ufffd\ufffd\ufffd\u02b7N\ufffdp\ufffd \ufffd\ufffdG\ufffd\ufffd\ufffd\t\ufffd\ufffd\ufffd\ufffd\u00180\u0007V\ufffdg\u03a9B3\ufffd4\ufffd\ufffdQ\ufffd\ufffd\ufffd\ufffd\"'\ufffd>\ufffd\ufffd7\ufffd\ufffd/\ufffd/N\ufffd\ufffd`\ufffd\ufffd\ufffd\ufffd9\ufffd_\u0011\ufffdc\u001f5B'^\ufffd\ufffd\u02547gy\ufffd\u0019\ufffd\ufffd\u001b'qxu\ufffdZ\ufffd\ufffd5\ufffd\u001c\ufffd\u018de\ufffd\u05bc\ufffd4\ufffdonN\ufffd\ufffd\ufffd\f\ufffdH?\u0004\ufffd\ufffdv\ufffd\ufffd\t\ufffdG\ufffd4\b\ufffdz\ufffd\ufffd\u00195\u0012F\ufffdi\ufffd\ufffd\ufffd7N\ufffdT\ufffd\ufffd\ufffd\ufffdq6\ufffd\ufffd\ufffd\ufffd}Pe^\u0739\ufffdL=\ufffd&\ufffd\u001b;\ufffd\ufffd\u0003\ufffdN\ufffd}yy\u065e\ufffd\ufffd\u0017\ufffd\ufffd(\ufffd\ufffd@\ufffd\ufffd\ufffdl\u001b\u0002>\ufffd\ufffd\ufffdg\ufffd\ufffdl\ufffd\ufffds\ufffdM\u0003\ufffd\u000b.a\u0018\ufffd\ufffd\ufffdN\ufffd\ufffd\ufffd\ufffd\u0014>R\ufffd,6g\ufffd\u0006\ufffd\ufffdg\ufffds\ufffd\ufffd0,\ufffd\ufffd\u0016\u000e\u0005\ufffd6\ufffd\ufffd\f\ufffd \ufffd\ufffdW\ufffd*\ufffd\ufffd0\ufffd\f\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdo\u039c\ufffdE\ufffd\ufffd\\:1\ufffd\ufffd6\ufffd\ufffdm\ufffd\ufffd\ufffd\u073c\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd~co\ufffdaW\u0012\u00048B\ufffdI\ufffd\ufffdr\u0015\ufffd\ufffdf8#jG\ufffd\ufffd\ufffd\ufffd\u001c\ufffd3\ufffd\ufffd\ufffd\u0000\ufffd1W^\f8.\u0016\ufffdo\ufffd\t\ufffdX\u0019~\ufffd\ufffdG\u001ap\u0018\ufffd\ufffd~\u0015\ufffdl\u001e\\\u0012$\ufffd\u0001\ufffdN\b,G\ufffd\ufffd\ufffd+\ufffd\ufffdf\ufffd\u0007\ufffd;\ufffdR\u001b\ufffd8\f(\ufffd\t2YEH\ufffd\ufffd\ufffd\u03af+7\u4ccd!F\ufffdp\ufffdp\u0011$\ufffdYh\ufffd\ufffdcwl\ufffdw\u001d\ufffd\u025c\ufffd\ufffd}\f\ufffd\ufffd\ufffdG\ufffd\ufffdQ\ufffd\u001d\ufffdv\ufffd#\ufffdqG\ufffd}\u001e\ufffdA\b\ufffd8:\ufffdl\ufffd/$\u001b\ufffd\ufffd\ufffd\f\u03d1p\ufffd\ufffd\ufffdg\u0014\ufffd\ufffd\ufffd\ufffd\ufffdDB\u0017\ufffd\ufffd\u032b\u0635\"\ufffd\u0011\ufffd\ufffd,#\ufffd\t\ufffd\ufffdW\u001b\ufffd\ufffd\u001a+G;r\ufffdU\ufffd\u0019\u05a5\ufffd\ufffd\ufffd0\ufffd\ufffd%t\u000eK\ufffdIL\ufffd\ufffd\ufffdK\ufffd\ufffd\ufffd]\\<\u0637A0\ufffdh Y]0@\ufffd\ufffd\ufffd\ufffd+\ufffd\u001f\t$\ufffd\u00ac\ufffdN\ufffd\u0019\u0543\n\u000b\ufffd&8\ufffd:\b\ufffd\ufffd>\ufffd\u01b5O\ufffdm\ufffd\ufffd\ufffd~\ufffd\ufffd\ufffd\ufffd\ufffdu\ufffd\ufffd m5\ufffdv;0\ufffd.\ufffd\ufffdy\u0002\ufffdi\ufffd\ufffd\ufffd%{\f\ufffd\ufffd7\ufffd\ufffdw\u0013f\u0001\u0019\ufffd\ufffd\ufffd\"x\ufffd!\f\ufffd\ufffd\tpa)mx\ufffd\ufffdv\ufffd^\ufffd\ufffdr\ufffd\ufffd\ufffd\ufffd_Z\ufffd\ufffd\ufffdw\u0007#]\u001b\f\n\ufffd\ufffd\t\ufffd\ufffd\ufffd_\u0005\ufffdT\ufffd\ufffd\ufffdf\u0016\ufffd\u0002zv\ufffdS+\ufffd\ufffd\ufffd\ufffd\u0467\ufffd\ubc27\ufffd\u01a0\ufffd\ufffd\u007ft\ufffd&\ufffd\ufffd\ufffdt+\ufffdH\ufffd\ufffdQ\ufffd\ufffd]\ufffd\ufffd\ufffd2\b\ufffd\u001a\ufffd\ufffd\u0018P:\ufffd]\ufffdv\f\u0699s\ufffdZN\ufffd\ufffd4\ufffd\ubef1kz\ufffd\bV4\ufffdT']U\u0001s\u0014\u0006\ufffd \ufffd\ufffd\u0012 G@\u0019\ufffdcS,\ufffdM\ufffd0?\ufffd\ufffd\u0005P\ufffd\ufffd\f\u001dl\ufffd\ufffd\u0003\u001a8<C,w\ufffd-\ufffd\u007f\ufffdpm'H\n\ufffd\ufffd#l\ufffd\ufffd\u0002 \ufffd\ufffd\ufffdi\ufffdO.\ufffd\ufffdsX\ufffd\u001d\ufffd\t\ufffd\ufffd/\ufffd?\ufffd='U\ufffd\ufffdL\ufffd\b\ufffd\u0016X\u001c\ufffd\u0000{\u0000\ufffd\ufffds\u04f2`\u0001r'.\ufffdgR\ufffdO\ufffd\u007f\ufffd{\ufffdv/\u0018)w\ufffd5(\ufffd\ufffd\u0014\u0013J\ufffd}\u0013\ufffd=\ufffd\ufffd\ufffd\u05b4\u001a\ufffd\ufffd\ufffd\ufffd\ufffdv/[T\u0002\ufffd\\\ufffd&^`}hMVq\f\ufffd\ufffd\u001c4\ufffd\u000f5\u0016\ufffd\ufffd\ufffdZ\u001f\ufffd{\ufffd\f\ufffd\ufffdZ\ufffd\ufffd8\ufffd\nZ\ufffd\ufffd\ufffd\ufffd\t\ufffdj\ufffd4}\t\ufffd6\ufffd\ufffd\ufffd\ufffd\u001fK>\ufffdV>h\ufffda\u0004c\ufffd\ufffd \ufffd:\u065aH\ufffd\u0683Lc\ufffdX\ufffd$\ufffdK\f\u0000\ufffd\ufffd\ufffdqC\u04f6\u001b-\\hq[\ufffd\u0012\ufffd\ufffd\ufffdF\u0014J\ufffdA\ufffd\ufffd\ufffd\ufffd\u001a=\ufffd\u0007?E\\\ufffd.]P;A\u001d\ufffd8\u001ej\u001f\u0001C\ufffd@k\ufffd\ufffdb'\ufffdMT\ufffd\u0645\u001b\ufffdL\u000f\u0014\n`(\ufffd\nh1\u0005\u0015e\ufffd.\ufffd\t*\ufffd\ufffd\u0011Z}\u0013\ufffd\u0015\u05da\u0003\u000f^\u0001\ufffd\u0018@\ufffdGh\ufffd\ufffd&\ufffd\ufffd\ufffdQ\ufffd~g\ufffd\ufffd\ufffd\ufffd\u0014\ufffd\u05ba\f\ufffd%j3\ufffdt\ufffd M\ufffd=\u0013\ufffd\ufffd\u0019\u0011\ufffd\ufffd$G@\ufffd)p%P^A\u0018S\ufffdw\ufffdt\u000e\u0002Q\u001f\ufffdU\ufffd~\u000b[K\u0010\ufffd\ufffd\ufffd\u0012\ufffd\ufffd&\t\ufffd\u0017\u04e9\ufffdr\u0006\ufffd\ufffd/WrF\ufffdhD\u050aZ\ufffd\tq\ufffd\ufffd\fC\ufffdM\ufffd\u001a\ufffdn\u0641=\ufffd\u0012 \ufffdP\ufffd\ufffdAf\u000b\ufffd?\ufffd\ufffd\ufffd)\ufffd\ufffd\u000fr6\ufffd\ufffd\u0018,\u0004\ufffd5\ufffd\u0000\ufffd5\ufffd\u0006\u0006\ufffd\ufffdr\ufffd\\\ufffd\u007fp\ufffd@\ufffdBu\ufffd!P\u0005/\u0222\ufffdS\ufffd\ufffdv\ufffd&\ufffd\ufffd@9?O\ufffd\ufffd\u001d\u0018\ufffd\u0007\ufffd\ufffd\u0743\ufffd\u0003J\ufffd\u040c\ufffd'\ufffdsgs\ufffdT^J\ufffd\u000f\u001e\ufffdaT\ufffd5d\ufffdO\ufffd\u001e\t\ufffd\ufffd,\ufffdfmb\u0013Y\uacf0J\ufffd\ufffd\ufffd\ufffd%\ufffd\ufffd\ufffdY\ufffd\u0013\ufffd*G\ufffd\ufffd\u00024\ufffd\ufffd?\u001a\ufffdp\u0722\u0002\ufffdIr6\ufffd\ufffd(\ufffdY8&\ufffd\ufffdN\f#\ufffd\u0786_\ufffd\ufffd\ufffd2\f\ufffd\ufffd\b\ufffd\f\ufffd/\f\ufffd~d\u001a\u000f\ufffd\u001b\u001f\ufffdx\ufffd\ufffdi\u0001\ufffd\ufffd\ufffd\r\ufffd\ufffd\ufffd<CH\ufffd3\fO\ufffd\ufffd-X\u2cf0\ufffd\ufffd\ufffdN|\ufffdiw+\ufffdr`\ufffd\ufffd\ufffd\t\ufffdHg\ufffd\ufffdZ\ufffd\ufffd?X\ufffdd\u0016\ufffdy;H\ufffd,\ufffdO\ufffd*\ufffdzP\ufffd8\ufffdKl\\\ufffd\ufffd\ufffd?\ufffdRU\ufffd\ufffdn+V\ufffd\ufffd]\ufffd\n\u0005\ufffd<\ufffd<8,\ufffd\ufffd\ufffd\ufffdk\ufffdW\ufffd\ufffd\ufffd\u01a7e(Di\ufffd\ufffd(5\ufffd8\ufffd\ufffd\u001bG(\ufffdY\ufffd%mg'\u001e!\ufffd\u001d\ufffd/x\ufffd]\ufffd\u7fdf\u073dC\ufffd\ufffd\ufffd}\ufffdW\ufffd\u001a\ufffd~9a\ufffd\u045e\ufffda\u0014\ufffd\u001bms\n+O\ufffd\ufffd\ufffd\u0016\ufffd\u0002`\ufffdY\u001f2==\u000b\ufffd\u000f\ufffd\u0003v\ufffd\ufffd\u001b\ufffd#Q\ufffd-\ufffd\u0006f\ufffd\ufffd%\u0011i\ufffd[\ufffd\ufffd6\ufffd{\ufffdd\ufffd\ufffdp\u0011\ufffd\t\u0014nr\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0019-\u001d+nJ\ufffd\u0012} \ufffd\ufffdC\ufffd\u0018W\ufffdSV\ufffd)\u0018\ufffdE\ufffd\ufffd\u0101RX\ufffd\u001c\ufffdY,|\ufffdN\ufffdN\ufffd=\f\u001d\ufffd[\t&\ufffdXp8\ufffd|\ufffd\u0014r\ufffd\ufffd\ufffdm\ufffd\u000bj3\ufffd\u0277\ufffd\ufffdL\ufffdto\ufffd\u0006\ufffd\u0004\ufffdw\u0016\ufffd;\ufffd\u000b\ufffd\ufffd\u000e7\ufffd\ufffd\u000f\f\ufffd\u070c$9a\ufffd5\ufffd(lC\ufffd\u0006\ufffdw\ufffd\ufffdQ\ufffd\ufffdv0\ufffdx\u001eN\ufffdo\ufffd(g\ufffd\ufffd\u0007#\ufffd\u0017\ufffd\ufffd\ufffd\u000bB\ufffd}\ufffd\nF\u001dR\ufffd\ufffd\u001b\ufffd\ufffdWT\ufffd\u001b\u0671~-\ufffd\u0019\ufffd\ufffd\ufffdc\"\ufffd;3\ufffd\u001b\ufffd\u0012=\ufffdS\ufffdt\ufffdL\ufffdVG\ufffdZ\ufffd\ufffdY\u0004\u0017\u026c\ufffd\ufffd\u0003f\ufffd\ufffd\ufffdej\ufffd\ufffd\ufffdy\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0012\ufffd7NTp\u0288\ufffdB*\u007f/Jm\ufffdp\t\ufffd\ufffdS\u0018)el\ufffdT\ufffd\u01c1\u0204\u06deS\ufffd[\t\ufffd\ufffd\ufffd\ufffd\ufffd`\ufffd&\ufffd\ufffd1X\ufffd\ufffd`\u0019\ufffd\ufffd\ufffd\ufffd\ufffdW\ufffdL,'\ufffd\ufffd\u0018Hb\ufffd\ufffd\u001by\ufffdQe`\ufffd'<\u0014\ufffd\ufffd\u001c\ufffdw\ufffd\ufffdh\ufffd\u05e0\ufffd\ufffd4-\ufffd\"u\ufffdLv\ufffd\ufffd\ufffdx\ufffd\ufffda#\ufffdj\ufffdK\\7\ufffd\ufffd`b\ufffd\ufffd(\u0002]8\u0013YQ99\u001b\ufffd(\ufffd\ufffdJ\ufffdp\ufffd0\ufffdr>\ufffd\u04e5V\ufffd+\ufffd\ufffd\u0013\ufffd\f\ufffd%]\ufffd\u0596\ufffd*\ufffde\ufffdC\ufffdZI\\\ufffd\ufffd\"\u01ff\ufffdYa\u0001~\ufffd\ufffd\ufffd0\b\ufffd#UP\ufffd\ufffdA\ufffd\ufffdM*\u001b\ufffd\ufffd\ufffd\ufffd7Y@J_\ufffdM`)\u0354\f\ufffd\ufffd?i\u0003\ufffd\ufffd!nk\ufffd\ufffd\ufffdj].[-\ufffd'\u01ed\u0016\ufffd\ufffd\ufffdV\ufffd \ufffd\u0016\ufffd=M\u001b>4\ufffd\u001e\ufffd\ufffdnuH\u001c\u0019\u0002u\ufffd\ufffd7\u058d\ufffdAmB\ufffdpB\u0000e~\u0004\ufffd1\ufffd?\u0011e\u0183\ufffd\ufffd \ufffdq\ufffd}C\ufffdg\ufffd\ufffdc\ufffd_D\ufffd\u0001\ufffd=}1\u0005#\u0006k\ufffd6\ufffd\ufffd\ufffd7)t\ufffd*\ufffdS\u001ef{\u0308\ufffd\u0010\u0014\ufffdB\u0000\u0400\ufffd\ufffdo2l\ufffd\u0005\ufffdy\u001bU\ufffdT\ufffdJ\ufffd\ufffd\ufffd\ufffdQ]\ufffd\ufffd\ufffdbF\ufffd*\ufffd\ufffd 2\ufffd\u0015\u0255\ufffd\u0017kJT\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdd\ufffd2\ufffdU\ufffd\ufffd\ufffd\ufffd\ufffd\u0526\ufffd<|M\ufffd3\u0019\ufffd#\u00188/\ufffdsz)\ufffd\ufffd4Y\u0011\ufffdPV\ufffd\ufffd\ufffd\ufffd\ufffd\u001bH\ufffd\ufffd\ufffdF\ufffd\u0015\ufffd\rIGpq;2\ufffd\ufffd\u0350RR\ufffd\u0006\ufffdWnM\ufffd\ufffd\ufffd\ufffd\ufffdn\ufffdR;4{\ufffdA\ufffd&\ufffd\ufffd\ufffd\ufffd{\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd{q{\ufffd\ufffd\u000b\ufffd3\ufffd\ufffd\ufffd>\u001a\ufffd/K\ufffd\u0000\u000f-`uJo\u0003\ufffd\ufffd\u0004\ufffdLX*k\u000f\ufffd0\ufffd|\fm\u054e\ufffd&\ufffd$t\ufffd\u000f'e\ufffd~Z\ufffd\\\ufffd3\ufffdw\ufffd\ufffd#:\ufffdw\ufffd\ufffd\u010f\ufffd\ufffd\ufffdB\ufffdY\ufffd\ufffd%\ufffdJJ\ufffd\u0231^\ufffdi\ufffd@\u0463\ufffd\ufffd\u009f*\u0006\ufffd\ufffd)5\ufffd6\u0001\ufffd\ufffd!\u0012`\ufffd\ufffd;y\ufffd\n oDqg%\ufffd\u0000~\ufffd1f;1Dd\ufffdK\ufffdZ\r\u0011m\ufffd^V\u0115\ufffd\ufffd\ufffd\ufffd\u0015\ufffd\ufffd\"0\u0018\ufffdd;p\"\ufffd(f`\ufffd\ufffd\u001e\ufffd\ufffd\ufffd\ufffd'd\ufffdX\ufffdOU\ufffd\r&kJg\ufffdm^E\ufffdLv\u0007\ufffd\ufffdu'_\ufffdl\ufffdK\ufffd\ufffd\ufffd\u001e\ufffdmq\u001c\ufffdN\ufffd\ufffd\ufffd\ufffd\u0001\ni\ufffdC\ufffd\ufffd\ufffd}5\ufffd\ufffd\u007f]\u04f4\ufffdR\u0011C\u025c\ufffdK\u0017\ufffd\u0017\ufffda\ufffd\ufffd\ufffd\ufffd\ufffd\u00002\u000e~z}\ufffd*\u000eA\ufffd\ufffdmY\ufffd\ufffd\u0015V@\ufffdz\ufffd\ufffd\ufffd-\ufffd\ufffd\ufffd\u0014\ufffdN\u0014\ufffd,\ufffd\ufffdka:\ufffd5i&[\u0017\u001f\ufffdf\ufffd\u07f0\ufffdq\ufffd@\ufffd\ufffdP\ufffd\u001e\ufffd\u0618\ufffd\ufffdk\ufffd\ufffd\u00b8c{\ufffd\u07ae\ufffd\ufffd5r\u01f6\ufffdR\ufffd\ufffd\ufffd\u0000\ufffd\rt)\ufffd\ufffd\u000b\ufffdt\ufffd\ufffd\ufffd\ufffd?\u04fe\ufffd\ufffdEn\ufffd\u0002\u007f\u0012\ufffdE\ufffd\ufffd\ufffdk*\ufffd\ufffd\ufffd\ufffd[\ufffd\u0014\u007f\ufffd\ufffd\ufffdW93\ufffd\ufffd\u048c\u79ddmFh\ufffd\ufffdNO$\ufffd\ufffd\ufffd\ufffdU\ufffdi:\ufffd\ufffd\ufffd3}<\u0518\ufffd\u001d\ufffd\ufffd\f\ufffd\ufffd\t\ufffdm\ufffd\ufffd\r|^\ufffd\ufffd\ufffd<)\ufffd\ufffdT\ufffd]\ufffdM$\ufffd\n\u0006\ufffd\ufffd\ufffd \ufffd\ufffd\ufffd\n\ufffd\ufffd\u04cf\ufffd\u0382\ufffd2\ufffdQc\ufffd\ufffd7'Y,3\ufffd%\ufffd\ufffd\ufffd%4W?:Q\ufffd!`\ufffd\u05b1\ufffd\u000b\ufffd\ufffd\u0013\ufffds\ufffd2\u06de\ufffd\ufffd\ufffd9|\ufffd\ufffd\ufffd<\ufffd\u0010h\ufffd\u0016\ufffd\ufffd.+\ufffd.\ufffd.\ufffd\ufffd\ufffd\ufffd\u0013k\u000f\ufffdF\fw\u010e\ufffd\ufffdo\ufffd\u044eV\ufffd\ufffd\u000b\ufffd\ufffd*\ufffd]\ufffd\ufffd\ufffd\ufffd\u0014N\ufffdbZGJ\u0012l\ufffd\b2?\ufffd\ufffd\u001d>OX[i\b+\ufffd\u000e6!\ufffd\u007f\ufffd[\u001a\ufffd\u0003RT\ufffd\ufffdr8 H\ufffd\ufffdr\ufffd\ufffdt\ufffd\ufffd_Sl\ufffdEk@\bq\u0005\ufffd\ufffd\u000f5)8\u001b\ufffd\u0001k\ufffd\u0005\ufffdk\ufffd\ufffd\u02d69\n\ufffd\ufffd\ufffdSt\u0007\ufffdTI\ufffd#\ufffd;\u0018C\ufffd\ufffdT\ufffd\ufffd;\"Z\u0658:\u0004\ufffdR\ufffd\ufffdc\u0005K\ufffd\f\ufffd|\ufffdN\u00ff\ufffd\u0000\ufffd\ufffd\u0005\ufffdZx\ufffd\ufffds\ufffdDD(#\ufffdU\ufffdD?\ufffd\ufffd\ufffd\ufffd\u001f\ufffd\ufffd\u0001\ufffd\u05e8SRT\ufffd\ufffd\ufffdl\ufffd\ufffdp\ufffd\ufffd\ufffd\f\u03399M\ufffd\u007f\u0006\ufffd\u001f\ufffd\ufffd\ufffd\u000b\ufffd2t\u0016\ufffdj\ufffd\ufffd\ufffdj\u0006\ufffd\ufffd\ufffd\u0018\ufffd\ufffd\ufffd\ufffd\ufffdSB\ufffd\ufffd\ufffd<Gr\ufffdYtpd\u0019\u0006\ufffd\u028ayJ+\ufffd\u0015\u0010X\ufffd2\bm\ufffdYG\u001d:iqG=ja;\u001cU\ufffd\ufffd-\ufffdi\ufffd_\u001c\ufffd\u0014;!{\u001d\ufffd\u0017\u000e?.\ufffd\ufffd\ufffdS\u0013\ufffd\ufffd]R\ufffd\ufffdj\ufffd\u0012\ufffd\u007f\ufffd\ufffdn\u0013\ufffdL\ufffd8\u000bM{\ufffd\ufffdGQ\ufffd\ufffd\ufffd\u0013r\u0001 \u0003K\u0007\u001e\u0002\ufffdx\ufffd\ufffd1CX\ufffd\ufffd\bz\u000f\ufffd0Z `\u000b\ufffd\u0003\ufffdKy\ufffd9\ufffdb2@\u078dI\ufffd\fb\f8\u0016YA\ufffd:Q\ufffd\ufffdJ\ufffd\ufffd\ufffd\ufffd\u0000\ufffd;\ufffdY\ufffd\u001f\ufffd\ufffdez\ufffdxC\ufffd\ufffd\ufffd\u000e\u001dB\ufffd:q\u04b3\ufffd4\ufffdYG\ufffd&\n-\ufffd\ufffd\ufffd\ufffd\u0016\u030e\ufffd\u0000O\ufffd(4r\ufffd\ufffdo\u001f\ufffd\u0016\u01c8\u0015\ufffd\ufffd\u0019\u01ae\ufffd\ufffd\u02ca\ufffdq\u0006x1\ufffdK\ufffd\ufffd\ufffdGq\ufffd7\ufffd\ufffdSzq\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd*\ufffda\u001a\ufffd\ufffdc\ufffdWH\ufffdGIC\ufffdP\ufffdx\u001e/\ufffd\ufffd\ufffd\ufffd\ufffd0\ufffdUp\ufffdf\fZ\u06b0\ufffd\ufffd_\ufffd\ufffd~l\f\ufffd&m\ufffd\u0014)\u0012I\u057a}\ufffdl\ufffdb\ufffd\ufffd\u0012\ufffd<G\u001dC\ufffd\ufffd\u001dm\ufffdyd\ufffd\ufffd\u0013\ufffd?v.\ufffd\ufffd\ufffdv\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdls\ufffd\ufffdt\ufffdJiZ\ufffd\ufffd[\ufffd\ufffd\u001dr\ufffd(\u001d\ufffd\ufffd[\ufffd\ufffdf\u0004%v\ufffd/\ufffd\fv\\(\ufffd \u0019c'<\ufffd\ufffd\ufffdV\ufffdD\ufffd\ufffd\ufffd\f\ufffd\ufffd\ufffd\u05b9 XY\ufffd\ufffd\ufffd\ufffd\u001fg\ufffdZ\ufffd\ufffd\ufffd\ufffda\ufffd\ufffd\ufffd\ny\ufffd?\ufffd+\ufffd\ufffd\ufffdS_\ufffd\u0012t]\ufffd\u000e\ufffdt<\ufffd\ufffd\ufffd\ufffd\u0012\ufffd&\ufffd1L\ufffd\ufffd\ufffd\u0002\ufffd]\ufffdk\u000f\ufffdk\u007f\ufffd\u0016?\u01b5c\ufffd\ufffd\ufffd\ufffd\ufffd\u000e/\ufffd\u000e\ufffdY\ufffdY\ufffd;/{\ufffd\u0006\n\u0013\ufffdaBO^b\ufffd \u04f535\ufffd{\ufffdV\u030e\ufffd%\ufffd\ufffdm\u0007\ufffd\ufffdL;\u0000\u0018\ufffdK\ufffd%B\ufffd\ufffd\ufffdW6\ufffd\ufffd57z\t\ufffd\ufffd\u0174v|]\ufffdW\ufffd\ufffd\u0001\ufffd\ufffdM\ufffd\ufffd\f]d\ufffdg8J/\ufffdD\ufffd\ufffdP\ufffdu\ufffd\u0000\u0379\b\ufffd\ufffd\u001f>\u0015\ufffdx\ufffdZL|\ufffd\ufffd~\ufffd0 )\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0004\ufffd[\ufffd\u0000o\ufffdD@\ufffd\ufffdg\ufffd_\ufffd&\u001eHl\u0007\ufffd\ufffdUPFi\ufffd\u05fav\ufffd\u001b\u001c\u001b]!\ufffdx\ufffd\ufffdl\ufffd\ufffde\u2b19\ufffd "
+  },
+  {
+    "id": "person::https://openalex.org/A5036381816",
+    "kind": "person",
+    "title": "Sam Sonnega",
+    "source": "OpenAlex",
+    "url": "https://openalex.org/A5036381816",
+    "orcid": "",
+    "deadline": null,
+    "eligibility_notes": "",
+    "institution": "University of Massachusetts Dartmouth",
+    "raw_affiliation": "Department of Biology, UMass Dartmouth, Dartmouth, MA, United States",
+    "pi_last_author": "Michael J. Sheriff",
+    "matched_topics": [
+      "animal cognition"
+    ],
+    "match_methods": [
+      "topic:Human-Animal Interaction Studies"
+    ],
+    "example_work": "Harnessing the gut microbiome: a potential biomarker for wild animal welfare",
+    "tags": [
+      "animal cognition"
+    ],
+    "overlap": 1,
+    "discovery": "topic",
+    "tier": "international",
+    "why_it_fits": "[topic] overlaps 1 of your topics (animal cognition); e.g. \"Harnessing the gut microbiome: a potential biomarker for wild animal welfare\"",
+    "warm_tie": null
+  }
+]

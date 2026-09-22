@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-22",
   "items": [
     {
       "n": 1,
@@ -8,18 +8,18 @@
     },
     {
       "n": 2,
-      "id": "person::https://openalex.org/A5093194507",
-      "title": "Edoardo Fazzari"
-    },
-    {
-      "n": 3,
       "id": "source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)",
       "title": "Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)"
     },
     {
+      "n": 3,
+      "id": "person::https://openalex.org/A5050751356",
+      "title": "Ester Desfilis"
+    },
+    {
       "n": 4,
-      "id": "person::https://openalex.org/A5067436187",
-      "title": "Cesare Stefanini"
+      "id": "source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva",
+      "title": "SEEEE — Sociedad Española de Etología y Ecología Evolutiva"
     },
     {
       "n": 5,
@@ -28,68 +28,33 @@
     },
     {
       "n": 6,
-      "id": "person::https://openalex.org/A5101772132",
-      "title": "Andrea Vera"
-    },
-    {
-      "n": 7,
       "id": "source::Fondation Fyssen — postdoctoral study grants",
       "title": "Fondation Fyssen — postdoctoral study grants"
     },
     {
-      "n": 8,
-      "id": "person::https://openalex.org/A5001223146",
-      "title": "Bernardo Hernández"
-    },
-    {
-      "n": 9,
-      "id": "source::UAB — Premis / Premi Extraordinari de Màster",
-      "title": "UAB — Premis / Premi Extraordinari de Màster"
-    },
-    {
-      "n": 10,
-      "id": "person::https://openalex.org/A5062885870",
-      "title": "David J. Menor-Campos"
-    },
-    {
-      "n": 11,
-      "id": "source::ASAB Research Grants",
-      "title": "ASAB Research Grants"
-    },
-    {
-      "n": 12,
-      "id": "person::https://openalex.org/A5088217940",
-      "title": "Vitor Hugo Bessa Ferreira"
-    },
-    {
-      "n": 13,
-      "id": "source::ASAB Scholarships & smaller grants",
-      "title": "ASAB Scholarships & smaller grants"
-    },
-    {
-      "n": 14,
-      "id": "person::https://openalex.org/A5071463695",
-      "title": "Per Jensen"
-    },
-    {
-      "n": 15,
-      "id": "source::Animal Behavior Society — Grants & Awards",
-      "title": "Animal Behavior Society — Grants & Awards"
-    },
-    {
-      "n": 16,
-      "id": "person::https://openalex.org/A5135575064",
-      "title": "Elodie P. Remoissenet"
-    },
-    {
-      "n": 17,
+      "n": 7,
       "id": "source::Company of Biologists — Travelling Fellowships",
       "title": "Company of Biologists — Travelling Fellowships"
     },
     {
-      "n": 18,
-      "id": "person::https://openalex.org/A5036381816",
-      "title": "Sam Sonnega"
+      "n": 8,
+      "id": "source::ASAB Research Grants",
+      "title": "ASAB Research Grants"
+    },
+    {
+      "n": 9,
+      "id": "person::https://openalex.org/A5071463695",
+      "title": "Per Jensen"
+    },
+    {
+      "n": 10,
+      "id": "source::Animal Behavior Society — Grants & Awards",
+      "title": "Animal Behavior Society — Grants & Awards"
+    },
+    {
+      "n": 11,
+      "id": "source::ASAB Scholarships & smaller grants",
+      "title": "ASAB Scholarships & smaller grants"
     }
   ]
 }
