@@ -1,92 +1,154 @@
 Opportunity Scout - sweep - 2026-09-22
 
-Council: The Scorer ranked fit + strategic value; The Eligibility Gate ran
-independently after and is the source of every [!] flag below. No warm ties
-from network.yaml matched any hit this run (checked against Daniel Sol Rueda,
-Mathilde Eriksen, Harshkumar Vasoya, Duncan Pottinger) — everything below is a
-cold lead unless a grant/society entry, so nothing is asserted as a warm tie.
+11 items selected (4 regional / 2 national / 5 international) out of 18 raw hits.
+
+Council: The Scorer ranked fit + strategic value within each tier; The Eligibility
+Gate ran independently after and is the source of every [!] flag below. No warm
+ties from network.yaml matched any hit this run (checked against Daniel Sol Rueda,
+Mathilde Eriksen, Harshkumar Vasoya, Duncan Pottinger) — everything below is a cold
+lead unless it's a society/grant entry, so nothing is asserted as a warm tie.
+
+Note: most of the static grant sources (SEEEE, AEI, Fondation Fyssen, Company of
+Biologists Travelling Fellowships, ASAB, Animal Behavior Society, Govern Illes
+Balears, Generalitat Valenciana) were already surfaced and sent earlier today in
+an prior digest run and are suppressed by the 120-day dedup — that's why this
+pool leans on fresh OpenAlex person discovery instead.
 
 Screened out before ranking (not listed below, but marked seen so they won't
-resurface for 120 days): Loreta M. Medina (Lleida) and Andrea Jeanette Vélez
-Vera / Bernardo Hernández's *second* record — duplicate co-authors of items
-kept below, from the same single paper; David José Menor-Campos and Bernardo
-Hernández (Universidad de La Laguna) — off-profile (pet-owner attitudes /
-human-animal-interaction psychology, not comparative cognition); and Elodie P.
-Remoissenet ("Barkley AI" / Barnsley College) — looks like a junk or
-AI-generated paper (buzzword title, non-research host, brand-new ORCID) and
-was dropped rather than presented as a real lead.
+resurface for 120 days): Daniel Ruiz-Equihua (UAM Economics faculty — human-robot
+interaction in a consumer/marketing context, false-positive keyword match on
+"comparative cognition"); Eduardo C. Garrido-Merchán and Santiago
+González-Carvajal (Comillas/UPM — pure NLP/ML text-classification work, false
+positive on "behavioural flexibility"); Marcos Tostado-Véliz (Universidad de
+Jaén — electrical-engineering demand-response "flexibility," unrelated field);
+Annalyse Ellis and Steve Loughnan (Edinburgh — companion-animal-owner
+relationship/wellbeing psychology, same off-profile human-animal-interaction
+category screened out in the last sweep); and Anjali Arya (Kamdhenu University,
+India — general livestock-welfare review paper, no cognition/methods overlap or
+clear collaboration hook).
 
 == REGIONAL (Catalonia + <2h of Barcelona) ==
 
-- [ ] Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)  (grant)  <!--id:source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)-->
-   - [!] eligibility/logistics flag: the tracked URL returned HTTP 400 this run — this is the general CAIB trámites index, not a specific call page. Find the current predoctoral-aid call on the seu electrònica before relying on this, and confirm residency/enrolment conditions once you do.
-   - why it fits: Balearic regional predoc/research funding — within your <2h/ferry regional reach.
-   - cadence: annual (confirm current call on the Balearic science/education portal)
-   - link: https://www.caib.es/seucaib/es/tramites/
+1. Louis Lefebvre  (person)  <!--id:person::https://openalex.org/A5035178188-->
+   - fit caveat (not a disqualifier): his primary affiliation is McGill
+     University (Montreal) — CREAF/UAB is a secondary Barcelona affiliation, so
+     he may not be locally based full-time. Confirm before assuming in-person
+     reach.
+   - why it fits: a pioneer of avian cognitive-innovation research — "How do big
+     brains evolve?" sits squarely on your bird cognition / comparative
+     cognition profile, and the CREAF/UAB tie makes this a genuinely local
+     door if he's on campus.
+   - institution: CREAF, Autonomous University of Barcelona (primary: McGill
+     University, Montréal)
+   - link: https://openalex.org/A5035178188 (ORCID: https://orcid.org/0000-0002-6445-0292)
 
-- [ ] Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)  (grant)  <!--id:source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)-->
-   - [!] eligibility/logistics flag: the tracked URL returned a 502 Bad Gateway this run (site outage, not necessarily gone) — confirm the current-year call URL and check the enrolment requirement in a Valencian doctoral programme.
-   - why it fits: Valencian regional predoctoral line (historically ACIF/Santiago Grisolía).
-   - cadence: annual, typically autumn
-   - link: https://innova.gva.es/es/ayudas
+2. Enrique Font  (person)  <!--id:person::https://openalex.org/A5089616958-->
+   - why it fits: Ethology Lab, Cavanilles Institute of Biodiversity and
+     Evolutionary Biology, University of Valencia — genuinely regional.
+     Co-authored with Manuel Leal (well-known lizard cognition/behaviour
+     researcher); recent work "Brains, Behaviour, and Cognition: Multiple
+     Misconceptions" is directly on-profile.
+   - institution: Parc Científic de la Universitat de València
+   - link: https://openalex.org/A5089616958 (ORCID: https://orcid.org/0000-0002-5115-0055)
 
-- [ ] Ester Desfilis  (person)  <!--id:person::https://openalex.org/A5050751356-->
-   - note (fit caveat, not a disqualifier): her group's angle is comparative *neuroanatomy* (brain evolution across vertebrates), not behavioural/GLM-HMM modelling — a stretch fit, flagged for honesty. Worth a look mainly for the cross-species-comparison angle.
-   - why it fits: PI, Laboratory of Evolutionary and Developmental Neurobiology, IRBLleida / Universitat de Lleida — genuinely regional (<2h from Barcelona). Recent work: "Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond." Her co-author Loreta M. Medina is in the same lab (screened out above as a duplicate lead).
-   - institution: Universitat de Lleida
-   - link: https://openalex.org/A5050751356 (ORCID: https://orcid.org/0000-0002-7765-0584)
+3. Gobierno de Aragón — ayudas predoctorales (DGA)  (grant)  <!--id:source::Gobierno de Aragón — ayudas predoctorales (DGA)-->
+   - [!] eligibility/logistics flag: the tracked URL returned HTTP 404 this
+     run. Find the current predoctoral-aid call on the Aragón research portal
+     before relying on this, and confirm enrolment/residency conditions once
+     you do.
+   - why it fits: Aragón regional predoc contracts — western edge of your
+     regional reach (Zaragoza).
+   - cadence: annual (confirm on the DGA research portal)
+   - link: https://www.aragon.es/-/ayudas-predoctorales
+
+4. Joaquín Hortal  (person)  <!--id:person::https://openalex.org/A5054732842-->
+   - fit caveat (not a disqualifier): stretch fit — matched on the profile's
+     "behavioural ecology" keyword, but his example work is dung-beetle
+     functional ecology, not cognition/behavioural modelling. Also currently
+     based at the University of Lisbon; tagged regional only via a legacy
+     MNCN-CSIC (Madrid) affiliation string. Worth a look mainly for the
+     ecology-methods angle, not a strong cognition match.
+   - why it fits: behavioural ecology, Spain-tied CSIC affiliation history.
+   - institution: University of Lisbon
+   - link: https://openalex.org/A5054732842 (ORCID: https://orcid.org/0000-0002-8370-8877)
 
 == NATIONAL (Spain + Portugal) ==
 
-- [ ] SEEEE — Sociedad Española de Etología y Ecología Evolutiva  (grant)  <!--id:source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva-->
-   - why it fits: the Spanish ethology/evolutionary-ecology society — directly on-profile and Spain-based, runs young-researcher / best-thesis awards plus congress travel support.
-   - cadence: annual, around the society congress
-   - note: no specific deadline was parsed this run — check the current cycle on-site.
-   - link: https://etologia.org/
+5. UAB — Premis / Premi Extraordinari de Màster  (grant)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
+   - [!] confirm-before-relying: this prize is AWARDED AUTOMATICALLY — you do
+     NOT apply. Eligible if you finished your master's in the previous
+     academic year with a global GPA ≥ 8.0; a faculty tribunal decides.
+     Your master's is at the Institut de Neurociències (INc); the INc site
+     currently lists doctorate-level prizes only, so confirm the master-level
+     prize with your programme's academic-affairs office.
+   - why it fits: on-profile thesis prize, zero application effort if eligible.
+   - cadence: awarded once per academic year for the previous year's graduates
+   - link: https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html
 
-- [ ] AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
-   - why it fits: master index of all Spanish state research funding (predoc/postdoc); the place to check for FPI-adjacent and other rolling national calls.
-   - cadence: rolling
-   - note: broad portal — no specific open call surfaced this run, needs manual browsing/filtering by tag.
-   - link: https://www.aei.gob.es/convocatorias/buscador-convocatorias
-
-- [ ] Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
-   - [!] eligibility RED FLAG: postdoc-stage only — you're not yet eligible (currently RA / pre-PhD). Flagging as a forward-planning seed for after your PhD, not actionable today.
-   - why it fits: THE animal-cognition-focused foundation for postdoctoral study grants (~€45k range), directly on your fields.
-   - cadence: annual, application window roughly Feb–Mar
-   - link: https://www.fondationfyssen.fr/en/
+6. la Caixa Junior Leader (postdoc)  (grant)  <!--id:source::la Caixa Junior Leader (postdoc)-->
+   - [!] eligibility RED FLAG: postdoc-stage only — you're not yet eligible
+     (currently RA / pre-PhD). Forward-planning seed for after your PhD, not
+     actionable today.
+   - [!] logistics flag: the tracked URL returned HTTP 404 this run — re-check
+     the current call page when this becomes relevant.
+   - why it fits: Spain-based postdoc fellowship (Incoming/Retaining split,
+     like INPhINIT), directly on your funding-ladder path.
+   - cadence: annual, typically autumn call
+   - link: https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships
 
 == INTERNATIONAL (mostly Europe) ==
 
-- [ ] Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
-   - why it fits: up to £3k for ECRs (grad students & postdocs) to undertake a collaborative lab visit — no nationality restriction, and Journal of Experimental Biology is the best-fit journal for your behaviour/physiology angle. Concrete and immediately actionable.
-   - cadence: rolling / journal-specific
-   - link: https://www.biologists.com/grants/travelling-fellowships/
+7. Comparative Cognition Society (CO3)  (grant)  <!--id:source::Comparative Cognition Society (CO3)-->
+   - [!] eligibility note: must be a current CCS member to apply for any of the
+     awards below.
+   - why it fits: THE defining society for this exact profile. Student awards
+     (publication, best talk/poster, travel) plus the Stan Kuczaj Memorial
+     Travel Grant to the CO3 conference; a separate Early Career Award exists
+     for later (first 5 yrs post-PhD, $1000). Confirm current-cycle deadlines
+     on the student-awards page.
+   - cadence: student-award deadlines ~Dec (a few months before CO3, held
+     ~April); Stan Kuczaj travel grant ~28 Feb
+   - link: https://www.comparativecognition.org/student_awards.php
 
-- [ ] ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
-   - why it fits: up to £10k (£15k with justification), explicitly to fund travel to conduct collaborative research or to bring a collaborator to you — a strong match for funding a methods exchange (e.g. GLM-HMM/behavioural-modelling collaboration).
-   - eligibility note: does not usually accept applicants based in the Americas — no issue for you, Spain-based.
-   - cadence: three rounds/year — deadlines 1 Feb, 1 Jun, 1 Oct
-   - link: https://www.asab.org/research-grants
+8. European Society for Evolutionary Biology (ESEB)  (grant)  <!--id:source::European Society for Evolutionary Biology (ESEB)-->
+   - why it fits: research-exchange and outreach funding; relevant on the
+     evolution/culture angle of your profile.
+   - cadence: various (e.g. Godfrey-Smith / research exchange schemes)
+   - note: no specific open call surfaced this run — check current schemes
+     on-site.
+   - link: https://eseb.org/prizes-funding/
 
-- [ ] Per Jensen  (person)  <!--id:person::https://openalex.org/A5071463695-->
-   - why it fits: PI, AVIAN Behavioural Genomics and Physiology group, Linköping University. Their recent review, "Are domesticated animals dumber than their wild relatives?", sits squarely in your comparative-cognition / cross-species-comparison territory (domestication effects on cognitive performance). Co-author Vitor Hugo Bessa Ferreira (now at INRAE/Tours) is a possible second contact point in the same network.
-   - note: cold lead, no warm tie in network.yaml. Confirm what career stage the lab is currently recruiting/hosting for before reaching out.
-   - institution: Linköping University
-   - link: https://openalex.org/A5071463695 (ORCID: https://orcid.org/0000-0001-5491-0649)
+9. International Society for Behavioral Ecology (ISBE)  (grant)  <!--id:source::International Society for Behavioral Ecology (ISBE)-->
+   - why it fits: congress travel awards + occasional grants, directly
+     on-profile for behavioural ecology.
+   - cadence: around the biennial congress
+   - note: confirm current schemes on-site — no specific deadline parsed this
+     run.
+   - link: https://behavecol.org/
 
-- [ ] Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
-   - [!] eligibility RED FLAG: many of these awards require ABS (or ASAB) membership in good standing — join before applying.
-   - why it fits: Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards — broad, on-profile funding menu for animal-behaviour ECRs.
-   - cadence: annual cycles per award
-   - link: https://www.animalbehaviorsociety.org/web/awards.php
+10. Company of Biologists — DMM/JEB conference & partnership travel grants  (grant)  <!--id:source::Company of Biologists — DMM/JEB conference & partnership travel grants-->
+    - eligibility note: some of these smaller conference-attendance travel
+      grants require SEB membership — check per-scheme before applying.
+    - why it fits: distinct from the flagship Travelling Fellowships already
+      sent earlier today — a smaller, complementary line for cheap conference
+      attendance (JEB is a strong-fit journal for your behaviour/physiology
+      angle).
+    - cadence: quarterly (SEB-linked travel grant: 31 Mar / 30 Jun / 30 Sep /
+      31 Dec)
+    - link: https://www.biologists.com/grants/
 
-- [ ] ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
-   - why it fits: conference support, education grants, and caregiver grants alongside the main ASAB Research Grants line — worth skimming for anything ECR-eligible.
-   - cadence: various
-   - link: https://www.asab.org/grant-overview
+11. Michael J. Sheriff  (person)  <!--id:person::https://openalex.org/A5079072853-->
+    - fit caveat (not a disqualifier): stretch fit — his recent work is a
+      gut-microbiome welfare-biomarker study in wild animals, closer to
+      stress-physiology/behavioural ecology than cognition/GLM-HMM modelling.
+      Weakest item in this batch; included mainly as a physiological-ecology
+      angle worth a look.
+    - why it fits: animal cognition/behaviour-adjacent, wild-animal welfare
+      angle — "Harnessing the gut microbiome: a potential biomarker for wild
+      animal welfare."
+    - institution: University of Massachusetts Dartmouth
+    - link: https://openalex.org/A5079072853 (ORCID: https://orcid.org/0000-0001-5230-2877)
 
 ---
-To greenlight, reply in Telegram with the researcher's/item's NAME(s) — e.g.
-"yes Desfilis, Jensen" to greenlight those two, or "yes SEEEE, Company of
-Biologists" for grants — name being safest. "all" / "none" also work.
+To greenlight, reply in Telegram with the item NUMBER(S) — e.g. "yes 1, 3" (or
+"no 4", "all", "none"). Names work as a fallback if numbers are ambiguous.
