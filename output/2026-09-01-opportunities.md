@@ -19,7 +19,7 @@ matching, not urgent.
 
 == REGIONAL (Catalonia + <2h of Barcelona) ==
 
-- [ ] Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)  (grant)  <!--id:source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)-->
+1. Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)  (grant)  <!--id:source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)-->
    - ELIGIBILITY FLAG: this is a predoctoral contract — it typically requires
      current or simultaneous enrolment in a doctoral programme. You're a
      Research Assistant who just finished the TFM and haven't started a PhD
@@ -32,7 +32,7 @@ matching, not urgent.
    - deadline: not confirmed (annual; check CAIB seu electrònica)
    - link: https://www.caib.es/seucaib/es/tramites/
 
-- [ ] Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)  (grant)  <!--id:source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)-->
+2. Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)  (grant)  <!--id:source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)-->
    - ELIGIBILITY FLAG: same as above — Valencian predoc grants (ACIF/Santiago
      Grisolía-style) generally require doctoral-programme enrolment; confirm
      against your actual admission timeline.
@@ -45,7 +45,7 @@ matching, not urgent.
 
 == NATIONAL (Spain + Portugal) ==
 
-- [ ] UAB — Premi Extraordinari de Màster  (thesis-prize)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
+3. UAB — Premi Extraordinari de Màster  (thesis-prize)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
    - CONFIRM-BEFORE-COUNTING-ON-IT: this prize is awarded automatically by
      faculty tribunal, not applied for — but the INc programme site
      currently only lists doctorate-level prizes. Confirm with your
@@ -59,14 +59,14 @@ matching, not urgent.
      graduates
    - link: https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html
 
-- [ ] AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
+4. AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
    - why it fits: master index of all Spanish state R&D calls (predoc,
      postdoc, project funding). Broad, not a specific call — worth a
      periodic skim rather than a single action.
    - deadline: rolling / varies by call
    - link: https://www.aei.gob.es/convocatorias/buscador-convocatorias
 
-- [ ] Bernardo Hernández  (person)  <!--id:person::https://openalex.org/A5001223146-->
+5. Bernardo Hernández  (person)  <!--id:person::https://openalex.org/A5001223146-->
    - why it fits: PI, Universidad de La Laguna, human-animal interaction
      research (e.g. "Pets, protected animals and farm animals: three
      perceptual spaces of animal abuse"). Topic overlap is moderate —
@@ -74,19 +74,19 @@ matching, not urgent.
      — real academic group, worth a look rather than a priority contact.
    - link: https://openalex.org/A5001223146
 
-- [ ] Andrea Vera  (person)  <!--id:person::https://openalex.org/A5101772132-->
+6. Andrea Vera  (person)  <!--id:person::https://openalex.org/A5101772132-->
    - why it fits: same group as Hernández above (Universidad de La Laguna),
      same human-animal interaction angle. Moderate, tangential fit to your
      core cognition/behavioural-flexibility work.
    - link: https://openalex.org/A5101772132
 
-- [ ] David J. Menor-Campos  (person)  <!--id:person::https://openalex.org/A5062885870-->
+7. David J. Menor-Campos  (person)  <!--id:person::https://openalex.org/A5062885870-->
    - why it fits: University of Córdoba, animal-welfare/human-animal
      attitudes research. Tangential to your cognition focus but Spain-based
      and topically adjacent.
    - link: https://openalex.org/A5062885870
 
-- [ ] Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
+8. Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
    - ELIGIBILITY FLAG — NOT YET ELIGIBLE: postdoc-stage only (~€45k mobility
      grant). You're pre-PhD. Listed here purely as a seed for after your
      PhD, not something to act on now.
@@ -97,7 +97,7 @@ matching, not urgent.
 
 == INTERNATIONAL (mostly Europe) ==
 
-- [ ] ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
+9. ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
    - DEADLINE FLAG: next round closes 1 Oct 2026 — about 4 weeks out from
      today. Decide quickly if you want to pursue this cycle.
    - why it fits: up to £10k (£15k with justification) explicitly for travel
@@ -107,20 +107,20 @@ matching, not urgent.
    - deadline: three rounds/year — 1 Feb, 1 Jun, 1 Oct (verified)
    - link: https://www.asab.org/research-grants
 
-- [ ] Per Jensen  (person)  <!--id:person::https://openalex.org/A5071463695-->
+10. Per Jensen  (person)  <!--id:person::https://openalex.org/A5071463695-->
    - why it fits: PI, Linköping University, AVIAN Behavioural Genomics and
      Physiology group — established name in domestication effects on animal
      cognition, directly overlapping your comparative-cognition/behavioural-
      flexibility interests. Best-fit person on this list.
    - link: https://openalex.org/A5071463695
 
-- [ ] Vitor Hugo Bessa Ferreira  (person)  <!--id:person::https://openalex.org/A5088217940-->
+11. Vitor Hugo Bessa Ferreira  (person)  <!--id:person::https://openalex.org/A5088217940-->
    - why it fits: same group as Per Jensen (Linköping/INRAE), first-author on
      "Are domesticated animals dumber than their wild relatives?" — direct
      topical overlap with your cognition work.
    - link: https://openalex.org/A5088217940
 
-- [ ] Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
+12. Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
    - ELIGIBILITY FLAG: eligibility is stated as "grad students & postdocs."
      Confirm whether a pre-enrolment Research Assistant qualifies, or
      whether you need to wait until you're formally enrolled in a PhD.
@@ -130,7 +130,7 @@ matching, not urgent.
    - deadline: rolling / journal-specific
    - link: https://www.biologists.com/grants/travelling-fellowships/
 
-- [ ] Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
+13. Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
    - ELIGIBILITY FLAG: many of these awards require current ABS (or ASAB)
      membership in good standing — factor in membership cost/timing before
      picking a specific award to target.
@@ -139,14 +139,14 @@ matching, not urgent.
    - deadline: annual cycles, varies per award — check current-cycle dates
    - link: https://www.animalbehaviorsociety.org/web/awards.php
 
-- [ ] ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
+14. ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
    - why it fits: overview of smaller ASAB awards (conference support,
      education grants, caregiver grants) — worth a skim for anything
      ECR-eligible, no single standout call identified this run.
    - deadline: various
    - link: https://www.asab.org/grant-overview
 
-- [ ] Sam Sonnega  (person)  <!--id:person::https://openalex.org/A5036381816-->
+15. Sam Sonnega  (person)  <!--id:person::https://openalex.org/A5036381816-->
    - why it fits: UMass Dartmouth, PI Michael J. Sheriff — wild-animal
      welfare/physiology angle (gut microbiome as welfare biomarker). Weakest
      fit on this list — tangential to cognition, included for topic overlap

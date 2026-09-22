@@ -3,10 +3,10 @@ name: opportunity-scout
 description: >
   Monthly council that scouts the web for grants, thesis prizes, mobility and
   travel fellowships, collaboration openings, and labs/researchers matching the
-  user's profile — then pushes the best hits to Telegram and writes a tickable
+  user's profile — then pushes the best hits to Telegram and writes a numbered
   digest. Two modes: --sweep (monthly deep discovery) and --deadlines (weekly
-  deadline check driven by each source's cadence). Ticked items are harvested
-  into approved_queue.json for the drafter skill.
+  deadline check driven by each source's cadence). Items greenlit by number in
+  Telegram are harvested into approved_queue.json for the drafter skill.
   Trigger on: "run the scout", "opportunity sweep", "check deadlines", "/scout".
 ---
 
@@ -42,10 +42,15 @@ Deadlines are handled in code (`scout.py` parses cadence dates), not by a person
    independent Eligibility Gate. Rank; pull red flags and any "confirm-before-
    naming" notes to the top. Select up to `top_n_to_push` — fewer or zero on a
    quiet month, never pad.
-4. Write the ranked digest to `output/<date>-opportunities.md`. Number the items
-   **sequentially 1..N in the exact order you present them**, each carrying its id:
+4. Write the ranked digest to `output/<date>-opportunities.md`. Start it with a
+   one-line tally so the counts are always visible, e.g.
+   `N items selected (R regional / N national / I international) out of M raw hits.`
+   Then, under the three tier headers, number the items
+   **sequentially 1..N in the exact order you present them** — continuously across
+   all three sections, never restarting at 1 per section — each carrying its id:
    `<n>. <title>  (<kind>)  <!--id:<candidate id>-->`
    followed by why-it-fits, deadline, eligibility flags, warm-tie note, and link.
+   **Do NOT use `- [ ]` checkboxes** — the digest is numbered, not ticked.
    The numbers you write ARE the greenlight numbers: `--send-file` rebuilds
    `context/last_digest_index.json` from this file's id order, so the harvester
    matches exactly what you sent. End the message telling the user to reply with the
