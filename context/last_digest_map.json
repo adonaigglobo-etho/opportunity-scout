@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-22",
   "items": [
     {
       "n": 1,
@@ -8,8 +8,8 @@
     },
     {
       "n": 2,
-      "id": "person::https://openalex.org/A5093194507",
-      "title": "Edoardo Fazzari"
+      "id": "person::https://openalex.org/A5062985659",
+      "title": "Loreta M. Medina"
     },
     {
       "n": 3,
@@ -18,8 +18,8 @@
     },
     {
       "n": 4,
-      "id": "person::https://openalex.org/A5067436187",
-      "title": "Cesare Stefanini"
+      "id": "person::https://openalex.org/A5050751356",
+      "title": "Ester Desfilis"
     },
     {
       "n": 5,
@@ -28,8 +28,8 @@
     },
     {
       "n": 6,
-      "id": "person::https://openalex.org/A5101772132",
-      "title": "Andrea Vera"
+      "id": "person::https://openalex.org/A5062885870",
+      "title": "David José Menor-Campos"
     },
     {
       "n": 7,
@@ -38,18 +38,18 @@
     },
     {
       "n": 8,
-      "id": "person::https://openalex.org/A5001223146",
-      "title": "Bernardo Hernández"
+      "id": "person::https://openalex.org/A5101772132",
+      "title": "Andrea Jeanette Vélez Vera"
     },
     {
       "n": 9,
-      "id": "source::UAB — Premis / Premi Extraordinari de Màster",
-      "title": "UAB — Premis / Premi Extraordinari de Màster"
+      "id": "source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva",
+      "title": "SEEEE — Sociedad Española de Etología y Ecología Evolutiva"
     },
     {
       "n": 10,
-      "id": "person::https://openalex.org/A5062885870",
-      "title": "David J. Menor-Campos"
+      "id": "person::https://openalex.org/A5001223146",
+      "title": "Bernardo Hernández"
     },
     {
       "n": 11,
