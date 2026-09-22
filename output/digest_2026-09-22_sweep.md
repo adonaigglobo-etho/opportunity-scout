@@ -2,90 +2,92 @@ Opportunity Scout - sweep - 2026-09-22
 
 == REGIONAL (Catalonia + <2h of Barcelona) ==
 
-1. Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)  (grant)  <!--id:source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)-->
-   - note: Balearic Islands regional predoc/research aid. Confirm the exact current call URL; the CAIB seu electrònica lists open trámites. Relevant given your <2h/ferry regional reach.  [UNREACHABLE: HTTP Error 400: Petici?n incorrecta]
-   - https://www.caib.es/seucaib/es/tramites/
+1. Gobierno de Aragón — ayudas predoctorales (DGA)  (grant)  <!--id:source::Gobierno de Aragón — ayudas predoctorales (DGA)-->
+   - note: Aragón regional predoc contracts. Relevant to the western edge of your <2h reach (Zaragoza). Confirm current call.  [UNREACHABLE: HTTP Error 404: ]
+   - https://www.aragon.es/-/ayudas-predoctorales
 
-2. Loreta M. Medina  (person)  <!--id:person::https://openalex.org/A5062985659-->
-   - [fallback-ES] Spain-based; overlaps 1 of your topics (comparative cognition); e.g. "Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond"
-   - Universitat de Lleida
-   - https://openalex.org/A5062985659
+2. Enrique Font  (person)  <!--id:person::https://openalex.org/A5089616958-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (bird cognition); e.g. "Brains, Behaviour, and Cognition: Multiple Misconceptions"
+   - Parc Científic de la Universitat de València
+   - https://openalex.org/A5089616958
 
-3. Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)  (grant)  <!--id:source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)-->
-   - note: Valencian regional predoctoral grants (ACIF/Santiago Grisolía historically). Confirm the current-year call on the GVA innovation portal.  [UNREACHABLE: <urlopen error Tunnel connection failed: 502 Bad Gateway>]
-   - https://innova.gva.es/es/ayudas
+3. Louis Lefebvre  (person)  <!--id:person::https://openalex.org/A5035178188-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (bird cognition); e.g. "How do big brains evolve?"
+   - Universitat Autònoma de Barcelona
+   - https://openalex.org/A5035178188
 
-4. Ester Desfilis  (person)  <!--id:person::https://openalex.org/A5050751356-->
-   - [fallback-ES] Spain-based; overlaps 1 of your topics (comparative cognition); e.g. "Evolution and Development of Amygdala Subdivisions: Pallial, Subpallial, and Beyond"
-   - Universitat de Lleida
-   - https://openalex.org/A5050751356
+4. Joaquín Hortal  (person)  <!--id:person::https://openalex.org/A5054732842-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (behavioural ecology); e.g. "A trait‐based framework for dung beetle functional ecology"
+   - University of Lisbon
+   - https://openalex.org/A5054732842
 
 == NATIONAL (Spain + Portugal) ==
 
-5. AEI — Agencia Estatal de Investigación (all calls)  (grant)  <!--id:source::AEI — Agencia Estatal de Investigación (all calls)-->
-   - note: Master call index for Spanish state research funding. Broad — filter hard by tags.
-   - https://www.aei.gob.es/convocatorias/buscador-convocatorias
+5. UAB — Premis / Premi Extraordinari de Màster  (grant)  <!--id:source::UAB — Premis / Premi Extraordinari de Màster-->
+   - note: UAB premi extraordinari de titulacio is AWARDED AUTOMATICALLY - you do NOT apply. Eligible if you finished the master in the previous academic year with global GPA >= 8.0; a faculty tribunal decides on academic record. Nothing to submit. Your master is at the Institut de Neurociencies (INc): https://www.uab.cat/en/incuab - confirm the master-level prize with your programme academic-affairs office (the INc site currently lists doctorate-level prizes).
+   - https://www.uab.cat/web/estudis/grau/informacio-academica/premis-extraordinaris-de-titulacio-1345662186782.html
 
-6. David José Menor-Campos  (person)  <!--id:person::https://openalex.org/A5062885870-->
-   - [topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. "Beliefs About Cats and Dogs Among Pet Owners and Former Owners"
-   - University of Córdoba
-   - https://openalex.org/A5062885870
+6. Daniel Ruiz‐Equihua  (person)  <!--id:person::https://openalex.org/A5010679213-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (comparative cognition); e.g. "Human–robot interactions in the restaurant setting: the role of social cognition, psychological ownership and anthropomorphism"
+   - Universidad Autónoma de Madrid
+   - https://openalex.org/A5010679213
 
-7. Fondation Fyssen — postdoctoral study grants  (grant)  <!--id:source::Fondation Fyssen — postdoctoral study grants-->
-   - note: Animal-cognition-focused foundation; postdoc study grants (~€45k range) for mobility. Postdoc-stage — seed for after the PhD.
-   - https://www.fondationfyssen.fr/en/
+7. la Caixa Junior Leader (postdoc)  (grant)  <!--id:source::la Caixa Junior Leader (postdoc)-->
+   - note: For later — postdoc stage. Incoming/Retaining split like INPhINIT. Seed for future eligibility.  [UNREACHABLE: HTTP Error 404: Not Found]
+   - https://lacaixafoundation.org/en/junior-leader-postdoctoral-fellowships
 
-8. Andrea Jeanette Vélez Vera  (person)  <!--id:person::https://openalex.org/A5101772132-->
-   - [topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. "Pets, protected animals and farm animals: three perceptual spaces of animal abuse"
-   - Universidad de La Laguna
-   - https://openalex.org/A5101772132
+8. Eduardo C. Garrido‐Merchán  (person)  <!--id:person::https://openalex.org/A5070783543-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (behavioural flexibility); e.g. "Comparing BERT Against Traditional Machine Learning Models in Text Classification"
+   - Universidad Pontificia Comillas
+   - https://openalex.org/A5070783543
 
-9. SEEEE — Sociedad Española de Etología y Ecología Evolutiva  (grant)  <!--id:source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva-->
-   - note: Spanish ethology/evolutionary-ecology society - young-researcher / best-thesis awards and congress support. Directly on-profile and Spain-based. NOTE: www.etologia.org threw an SSL cert error last run; entry now uses etologia.org (no www).
-   - https://etologia.org/
+9. Santiago González-Carvajal  (person)  <!--id:person::https://openalex.org/A5074268487-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (behavioural flexibility); e.g. "Comparing BERT Against Traditional Machine Learning Models in Text Classification"
+   - Artificial Intelligence Research Institute
+   - https://openalex.org/A5074268487
 
-10. Bernardo Hernández  (person)  <!--id:person::https://openalex.org/A5001223146-->
-   - [topic-ES] Spain-based; overlaps 1 of your topics (animal cognition); e.g. "Pets, protected animals and farm animals: three perceptual spaces of animal abuse"
-   - Universidad de La Laguna
-   - https://openalex.org/A5001223146
+10. Marcos Tostado‐Véliz  (person)  <!--id:person::https://openalex.org/A5038590259-->
+   - [fallback-ES] Spain-based; overlaps 1 of your topics (behavioural flexibility); e.g. "A fully robust home energy management model considering real time price and on-board vehicle batteries"
+   - Universidad de Jaén
+   - https://openalex.org/A5038590259
 
 == INTERNATIONAL (mostly Europe) ==
 
-11. ASAB Research Grants  (grant)  <!--id:source::ASAB Research Grants-->
-   - note: Up to £10k (£15k with justification). Explicitly funds travel to conduct COLLABORATIVE research or to bring a collaborator to you. Does NOT usually accept applicants based in the Americas — fine for Spain. No overheads.
-   - https://www.asab.org/research-grants
+11. Company of Biologists — DMM/JEB conference & partnership travel grants  (grant)  <!--id:source::Company of Biologists — DMM/JEB conference & partnership travel grants-->
+   - note: Smaller conference-attendance travel grants; some require SEB membership. Good for getting to a target conference cheaply.
+   - https://www.biologists.com/grants/
 
-12. Vitor Hugo Bessa Ferreira  (person)  <!--id:person::https://openalex.org/A5088217940-->
-   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan"
-   - Linköping University
-   - https://openalex.org/A5088217940
-
-13. ASAB Scholarships & smaller grants  (grant)  <!--id:source::ASAB Scholarships & smaller grants-->
-   - note: Includes conference support, education grants, caregiver grants. Skim the overview page for anything ECR-eligible.
-   - https://www.asab.org/grant-overview
-
-14. Per Jensen  (person)  <!--id:person::https://openalex.org/A5071463695-->
-   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Are domesticated animals dumber than their wild relatives? A comprehensive review on the domestication effects on animal cognitive performan"
-   - Linköping University
-   - https://openalex.org/A5071463695
-
-15. Animal Behavior Society — Grants & Awards  (grant)  <!--id:source::Animal Behavior Society — Grants & Awards-->
-   - note: Early Career Research Grants, Student Research Grants, Travel Awards, plus named awards. Many require ABS (or ASAB) membership in good standing — factor membership into eligibility.
-   - https://www.animalbehaviorsociety.org/web/awards.php
-
-16. Elodie P. Remoissenet  (person)  <!--id:person::https://openalex.org/A5135575064-->
-   - [topic] overlaps 1 of your topics (animal cognition); e.g. "From Surveillance to Cognition: A Unified Framework for Precision Behavioral and Metabolic Intelligence in Companion Animals"
-   - Barnsley College
-   - https://openalex.org/A5135575064
-
-17. Company of Biologists — Travelling Fellowships  (grant)  <!--id:source::Company of Biologists — Travelling Fellowships-->
-   - note: Up to £3k for ECRs (grad students & postdocs) to undertake collaborative lab visits. No nationality restriction. Journal of Experimental Biology is the best-fit journal for behaviour/physiology.
-   - https://www.biologists.com/grants/travelling-fellowships/
-
-18. Sam Sonnega  (person)  <!--id:person::https://openalex.org/A5036381816-->
+12. Michael J. Sheriff  (person)  <!--id:person::https://openalex.org/A5079072853-->
    - [topic] overlaps 1 of your topics (animal cognition); e.g. "Harnessing the gut microbiome: a potential biomarker for wild animal welfare"
    - University of Massachusetts Dartmouth
-   - https://openalex.org/A5036381816
+   - https://openalex.org/A5079072853
+
+13. International Society for Behavioral Ecology (ISBE)  (grant)  <!--id:source::International Society for Behavioral Ecology (ISBE)-->
+   - note: Congress travel awards + occasional grants. Confirm current schemes on site.
+   - https://behavecol.org/
+
+14. Annalyse Ellis  (person)  <!--id:person::https://openalex.org/A5104235663-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "The Link between the Nature of the Human–Companion Animal Relationship and Well-Being Outcomes in Companion Animal Owners"
+   - University of Edinburgh
+   - https://openalex.org/A5104235663
+
+15. European Society for Evolutionary Biology (ESEB)  (grant)  <!--id:source::European Society for Evolutionary Biology (ESEB)-->
+   - note: Research exchange and outreach funding; relevant on the evolution/culture angle.
+   - https://eseb.org/prizes-funding/
+
+16. Steve Loughnan  (person)  <!--id:person::https://openalex.org/A5043312930-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "The Link between the Nature of the Human–Companion Animal Relationship and Well-Being Outcomes in Companion Animal Owners"
+   - University of Edinburgh
+   - https://openalex.org/A5043312930
+
+17. Comparative Cognition Society (CO3)  (grant)  <!--id:source::Comparative Cognition Society (CO3)-->
+   - note: THE defining society for this exact profile. Student awards (publication, best talk/poster, travel) + Stan Kuczaj Memorial Travel Grant to CO3; separate Early Career Award for early-career faculty (first 5 yrs of first post, $1000). MUST be a current CCS member to apply; you now apply for all awards. Confirm current-cycle deadlines on the student-awards page.
+   - https://www.comparativecognition.org/student_awards.php
+
+18. Anjali Arya  (person)  <!--id:person::https://openalex.org/A5102663523-->
+   - [topic] overlaps 1 of your topics (animal cognition); e.g. "Animal Cognition and Animal Welfare: A Review"
+   - Kamdhenu University
+   - https://openalex.org/A5102663523
 
 
 To greenlight, reply in Telegram with the NUMBER(S): e.g. 'yes 1, 3' (or 'no 4' to drop; 'all' / 'none'). Names also work as a fallback, e.g. 'yes Sonnega, Company of Biologists'.

@@ -3,58 +3,93 @@
   "items": [
     {
       "n": 1,
-      "id": "source::Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)",
-      "title": "Govern Illes Balears — ajuts predoctorals (GOIB/DGPRI)"
+      "id": "source::Gobierno de Aragón — ayudas predoctorales (DGA)",
+      "title": "Gobierno de Aragón — ayudas predoctorales (DGA)"
     },
     {
       "n": 2,
-      "id": "source::Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)",
-      "title": "Generalitat Valenciana — ajudes predoctorals (GVA/Conselleria)"
+      "id": "person::https://openalex.org/A5089616958",
+      "title": "Enrique Font"
     },
     {
       "n": 3,
-      "id": "person::https://openalex.org/A5050751356",
-      "title": "Ester Desfilis"
+      "id": "person::https://openalex.org/A5035178188",
+      "title": "Louis Lefebvre"
     },
     {
       "n": 4,
-      "id": "source::SEEEE — Sociedad Española de Etología y Ecología Evolutiva",
-      "title": "SEEEE — Sociedad Española de Etología y Ecología Evolutiva"
+      "id": "person::https://openalex.org/A5054732842",
+      "title": "Joaquín Hortal"
     },
     {
       "n": 5,
-      "id": "source::AEI — Agencia Estatal de Investigación (all calls)",
-      "title": "AEI — Agencia Estatal de Investigación (all calls)"
+      "id": "source::UAB — Premis / Premi Extraordinari de Màster",
+      "title": "UAB — Premis / Premi Extraordinari de Màster"
     },
     {
       "n": 6,
-      "id": "source::Fondation Fyssen — postdoctoral study grants",
-      "title": "Fondation Fyssen — postdoctoral study grants"
+      "id": "person::https://openalex.org/A5010679213",
+      "title": "Daniel Ruiz‐Equihua"
     },
     {
       "n": 7,
-      "id": "source::Company of Biologists — Travelling Fellowships",
-      "title": "Company of Biologists — Travelling Fellowships"
+      "id": "source::la Caixa Junior Leader (postdoc)",
+      "title": "la Caixa Junior Leader (postdoc)"
     },
     {
       "n": 8,
-      "id": "source::ASAB Research Grants",
-      "title": "ASAB Research Grants"
+      "id": "person::https://openalex.org/A5070783543",
+      "title": "Eduardo C. Garrido‐Merchán"
     },
     {
       "n": 9,
-      "id": "person::https://openalex.org/A5071463695",
-      "title": "Per Jensen"
+      "id": "person::https://openalex.org/A5074268487",
+      "title": "Santiago González-Carvajal"
     },
     {
       "n": 10,
-      "id": "source::Animal Behavior Society — Grants & Awards",
-      "title": "Animal Behavior Society — Grants & Awards"
+      "id": "person::https://openalex.org/A5038590259",
+      "title": "Marcos Tostado‐Véliz"
     },
     {
       "n": 11,
-      "id": "source::ASAB Scholarships & smaller grants",
-      "title": "ASAB Scholarships & smaller grants"
+      "id": "source::Company of Biologists — DMM/JEB conference & partnership travel grants",
+      "title": "Company of Biologists — DMM/JEB conference & partnership travel grants"
+    },
+    {
+      "n": 12,
+      "id": "person::https://openalex.org/A5079072853",
+      "title": "Michael J. Sheriff"
+    },
+    {
+      "n": 13,
+      "id": "source::International Society for Behavioral Ecology (ISBE)",
+      "title": "International Society for Behavioral Ecology (ISBE)"
+    },
+    {
+      "n": 14,
+      "id": "person::https://openalex.org/A5104235663",
+      "title": "Annalyse Ellis"
+    },
+    {
+      "n": 15,
+      "id": "source::European Society for Evolutionary Biology (ESEB)",
+      "title": "European Society for Evolutionary Biology (ESEB)"
+    },
+    {
+      "n": 16,
+      "id": "person::https://openalex.org/A5043312930",
+      "title": "Steve Loughnan"
+    },
+    {
+      "n": 17,
+      "id": "source::Comparative Cognition Society (CO3)",
+      "title": "Comparative Cognition Society (CO3)"
+    },
+    {
+      "n": 18,
+      "id": "person::https://openalex.org/A5102663523",
+      "title": "Anjali Arya"
     }
   ]
 }
